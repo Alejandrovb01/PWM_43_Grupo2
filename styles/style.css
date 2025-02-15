@@ -1,5 +1,6 @@
 @import url(header.css);
 @import url(footer.css);
+@import url(dishPage.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
@@ -8,4 +9,14 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: min(95%, 1200px);
+    margin: 50px auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
 }
