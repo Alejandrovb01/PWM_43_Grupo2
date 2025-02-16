@@ -1,0 +1,26 @@
+.dish-menu {
+    width: 350px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.dish-menu .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Price */
+.dish-menu .price {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Description with text truncation */
+.dish-menu .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #818181;
+}
