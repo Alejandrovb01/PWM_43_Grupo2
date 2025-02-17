@@ -4,6 +4,8 @@
 @import url(cardSlider.css);
 @import url(dishMenuQR.css);
 @import url(menuQR.css);
+@import url(notification.css);
+@import url(loginworkers.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
