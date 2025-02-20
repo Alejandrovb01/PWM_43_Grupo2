@@ -54,15 +54,15 @@ body {
 .menu-img-text-section div {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar título e iframe */
-    max-width: 400px; /* Limita el ancho del texto y del iframe */
+    align-items: center;
+    max-width: 400px;
 }
 
 .menu-img-text-section iframe {
-    width: 100%; /* Que ocupe el ancho máximo del contenedor */
-    max-width: 300px; /* Evita que se expanda demasiado */
-    height: 150px; /* Define una altura estándar */
-    border: none; /* Elimina el borde por estética */
+    width: 100%;
+    max-width: 300px;
+    height: 150px;
+    border: none;
 }
 
 .menu-img-text-section.reverse {
