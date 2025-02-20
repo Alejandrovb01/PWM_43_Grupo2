@@ -1,0 +1,145 @@
+/* styles_about.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f3f3f3;
+    padding: 15px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.img-text-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.img-text-section img {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.img-text-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.img-text-section.reverse img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.full-width-img {
+    position: relative; /* Para posicionar el texto sobre la imagen */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 400px; /* Altura fija (ajusta según sea necesario) */
+    overflow: hidden; /* Evita que la imagen se desborde */
+    padding: 20px; /* Añade un margen interno (espacio alrededor de la imagen) */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    margin-top: 40px;
+}
+
+.full-width-img img {
+    width: calc(100% - 40px); /* Ajusta el ancho para tener en cuenta el padding */
+    height: calc(100% - 40px); /* Ajusta la altura para tener en cuenta el padding */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    display: block; /* Elimina espacios no deseados */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.full-width-img h2 {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el centrado */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.full-width-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.full-width-section h2 {
+    margin-bottom: 20px;
+}
+
+.last-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.last-section h2 {
+    margin-bottom: 20px;
+}
+
+.last-section .img-text-section {
+    justify-content: left;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .img-text-section, .img-text-section.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img-text-section img, .img-text-section.reverse img {
+        margin: 0 0 20px 0;
+    }
+}
