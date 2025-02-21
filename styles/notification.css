@@ -41,3 +41,18 @@
 .notification button:hover {
     background-color: #333;
 }
+.notificationgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+
+}
+.notificationgrid div {margin-bottom: 20px}
+
+.notification_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
