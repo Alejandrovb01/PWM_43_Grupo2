@@ -1,4 +1,4 @@
-menu-body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ menu-body {
     padding: 20px;
 }
 
-.grid-3x3 {
+.menu-grid-3x3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -30,54 +30,68 @@ menu-body {
 }
 
 /* Estilos para la segunda sección */
-.about-section {
+.menu-about-section {
     padding: 20px;
 }
 
-.about-section h2 {
+.menu-about-section h2 {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.img-text-section {
+.menu-img-text-section {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
 
-.img-text-section img {
+.menu-img-text-section img {
     width: 300px;
     height: 300px;
     margin-right: 20px;
 }
 
-.img-text-section.reverse {
+.menu-img-text-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+}
+
+.menu-img-text-section iframe {
+    width: 100%;
+    max-width: 300px;
+    height: 150px;
+    border: none;
+}
+
+.menu-img-text-section.reverse {
     flex-direction: row-reverse;
 }
 
-.img-text-section.reverse img {
+.menu-img-text-section.reverse img {
     margin-right: 0;
     margin-left: 20px;
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
-    .grid-3x3 {
+    .menu-grid-3x3 {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .img-text-section, .img-text-section.reverse {
+    .menu-img-text-section, .menu-img-text-section.reverse {
         flex-direction: column;
         text-align: center;
     }
 
-    .img-text-section img, .img-text-section.reverse img {
+    .menu-img-text-section img, .menu-img-text-section.reverse img {
         margin: 0 0 20px 0;
     }
 }
 
 @media (max-width: 480px) {
-    .grid-3x3 {
+    .menu-grid-3x3 {
         grid-template-columns: 1fr;
     }
 }
