@@ -59,13 +59,6 @@ body {
     max-width: 400px;
 }
 
-.menu-img-text-section iframe {
-    width: 100%;
-    max-width: 300px;
-    height: 150px;
-    border: none;
-}
-
 .menu-img-text-section.reverse {
     flex-direction: row-reverse;
 }
