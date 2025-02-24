@@ -1,6 +1,7 @@
 .home-history-section {
     display: flex;
     justify-content: space-between;
+    text-align: justify;
     align-items: center;
     margin-bottom: 40px;
 }
@@ -35,3 +36,4 @@
 .go-to-button:hover {
     background-color: #333;
 }
+
