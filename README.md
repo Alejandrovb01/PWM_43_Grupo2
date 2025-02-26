@@ -1,46 +1,82 @@
-#Nombre del proyecto: PWM_43_Grupo2
-#
-#Componentes del grupo:
-#Daniel Padrón Acosta​
-#Gabriel Domínguez Torres​
-#David González espino​
-#Alejandro Van Baumberghen quintana
-#
-#Se trata de una página web que se accede a partir de un QR que se encuentra en los restaurantes. ​
-#Dentro de la página se pueden hacer pedidos a la mesa directamente. ​
-#Además, la página cuenta con apartados de uso más general, como la información del restaurante, el menú o el contacto.​
-#Por otro lado, Los cocineros tienen una página para ver los pedidos.​
-#
-#Requisitos funcionales:
-#Los cocineros deben poder iniciar sesión mediante un nombre de usuario y una contraseña.​
-#Los usuarios deben de poder añadir y eliminar de la cesta, los platos del menú.​
-#El usuario debe de poder enviar un mensaje de valoración.​
-#Los cocineros deben de poder restablecer su contraseña.​
-#El usuario debe de poder conocer mas información de un plato de comida si interactua con él.​
-#
-#Nombre y ubicación del archivo pdf con los mockups y storyboard:
-#/Mockups/PWM_Sprint1_Mockups.pdf
-#
-#Listado de archivos templates identificados y señalar archivo en el que se cargan:
-#/templates/cardSlider.html.
-#/templates/cardValues.html.
-#/templates/dishMenuQR.html se carga en menu.html.
-#/templates/footer.html se carga en todas las páginas HTML.
-#/templates/header.html se carga en todas las páginas HTML.
-#/templates/notification.html.
-#/templates/opImages.html.
-#
+# Luigi's Restaurant - Grupo de Trabajo 2
 
-#Listado de páginas HTML:
-#aboutUs.html
-#contact.html
-#dishPage.html
-#home.html
-#loginworkers.html
-#menu.html
-#menuQRPage.html
-#NotificationPage.html
-#
-#Enlace Figma: https://www.figma.com/design/d7QA36de4T0m12a2ifsf4L/PWM?node-id=56-292&t=toErnjGuGlLAchiV-0​
-#
-#Enlace Trello: https://trello.com/invite/b/67aa35d78c547bc075e7a705/ATTI9d0bd43194ef09666f9cd36b557a26248A73F202/pwm
+## Descripción del Proyecto
+
+Este proyecto es una página web para el restaurante Luigi's, desarrollada durante el Sprint 1. Hemos creado una interfaz atractiva y funcional utilizando HTML, CSS y JavaScript. La estructura del proyecto incluye bocetos, mockups diseñados en Figma, y la implementación de templates y estilos.
+
+## Integrantes del Equipo
+
+- Daniel Padrón Acosta
+- Gabriel Domínguez Torres
+- David González Espino
+- Alejandro Van Baumberghen Quintana
+
+## Estructura del Proyecto
+
+El proyecto está organizado de la siguiente manera:
+
+- **Boceto**: Contiene los bocetos iniciales del diseño.
+- **main**: Archivos HTML principales.
+    - `aboutUsMain.html`
+    - `contactMain.html`
+    - `dishMain.html`
+    - `homeMain.html`
+    - `menuMain.html`
+    - `menuQRMain.html`
+- **Mockups**: Diseños creados en Figma.
+- **styles**: Archivos CSS para estilos.
+    - `about.css`
+    - `cardSlider.css`
+    - `contact.css`
+    - `dishMenuQR.css`
+    - `dishPage.css`
+    - `footer.css`
+    - `header.css`
+    - `home.css`
+    - `loginworkers.css`
+    - `menu.css`
+    - `menuDish.css`
+    - `menuQR.css`
+    - `notification.css`
+    - `review.css`
+    - `style.css`
+- **templates**: Templates HTML reutilizables.
+    - `cardMenu.html`
+    - `cardSlider.html`
+    - `cardValues.html`
+    - `dishMenuQR.html`
+    - `footer.html`
+    - `header.html`
+    - `Notification.html`
+    - `opImages.html`
+    - `review.html`
+- **Trello**: Archivos relacionados con la gestión del proyecto en Trello.
+    - `aboutUs.html`
+    - `contactPage.html`
+    - `dishPage.html`
+    - `homePage.html`
+    - `loginworkers.html`
+    - `menuPage.html`
+    - `menuQRPage.html`
+    - `NotificationPage.html`
+- **README.md**: Este archivo.
+- **xlu-include-file.js**: Librería JavaScript para incluir templates.
+
+## Tecnologías Utilizadas
+
+- **HTML**: Para la estructura de la página.
+- **CSS**: Para los estilos y diseño.
+- **JavaScript**: Para la funcionalidad y la inclusión dinámica de templates.
+- **WebStorm**: Como entorno de desarrollo integrado (IDE).
+
+## Instrucciones de Uso
+
+1. Clona el repositorio en tu máquina local.
+2. Abre el proyecto en WebStorm o cualquier otro editor de texto.
+3. Navega por los diferentes archivos HTML para ver las distintas secciones de la página.
+4. Los estilos CSS están organizados por secciones para facilitar su mantenimiento.
+5. Utiliza la librería `xlu-include-file.js` para incluir templates dinámicamente en las páginas.
+
+---
+
+¡Gracias por visitar el proyecto de Luigi's Restaurant! Esperamos que disfrutes explorando nuestro trabajo.
