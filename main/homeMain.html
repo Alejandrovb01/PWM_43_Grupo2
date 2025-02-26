@@ -16,19 +16,9 @@
 <section class="menu-grid-section">
     <h2>Nuestros mejores platos</h2>
     <div class="menu-grid-3x3">
-        <div class="grid-item">
-            <img src="assets/peperoni.jpg" alt="Placeholder">
-            <iframe src="templates/dishMenuQR.html" style="width: 360px"> </iframe>
-        </div>
-
-        <div class="grid-item">
-            <img src="assets/peperoni.jpg" alt="Placeholder">
-            <iframe src="templates/dishMenuQR.html" style="width: 360px"> </iframe>
-        </div>
-        <div class="grid-item">
-            <img src="assets/peperoni.jpg" alt="Placeholder">
-            <iframe src="templates/dishMenuQR.html" style="width: 360px"> </iframe>
-        </div>
+        <div class="grid-item" xlu-include-file="templates/cardMenu.html"></div>
+        <div class="grid-item" xlu-include-file="templates/cardMenu.html"></div>
+        <div class="grid-item" xlu-include-file="templates/cardMenu.html"></div>
     </div>
     <button class="go-to-button">Ir al menú</button>
 </section>
@@ -36,9 +26,9 @@
 <section>
     <h2>Nuestros clientes</h2>
     <div>
-        <iframe src="review.html" style="width: 370px; height: 400px"> </iframe>
-        <iframe src="review.html" style="width: 370px; height: 400px"> </iframe>
-        <iframe src="review.html" style="width: 370px; height: 400px"> </iframe>
+        <section class="review"  xlu-include-file="templates/review.html"></section>
+        <section class="review"  xlu-include-file="templates/review.html"></section>
+        <section class="review"  xlu-include-file="templates/review.html"></section>
     </div>
 
 </section>
