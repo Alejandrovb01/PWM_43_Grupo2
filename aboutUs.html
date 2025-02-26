@@ -5,63 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="xlu-include-file.js"></script>
 </head>
 <body>
-<!-- Header -->
-<iframe src="templates/header.html">
-</iframe>
+<header class="header" xlu-include-file="templates/header.html">
+</header>
 
-<!-- Contenido específico de About Us -->
-<main>
-
-    <section class="menu-about-section">
-        <h2>About Us</h2>
-        <div class="menu-img-text-section">
-            <img src="assets/peperoni.jpg" alt="Placeholder">
-            <div>
-                <h3>¿Quiénes somos?</h3>
-                <p>Texto descriptivo...</p>
-            </div>
-        </div>
-        <div class="menu-img-text-section reverse">
-            <img src="assets/peperoni.jpg" alt="Placeholder">
-            <div>
-                <h3>El restaurante</h3>
-                <p>Texto descriptivo...</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="grid">
-        <article class="card">
-            <img src="assets/peperoni.jpg">
-            <h2>Visión</h2>
-            <p>Texto descriptivo...</p>
-        </article>
-        <article class="card">
-            <img src="assets/peperoni.jpg">
-            <h2>Misión</h2>
-            <p>Texto descriptivo...</p>
-        </article>
-        <article class="card">
-            <img src="assets/peperoni.jpg">
-            <h2>Valores</h2>
-            <p>Texto descriptivo...</p>
-        </article>
-    </section>
-
-    <div class="full-width-img">
-        <img src="assets/peperoni.jpg" alt="Placeholder">
-    </div>
-
-    <section class="last-section">
-        <h2>Calidad</h2>
-        <div class="img-text-section">
-            <img src="assets/peperoni.jpg">
-            <p>Texto descriptivo...</p>
-        </div>
-    </section>
+<main xlu-include-file="main/aboutUsMain.html">
 </main>
-<iframe src="templates/footer.html" style="height: 455px"></iframe>
+
+<footer class="footer" xlu-include-file="templates/footer.html">
+</footer>
+<script>
+    xLuIncludeFile();
+</script>
 </body>
 </html>
