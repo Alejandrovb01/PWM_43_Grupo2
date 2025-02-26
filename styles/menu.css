@@ -1,10 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .menu {
     list-style: none;
     display: flex;
@@ -16,7 +9,6 @@ body {
     cursor: pointer;
 }
 
-/* Estilos para la primera sección (grid de 3x3) */
 .menu-grid-section {
     text-align: center;
     padding: 20px;
@@ -29,7 +21,6 @@ body {
     margin-top: 20px;
 }
 
-/* Estilos para la segunda sección */
 .menu-about-section {
     padding: 20px;
 }
@@ -66,26 +57,4 @@ body {
 .menu-img-text-section.reverse img {
     margin-right: 0;
     margin-left: 20px;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .menu-grid-3x3 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .menu-img-text-section, .menu-img-text-section.reverse {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .menu-img-text-section img, .menu-img-text-section.reverse img {
-        margin: 0 0 20px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .menu-grid-3x3 {
-        grid-template-columns: 1fr;
-    }
 }
