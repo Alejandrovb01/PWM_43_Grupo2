@@ -51,11 +51,11 @@ El proyecto está organizado de la siguiente manera:
     - `opImages.html`
     - `review.html`
 - **Trello**: Archivos relacionados con la gestión del proyecto en Trello.
-    - `aboutUs.html`
+    - `aboutUsPage.html`
     - `contactPage.html`
     - `dishPage.html`
     - `homePage.html`
-    - `loginworkers.html`
+    - `loginWorkers.html`
     - `menuPage.html`
     - `menuQRPage.html`
     - `NotificationPage.html`
@@ -76,6 +76,15 @@ El proyecto está organizado de la siguiente manera:
 3. Navega por los diferentes archivos HTML para ver las distintas secciones de la página.
 4. Los estilos CSS están organizados por secciones para facilitar su mantenimiento.
 5. Utiliza la librería `xlu-include-file.js` para incluir templates dinámicamente en las páginas.
+
+## Enlaces
+**Link Figma**
+
+https://www.figma.com/design/d7QA36de4T0m12a2ifsf4L/PWM?node-id=0-1&t=j3eLO3TWJ09O6Kew-1
+
+**Link Trello**
+
+https://trello.com/invite/b/67aa35d78c547bc075e7a705/ATTI6c4e7ea6f9ce2312fc8bbf3e624fde3303151BE2/pwm
 
 ---
 
