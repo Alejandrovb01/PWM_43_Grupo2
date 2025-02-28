@@ -11,6 +11,28 @@ Este proyecto es una página web para el restaurante Luigi's, desarrollada duran
 - David González Espino
 - Alejandro Van Baumberghen Quintana
 
+## Funcionalidades
+
+La aplicación web de Luigi's Restaurant está diseñada para ofrecer una experiencia completa tanto para los clientes que visitan el restaurante como para el personal que trabaja en él. La web proporciona información detallada sobre el restaurante, su menú, historia y datos de contacto. Además, incluye una funcionalidad innovadora que permite a los clientes realizar pedidos escaneando un código QR, lo que facilita la comunicación entre los clientes y la cocina.
+
+## Funcionalidades Principales
+
+### 1. **Información del Restaurante**
+- **Home**: Página principal con una introducción al restaurante, imágenes destacadas y enlaces a otras secciones.
+- **Nosotros**: Información sobre la historia del restaurante, su filosofía y equipo.
+- **Menú**: Visualización del menú del restaurante con categorías, descripciones y precios de los platos.
+- **Contacto**: Formulario de contacto y detalles de ubicación, horarios y redes sociales.
+
+### 2. **Pedidos a través de QR**
+- **Escaneo de QR**: Los clientes pueden escanear un código QR en su mesa para acceder a la página de pedidos.
+- **Realización de Pedidos**: Los clientes seleccionan los platos que desean ordenar directamente desde la página web.
+- **Confirmación de Pedidos**: Una vez realizado el pedido, este se envía automáticamente a la cocina.
+
+### 3. **Gestión de Pedidos en Cocina**
+- **Recepción de Pedidos**: La cocina recibe los pedidos en tiempo real a través de una interfaz dedicada.
+- **Tiempo de Preparación**: El personal de cocina puede indicar el tiempo estimado de preparación para cada pedido.
+- **Notificaciones**: Los clientes reciben una notificación con el tiempo estimado y un contador que muestra el tiempo restante.
+
 ## Estructura del Proyecto
 
 El proyecto está organizado de la siguiente manera:
@@ -51,14 +73,14 @@ El proyecto está organizado de la siguiente manera:
     - `opImages.html`
     - `review.html`
 - **Trello**: Archivos relacionados con la gestión del proyecto en Trello.
-    - `aboutUsPage.html`
-    - `contactPage.html`
-    - `dishPage.html`
-    - `homePage.html`
-    - `loginWorkers.html`
-    - `menuPage.html`
-    - `menuQRPage.html`
-    - `NotificationPage.html`
+- `aboutUsPage.html`
+- `contactPage.html`
+- `dishPage.html`
+- `homePage.html`
+- `loginWorkers.html`
+- `menuPage.html`
+- `menuQRPage.html`
+- `NotificationPage.html`
 - **README.md**: Este archivo.
 - **xlu-include-file.js**: Librería JavaScript para incluir templates.
 
