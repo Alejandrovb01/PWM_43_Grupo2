@@ -1,0 +1,53 @@
+h2 {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.home-history-section {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    align-items: center;
+}
+
+.home-history-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+}
+
+.home-history-section img {
+    width: 550px;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.home-map {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.go-to-button {
+    display: inline-block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 50%;
+    transition: background-color 0.3s ease-in-out;
+}
+.go-to-button:hover {
+    background-color: #333;
+}
