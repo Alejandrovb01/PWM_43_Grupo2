@@ -1,0 +1,54 @@
+.card-slider {
+    width: 250px;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin-left: 5px;
+}
+
+.card-slider img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+.card-slider h3 {
+    margin: 10px 0;
+}
+
+.card-slider p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.card-slider .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #333;
+}
