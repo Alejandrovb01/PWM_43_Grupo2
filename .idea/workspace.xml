@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Trello actualizado." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="sprint-1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;002avid&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Alejandrovb01/PWM_43_Grupo2.git&quot;,
+    &quot;accountId&quot;: &quot;04693b50-716f-474d-babc-0655a865d315&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2tB8krzgoQSqQ9VVSrRyNFXeKTd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.aboutUs.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.aboutUsPage.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.homePage.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menu.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menuMain.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menuPage.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menuQRPage.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sprint-2&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/David/Documents/Acceso directo a Documentos (OneDrive - Personal).lnk&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\David\WebstormProjects\PWM_43_Grupo2\Trello" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="" />
+      <created>1739814254129</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739814254129</updated>
+      <workItem from="1739814255273" duration="3284000" />
+      <workItem from="1739880520373" duration="997000" />
+      <workItem from="1740150573541" duration="4592000" />
+      <workItem from="1740754737581" duration="5401000" />
+      <workItem from="1741359458856" duration="848000" />
+      <workItem from="1741365206763" duration="754000" />
+    </task>
+    <task id="LOCAL-00001" summary="Menu y about.">
+      <option name="closed" value="true" />
+      <created>1740150800686</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740150800686</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Deslizador de alto menu arreglado.">
+      <option name="closed" value="true" />
+      <created>1740156590327</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740156590327</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Tamaño de los entrantes del menú ajustados.">
+      <option name="closed" value="true" />
+      <created>1740757938566</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740757938566</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Trello actualizado.">
+      <option name="closed" value="true" />
+      <created>1740760379606</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740760379606</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Menu y about." />
+    <MESSAGE value="Deslizador de alto menu arreglado." />
+    <MESSAGE value="Tamaño de los entrantes del menú ajustados." />
+    <MESSAGE value="Trello actualizado." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trello actualizado." />
+  </component>
+</project>
