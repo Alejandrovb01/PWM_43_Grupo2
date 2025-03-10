@@ -1,11 +1,21 @@
-<div class="logo-container">
-  <img class="logo" src="../assets/blackLogo.png" alt="Logo">
-  <h3 class="logo-name">Luigi's</h3>
-</div>
-<nav class="nav">
-  <ul>
-    <li><a href="./menuPage.html">Menú</a></li>
-    <li><a href="./aboutUsPage.html">Nosotros</a></li>
-    <li><a href="./contactPage.html">Contacto</a></li>
-  </ul>
-</nav>
+<header class="header">
+  <nav class="header__nav">
+    <div class="header__container-logo">
+      <a href="./homePage.html">
+        <img class="header__logo" src="../assets/blackLogo.png" alt="Logo de Luigi's">
+      </a>
+      <h3 class="header__name">Luigi's</h3>
+    </div>
+    <div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+        <div class="menu__section">
+          <li class="menu__li"><a href="./menuPage.html" class="menu__link">Menú</a></li>
+          <li class="menu__li"><a href="./aboutUsPage.html" class="menu__link">Nosotros</a></li>
+          <li class="menu__li"><a href="./contactPage.html" class="menu__link">Contacto</a></li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+</header>
