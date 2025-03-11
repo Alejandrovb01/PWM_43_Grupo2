@@ -32,10 +32,6 @@ main {
     padding: 0;
 }
 
-header, section, footer, aside, nav, article, figure, figcaption, hgroup{
-    display: block;
-}
-
 img {
     max-width: 100%;
     height: auto;
