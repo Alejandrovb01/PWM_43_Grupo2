@@ -4,12 +4,13 @@
 }
 .dish-description {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     place-items: center;
     gap: 30px;
     padding: 20px;
     margin-bottom: 50px;
 }
+
 .dish-image {
     width: 600px;
 }
@@ -32,16 +33,6 @@
     text-align: center;
     margin-bottom: 20px;
 }
-.options-list {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px auto;
-}
-
-.options-list img {
-    width: 100px;
-    height: 100px;
-}
 
 .buy-button {
     display: inline-block;
@@ -56,6 +47,39 @@
     width: 100%;
     transition: background-color 0.3s ease-in-out;
 }
+
 .buy-button:hover {
     background-color: #333;
+}
+
+.options-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.options-list img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .options-list img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dish-description {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .options-list img {
+        width: 100px;
+        height: 100px;
+    }
 }
