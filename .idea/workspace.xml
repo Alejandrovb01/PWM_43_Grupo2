@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Trello actualizado." />
+    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Untracked Files error solution try">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/aboutUsMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/aboutUsMain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/menu.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +20,8 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="tsconfig.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -50,6 +57,7 @@
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;JavaScript Debug.aboutUs.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.aboutUsMain.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.aboutUsPage.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.homePage.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.menu.html.executor&quot;: &quot;Run&quot;,
@@ -95,7 +103,14 @@
       <workItem from="1740150573541" duration="4592000" />
       <workItem from="1740754737581" duration="5401000" />
       <workItem from="1741359458856" duration="848000" />
-      <workItem from="1741365206763" duration="754000" />
+      <workItem from="1741365206763" duration="1010000" />
+      <workItem from="1741366242372" duration="147000" />
+      <workItem from="1741603400730" duration="4129000" />
+      <workItem from="1741622096404" duration="2515000" />
+      <workItem from="1741626521647" duration="5755000" />
+      <workItem from="1741692920138" duration="55000" />
+      <workItem from="1741801964807" duration="292000" />
+      <workItem from="1741855534664" duration="621000" />
     </task>
     <task id="LOCAL-00001" summary="Menu y about.">
       <option name="closed" value="true" />
@@ -129,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740760379606</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Untracked Files error solution try">
+      <option name="closed" value="true" />
+      <created>1741365996717</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741365996717</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +174,7 @@
     <MESSAGE value="Deslizador de alto menu arreglado." />
     <MESSAGE value="Tamaño de los entrantes del menú ajustados." />
     <MESSAGE value="Trello actualizado." />
-    <option name="LAST_COMMIT_MESSAGE" value="Trello actualizado." />
+    <MESSAGE value="Untracked Files error solution try" />
+    <option name="LAST_COMMIT_MESSAGE" value="Untracked Files error solution try" />
   </component>
 </project>
