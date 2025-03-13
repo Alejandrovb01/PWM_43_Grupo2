@@ -2,11 +2,12 @@
     background-color: #009344;
     color: black;
     width: 100%;
-    height: 425px;
+    height: 675px;
 }
+
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     align-items: start;
     padding: 50px;
@@ -63,8 +64,8 @@
 }
 
 .footer-logo img {
-    width: 200px;
-    height: 200px;
+    width: 125px;
+    height: 125px;
 }
 
 .footer-bottom {
@@ -72,4 +73,31 @@
     background-color: #00BB57;
     padding: 15px;
     font-size: 18px;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .footer {
+        height: 455px;
+    }
+
+    .footer-logo img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        height: 425px;
+    }
+
+    .footer-logo img {
+        width: 200px;
+        height: 200px;
+    }
 }
