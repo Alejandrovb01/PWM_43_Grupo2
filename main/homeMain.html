@@ -13,22 +13,29 @@
     </div>
 </section>
 
-<section class="menu-grid-section">
+<section class="menu-slider-section">
     <h2>Nuestros mejores platos</h2>
-    <div class="menu-grid-3x3">
-        <div class="grid-item" xlu-include-file="templates/cardMenu.html"></div>
-        <div class="grid-item" xlu-include-file="templates/cardMenu.html"></div>
-        <div class="grid-item" xlu-include-file="templates/cardMenu.html"></div>
+    <div class="slider-container">
+        <button class="slider-btn prev">&#10094;</button>
+        <div class="slider">
+            <div class="slide grid-item" xlu-include-file="templates/cardMenu.html"></div>
+            <div class="slide grid-item" xlu-include-file="templates/cardMenu.html"></div>
+            <div class="slide grid-item" xlu-include-file="templates/cardMenu.html"></div>
+        </div>
+        <button class="slider-btn next">&#10095;</button>
     </div>
     <button class="go-to-button">Ir al menú</button>
 </section>
 
 <section>
     <h2>Nuestros clientes</h2>
-    <div class="review-grid">
-        <section class="review"  xlu-include-file="templates/review.html"></section>
-        <section class="review"  xlu-include-file="templates/review.html"></section>
-        <section class="review"  xlu-include-file="templates/review.html"></section>
+    <div class="review-slider-container">
+        <button class="slider-btn prev-review">&#10094;</button>
+        <div class="review-slider">
+            <section class="review slide" xlu-include-file="templates/review.html"></section>
+            <section class="review slide" xlu-include-file="templates/review.html"></section>
+            <section class="review slide" xlu-include-file="templates/review.html"></section>
+        </div>
+        <button class="slider-btn next-review">&#10095;</button>
     </div>
-
 </section>

@@ -8,16 +8,35 @@
     <script src="xlu-include-file.js"></script>
 </head>
 <body>
-<header class="header" xlu-include-file="templates/header.html">
-</header>
+<header class="header" xlu-include-file="templates/header.html"></header>
 
-<main xlu-include-file="main/homeMain.html">
-</main>
+<main xlu-include-file="main/homeMain.html"></main>
 
-<footer class="footer" xlu-include-file="templates/footer.html">
-</footer>
+<footer class="footer" xlu-include-file="templates/footer.html"></footer>
+
 <script>
     xLuIncludeFile();
+
+    document.addEventListener("DOMContentLoaded", function () {
+        function setupSlider(containerSelector, sliderSelector, prevBtnSelector, nextBtnSelector) {
+            const slider = document.querySelector(sliderSelector);
+            const slides = document.querySelectorAll(`${sliderSelector} .slide`);
+            let index = 0;
+
+            document.querySelector(prevBtnSelector).addEventListener("click", function () {
+                index = (index - 1 + slides.length) % slides.length;
+                slider.style.transform = `translateX(-${index * 100}%)`;
+            });
+
+            document.querySelector(nextBtnSelector).addEventListener("click", function () {
+                index = (index + 1) % slides.length;
+                slider.style.transform = `translateX(-${index * 100}%)`;
+            });
+        }
+
+        setupSlider(".menu-slider-section", ".slider", ".prev", ".next");
+        setupSlider(".review-slider-container", ".review-slider", ".prev-review", ".next-review");
+    });
 </script>
 </body>
 </html>
