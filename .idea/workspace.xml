@@ -4,36 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="AboutUs and Menu responsive.">
-      <change afterPath="$PROJECT_DIR$/assets/bruschetta.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/burrata.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/calamari.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/caprese.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/carpaccio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_carbonara.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_cuatro_quesos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_hawaiana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_margherita.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_marinara.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_prosciutto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_trufa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_vegetariana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/prosciutto_melon.jpg" afterDir="false" />
+    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Modify menu and add images of dishes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Json/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/Json/menu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/peperoni.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pizza_peperoni.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/dishPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/dishPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/menuQRPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/menuQRPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/aboutUsMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/aboutUsMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/contactMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/contactMain.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/dishMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/dishMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/homeMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/homeMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/menuMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/menuMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/menuQRMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/menuQRMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cardMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cardMenu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cardSlider.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cardSlider.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cardValues.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cardValues.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/opImages.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/opImages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/review.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/cardSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/cardSlider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/dishMenuQR.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/dishMenuQR.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741856220561</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Modify menu and add images of dishes">
+      <option name="closed" value="true" />
+      <created>1741968443650</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741968443650</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +200,7 @@
     <MESSAGE value="Trello actualizado." />
     <MESSAGE value="Untracked Files error solution try" />
     <MESSAGE value="AboutUs and Menu responsive." />
-    <option name="LAST_COMMIT_MESSAGE" value="AboutUs and Menu responsive." />
+    <MESSAGE value="Modify menu and add images of dishes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify menu and add images of dishes" />
   </component>
 </project>
