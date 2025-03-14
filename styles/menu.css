@@ -23,6 +23,44 @@
     margin-top: 20px;
 }
 
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.info {
+    padding: 10px;
+    text-align: left;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Muestra solo 3 líneas */
+    -webkit-box-orient: vertical;
+}
+
 @media (max-width: 1024px) {
     .menu-grid-3x3 {
         grid-template-columns: repeat(2, 1fr);
