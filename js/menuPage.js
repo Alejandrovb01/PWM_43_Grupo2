@@ -1,51 +1,48 @@
 if (document.body.id === 'menuPage') {
     loadTemplate('../main/menuMain.html', 'main');
-    loadTemplate('../templates/cardMenu.html', 'cardMenu1');
-    loadTemplate('../templates/cardMenu.html', 'cardMenu2');
-    loadTemplate('../templates/cardMenu.html', 'cardMenu3');
-    loadTemplate('../templates/cardMenu.html', 'cardMenu4');
-    loadTemplate('../templates/cardMenu.html', 'cardMenu5');
-    loadTemplate('../templates/cardMenu.html', 'cardMenu6');
-    loadTemplate('../templates/cardMenu.html', 'cardMenu7');
-    loadTemplate('../templates/cardMenu.html', 'cardMenu8');
-    loadTemplate('../templates/cardMenu.html', 'cardMenu9');
-
-    loadTemplate('../templates/dishMenuQR.html', 'dishMenu1');
-    loadTemplate('../templates/dishMenuQR.html', 'dishMenu2');
-    loadTemplate('../templates/dishMenuQR.html', 'dishMenu3');
-    loadTemplate('../templates/dishMenuQR.html', 'dishMenu4');
-    loadTemplate('../templates/dishMenuQR.html', 'dishMenu5');
-    loadTemplate('../templates/dishMenuQR.html', 'dishMenu6');
-    loadTemplate('../templates/dishMenuQR.html', 'dishMenu7');
-    loadTemplate('../templates/dishMenuQR.html', 'dishMenu8');
-    loadTemplate('../templates/dishMenuQR.html', 'dishMenu9');
-    loadTemplate('../templates/dishMenuQR.html', 'dishMenu10');
-    loadTemplate('../templates/dishMenuQR.html', 'dishMenu11');
-    loadTemplate('../templates/dishMenuQR.html', 'dishMenu12');
 }
+
 document.addEventListener("DOMContentLoaded", () => {
     fetch("../Json/menu.json")
         .then(response => response.json())
         .then(data => {
-            const menuGrid = document.getElementById("menuGrid");
-
-            data.menu.forEach(item => {
-                const gridItem = document.createElement("div");
-                gridItem.classList.add("grid-item");
-
-                gridItem.innerHTML = `
-                    <img src="${item.imagen}" alt="${item.nombre}">
-                    <div class="info">
-                        <h3 class="title">${item.nombre}</h3>
-                        <p class="price">${item.precio}</p>
-                        <p class="description">${item.descripcion}</p>
-                    </div>
-                `;
-
-                // Añadir el elemento al grid
-                menuGrid.appendChild(gridItem);
-            });
+            cargarPizzas(data.menu.clasicas.concat(data.menu.bestsellers, data.menu.gourmet));
+            cargarSeccion(".menu-about-section .menu-img-text-section:nth-child(1) .dish-menu", data.menu.appetizers);
+            cargarSeccion(".menu-about-section .menu-img-text-section:nth-child(2) .dish-menu", data.menu.antipasti);
         })
-        .catch(error => console.error("Error cargando el menú:", error));
+        .catch(error => console.error("Error cargando el JSON:", error));
 });
 
+function cargarPizzas(pizzas) {
+    const grid = document.querySelector(".menu-grid-3x3");
+    grid.innerHTML = "";
+
+    pizzas.forEach(pizza => {
+        const card = crearCard(pizza);
+        grid.appendChild(card);
+    });
+}
+
+function cargarSeccion(selector, items) {
+    const sections = document.querySelectorAll(selector);
+    sections.forEach((section, index) => {
+        if (items[index]) {
+            const card = crearCard(items[index]);
+            section.innerHTML = "";
+            section.appendChild(card);
+        }
+    });
+}
+
+function crearCard(item) {
+    const div = document.createElement("div");
+    div.classList.add("grid-item", "menu-card");
+    div.innerHTML = `
+      <img src="../assets/${item.imagen}" alt="${item.nombre}">
+      <h3>${item.nombre}</h3>
+      <p>${item.descripcion}</p>
+      <span class="price">${item.precio}</span>
+      <p class="alergenos">Alergenos: ${item.alergenos.join(", ") || "Ninguno"}</p>
+  `;
+    return div;
+}

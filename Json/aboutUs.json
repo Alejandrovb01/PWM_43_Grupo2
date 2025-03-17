@@ -1,40 +1,39 @@
 {
   "aboutUs_intro": [
     {
-      "imagen": "../assets/peperoni.jpg",
+      "imagen": "../assets/cocinero.jpg",
       "titulo": "¿Quiénes somos?",
-      "descripcion": "Texto descriptivo..."
+      "descripcion": "Somos un restaurante italiano apasionado por ofrecer la auténtica experiencia culinaria de Italia, con recetas tradicionales y un ambiente acogedor."
     },
     {
-      "imagen": "../assets/peperoni.jpg",
+      "imagen": "../assets/restaurante.jpg",
       "titulo": "El restaurante",
-      "descripcion": "Texto descriptivo..."
+      "descripcion": "Un rincón de Italia en la ciudad, donde cada plato cuenta una historia y cada ingrediente refleja nuestra dedicación a la calidad y el sabor."
     }
+
   ],
   "aboutUs_grid": [
     {
-      "imagen": "../assets/peperoni.jpg",
+      "imagen": "../assets/vision.jpg",
       "titulo": "Visión",
-      "descripcion": "Texto descriptivo..."
+      "descripcion": "Ser el restaurante italiano de referencia en la ciudad, reconocido por su calidad, hospitalidad y ambiente que transporta a Italia."
     },
     {
-      "imagen": "../assets/peperoni.jpg",
+      "imagen": "../assets/mision.jpg",
       "titulo": "Misión",
-      "descripcion": "Texto descriptivo..."
+      "descripcion": "Ofrecer auténtica cocina italiana con ingredientes frescos y recetas tradicionales, creando una experiencia cálida y acogedora para cada comensal."
     },
     {
-      "imagen": "../assets/peperoni.jpg",
+      "imagen": "../assets/valores.jpg",
       "titulo": "Valores",
-      "descripcion": "Texto descriptivo..."
+      "descripcion": "Autenticidad – Respetamos las recetas y tradiciones italianas.\nCalidad – Solo usamos ingredientes frescos y de primera.\nHospitalidad – Hacemos que cada cliente se sienta en casa.\nPasión – Cocinamos con amor y dedicación."
     }
-  ],
-  "aboutUs_map": [
   ],
   "aboutUs_last":[
     {
-      "imagen": "../assets/peperoni.jpg",
+      "imagen": "../assets/calidad.jpg",
       "titulo": "Calidad",
-      "descripcion": "Texto descriptivo..."
+      "descripcion": "Cada plato es una obra maestra, elaborado con ingredientes seleccionados y el amor por la cocina italiana que nos define."
     }
   ]
 }
