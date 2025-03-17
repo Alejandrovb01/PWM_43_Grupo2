@@ -57,42 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 `;
             });
 
-            const map = document.getElementById('map');
-            if (map) {
-                const lat = 27.7669022;
-                const lng = -15.5903258;
-                const zoom = 16;
-
-                const map = L.map('map').setView([lat, lng], zoom);
-
-                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution:
-                        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-                }).addTo(map);
-
-                if (window.location.pathname === '../main/aboutUsMain') {
-                    L.marker([lat, lng])
-                        .addTo(map)
-                        .bindPopup(
-                            `
-                    <h2 class="contact_map_heading">C.D Maspaoasis</h2>
-                    <p class="contact_map_text">A/ Alejandro del Castillo, 53</p>
-                    <p class="contact_map_text">Maspalomas, Las Palmas</p>`
-                        )
-                        .openPopup();
-                } else {
-                    L.marker([lat, lng])
-                        .addTo(map)
-                        .bindPopup(
-                            `
-                        <h2 class="map__heading">C.D Maspaoasis</h2>
-                        <p class="map__text">A/ Alejandro del Castillo, 53</p>
-                        <p class="map__text">Maspalomas, Las Palmas</p>`
-                        )
-                        .openPopup();
-                }
-            }
-
             document.querySelectorAll(".toggle-text").forEach(button => {
                 button.addEventListener("click", function () {
                     const description = this.previousElementSibling;
