@@ -1,0 +1,40 @@
+{
+  "aboutUs_intro": [
+    {
+      "imagen": "../assets/peperoni.jpg",
+      "titulo": "¿Quiénes somos?",
+      "descripcion": "Texto descriptivo..."
+    },
+    {
+      "imagen": "../assets/peperoni.jpg",
+      "titulo": "El restaurante",
+      "descripcion": "Texto descriptivo..."
+    }
+  ],
+  "aboutUs_grid": [
+    {
+      "imagen": "../assets/peperoni.jpg",
+      "titulo": "Visión",
+      "descripcion": "Texto descriptivo..."
+    },
+    {
+      "imagen": "../assets/peperoni.jpg",
+      "titulo": "Misión",
+      "descripcion": "Texto descriptivo..."
+    },
+    {
+      "imagen": "../assets/peperoni.jpg",
+      "titulo": "Valores",
+      "descripcion": "Texto descriptivo..."
+    }
+  ],
+  "aboutUs_map": [
+  ],
+  "aboutUs_last":[
+    {
+      "imagen": "../assets/peperoni.jpg",
+      "titulo": "Calidad",
+      "descripcion": "Texto descriptivo..."
+    }
+  ]
+}

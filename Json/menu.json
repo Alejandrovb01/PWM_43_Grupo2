@@ -1,33 +1,134 @@
 {
-  "menu": [
-    { "imagen": "../assets/peperoni.jpg",
-      "nombre": "Pizza Peperoni",
-      "precio": "10.00€",
-      "descripcion": "Un clásico reinventado, donde la tradición italiana se fusiona con el toque picante y ahumado del pepperoni. Elaborada con una masa de fermentación lenta, crujiente en su base y esponjosa en sus bordes, esta pizza es una explosión de sabor en cada bocado. La salsa de tomate, elaborada con tomates frescos y hierbas aromáticas, sirve de lecho para una generosa capa de queso mozzarella de alta calidad, que se funde a la perfección con el calor del horno. Las rodajas de pepperoni, con su característico color rojo y su sabor ligeramente picante, se distribuyen uniformemente sobre la pizza, aportando un toque de sabor y aroma que estimula los sentidos. Horneada a la perfección en nuestro horno de leña, la Pizza Pepperoni es una experiencia culinaria que no te dejará indiferente. ¡Pídela ahora y déjate seducir por su sabor inigualable!"
-    },
-    { "imagen": "../assets/peperoni.jpg", "nombre": "Pizza Peperoni",
-      "precio": "10.00€",
-      "descripcion": "Un clásico reinventado, donde la tradición italiana se fusiona con el toque picante y ahumado del pepperoni. Elaborada con una masa de fermentación lenta, crujiente en su base y esponjosa en sus bordes, esta pizza es una explosión de sabor en cada bocado. La salsa de tomate, elaborada con tomates frescos y hierbas aromáticas, sirve de lecho para una generosa capa de queso mozzarella de alta calidad, que se funde a la perfección con el calor del horno. Las rodajas de pepperoni, con su característico color rojo y su sabor ligeramente picante, se distribuyen uniformemente sobre la pizza, aportando un toque de sabor y aroma que estimula los sentidos. Horneada a la perfección en nuestro horno de leña, la Pizza Pepperoni es una experiencia culinaria que no te dejará indiferente. ¡Pídela ahora y déjate seducir por su sabor inigualable!" },
-    { "imagen": "../assets/peperoni.jpg", "nombre": "Pizza Peperoni",
-      "precio": "10.00€",
-      "descripcion": "Un clásico reinventado, donde la tradición italiana se fusiona con el toque picante y ahumado del pepperoni. Elaborada con una masa de fermentación lenta, crujiente en su base y esponjosa en sus bordes, esta pizza es una explosión de sabor en cada bocado. La salsa de tomate, elaborada con tomates frescos y hierbas aromáticas, sirve de lecho para una generosa capa de queso mozzarella de alta calidad, que se funde a la perfección con el calor del horno. Las rodajas de pepperoni, con su característico color rojo y su sabor ligeramente picante, se distribuyen uniformemente sobre la pizza, aportando un toque de sabor y aroma que estimula los sentidos. Horneada a la perfección en nuestro horno de leña, la Pizza Pepperoni es una experiencia culinaria que no te dejará indiferente. ¡Pídela ahora y déjate seducir por su sabor inigualable!" },
-    { "imagen": "../assets/peperoni.jpg", "nombre": "Pizza Peperoni",
-      "precio": "10.00€",
-      "descripcion": "Un clásico reinventado, donde la tradición italiana se fusiona con el toque picante y ahumado del pepperoni. Elaborada con una masa de fermentación lenta, crujiente en su base y esponjosa en sus bordes, esta pizza es una explosión de sabor en cada bocado. La salsa de tomate, elaborada con tomates frescos y hierbas aromáticas, sirve de lecho para una generosa capa de queso mozzarella de alta calidad, que se funde a la perfección con el calor del horno. Las rodajas de pepperoni, con su característico color rojo y su sabor ligeramente picante, se distribuyen uniformemente sobre la pizza, aportando un toque de sabor y aroma que estimula los sentidos. Horneada a la perfección en nuestro horno de leña, la Pizza Pepperoni es una experiencia culinaria que no te dejará indiferente. ¡Pídela ahora y déjate seducir por su sabor inigualable!" },
-    { "imagen": "../assets/peperoni.jpg", "nombre": "Pizza Peperoni",
-      "precio": "10.00€",
-      "descripcion": "Un clásico reinventado, donde la tradición italiana se fusiona con el toque picante y ahumado del pepperoni. Elaborada con una masa de fermentación lenta, crujiente en su base y esponjosa en sus bordes, esta pizza es una explosión de sabor en cada bocado. La salsa de tomate, elaborada con tomates frescos y hierbas aromáticas, sirve de lecho para una generosa capa de queso mozzarella de alta calidad, que se funde a la perfección con el calor del horno. Las rodajas de pepperoni, con su característico color rojo y su sabor ligeramente picante, se distribuyen uniformemente sobre la pizza, aportando un toque de sabor y aroma que estimula los sentidos. Horneada a la perfección en nuestro horno de leña, la Pizza Pepperoni es una experiencia culinaria que no te dejará indiferente. ¡Pídela ahora y déjate seducir por su sabor inigualable!" },
-    { "imagen": "../assets/peperoni.jpg", "nombre": "Pizza Peperoni",
-      "precio": "10.00€",
-      "descripcion": "Un clásico reinventado, donde la tradición italiana se fusiona con el toque picante y ahumado del pepperoni. Elaborada con una masa de fermentación lenta, crujiente en su base y esponjosa en sus bordes, esta pizza es una explosión de sabor en cada bocado. La salsa de tomate, elaborada con tomates frescos y hierbas aromáticas, sirve de lecho para una generosa capa de queso mozzarella de alta calidad, que se funde a la perfección con el calor del horno. Las rodajas de pepperoni, con su característico color rojo y su sabor ligeramente picante, se distribuyen uniformemente sobre la pizza, aportando un toque de sabor y aroma que estimula los sentidos. Horneada a la perfección en nuestro horno de leña, la Pizza Pepperoni es una experiencia culinaria que no te dejará indiferente. ¡Pídela ahora y déjate seducir por su sabor inigualable!" },
-    { "imagen": "../assets/peperoni.jpg", "nombre": "Pizza Peperoni",
-      "precio": "10.00€",
-      "descripcion": "Un clásico reinventado, donde la tradición italiana se fusiona con el toque picante y ahumado del pepperoni. Elaborada con una masa de fermentación lenta, crujiente en su base y esponjosa en sus bordes, esta pizza es una explosión de sabor en cada bocado. La salsa de tomate, elaborada con tomates frescos y hierbas aromáticas, sirve de lecho para una generosa capa de queso mozzarella de alta calidad, que se funde a la perfección con el calor del horno. Las rodajas de pepperoni, con su característico color rojo y su sabor ligeramente picante, se distribuyen uniformemente sobre la pizza, aportando un toque de sabor y aroma que estimula los sentidos. Horneada a la perfección en nuestro horno de leña, la Pizza Pepperoni es una experiencia culinaria que no te dejará indiferente. ¡Pídela ahora y déjate seducir por su sabor inigualable!" },
-    { "imagen": "../assets/peperoni.jpg", "nombre": "Pizza Peperoni",
-      "precio": "10.00€",
-      "descripcion": "Un clásico reinventado, donde la tradición italiana se fusiona con el toque picante y ahumado del pepperoni. Elaborada con una masa de fermentación lenta, crujiente en su base y esponjosa en sus bordes, esta pizza es una explosión de sabor en cada bocado. La salsa de tomate, elaborada con tomates frescos y hierbas aromáticas, sirve de lecho para una generosa capa de queso mozzarella de alta calidad, que se funde a la perfección con el calor del horno. Las rodajas de pepperoni, con su característico color rojo y su sabor ligeramente picante, se distribuyen uniformemente sobre la pizza, aportando un toque de sabor y aroma que estimula los sentidos. Horneada a la perfección en nuestro horno de leña, la Pizza Pepperoni es una experiencia culinaria que no te dejará indiferente. ¡Pídela ahora y déjate seducir por su sabor inigualable!" },
-    { "imagen": "../assets/peperoni.jpg", "nombre": "Pizza Peperoni",
-      "precio": "10.00€",
-      "descripcion": "Un clásico reinventado, donde la tradición italiana se fusiona con el toque picante y ahumado del pepperoni. Elaborada con una masa de fermentación lenta, crujiente en su base y esponjosa en sus bordes, esta pizza es una explosión de sabor en cada bocado. La salsa de tomate, elaborada con tomates frescos y hierbas aromáticas, sirve de lecho para una generosa capa de queso mozzarella de alta calidad, que se funde a la perfección con el calor del horno. Las rodajas de pepperoni, con su característico color rojo y su sabor ligeramente picante, se distribuyen uniformemente sobre la pizza, aportando un toque de sabor y aroma que estimula los sentidos. Horneada a la perfección en nuestro horno de leña, la Pizza Pepperoni es una experiencia culinaria que no te dejará indiferente. ¡Pídela ahora y déjate seducir por su sabor inigualable!" }
-  ]
+  "menu": {
+    "clasicas": [
+      {
+        "id": 1,
+        "imagen": "pizza_margherita.jpg",
+        "nombre": "Pizza Margherita",
+        "precio": "9.50€",
+        "descripcion": "La clásica pizza italiana con salsa de tomate, mozzarella fresca, albahaca y un toque de aceite de oliva. Simplicidad y sabor en cada bocado.",
+        "alergenos": ["gluten", "lacteos"]
+      },
+      {
+        "id": 2,
+        "imagen": "pizza_peperoni.jpg",
+        "nombre": "Pizza Pepperoni",
+        "precio": "10.00€",
+        "descripcion": "Una explosión de sabor con pepperoni picante, salsa de tomate casera y queso mozzarella derretido. Perfecta para los amantes del picante.",
+        "alergenos": ["gluten", "lacteos"]
+      },
+      {
+        "id": 3,
+        "imagen": "pizza_cuatro_quesos.jpg",
+        "nombre": "Pizza Cuatro Quesos",
+        "precio": "11.00€",
+        "descripcion": "Una mezcla irresistible de mozzarella, gorgonzola, parmesano y fontina. Un festín de quesos para los más exigentes.",
+        "alergenos": ["gluten", "lacteos"]
+      }
+    ],
+    "bestsellers": [
+      {
+        "id": 4,
+        "imagen": "pizza_hawaiana.jpg",
+        "nombre": "Pizza Hawaiana",
+        "precio": "10.50€",
+        "descripcion": "Una combinación única de jamón dulce, piña fresca y queso mozzarella. Dulce, salado y delicioso.",
+        "alergenos": ["gluten", "lacteos"]
+      },
+      {
+        "id": 5,
+        "imagen": "pizza_carbonara.jpg",
+        "nombre": "Pizza Carbonara",
+        "precio": "11.50€",
+        "descripcion": "Inspirada en la famosa pasta, lleva bacon, huevo, queso pecorino y pimienta negra. Una experiencia cremosa y sabrosa.",
+        "alergenos": ["gluten", "lacteos", "huevo"]
+      },
+      {
+        "id": 6,
+        "imagen": "pizza_vegetariana.jpg",
+        "nombre": "Pizza Vegetariana",
+        "precio": "10.00€",
+        "descripcion": "Cargada de verduras frescas: pimientos, cebolla, champiñones, aceitunas y tomate. Ligera y saludable.",
+        "alergenos": ["gluten", "lacteos"]
+      }
+    ],
+    "gourmet": [
+      {
+        "id": 7,
+        "imagen": "pizza_trufa.jpg",
+        "nombre": "Pizza de Trufa",
+        "precio": "14.00€",
+        "descripcion": "Una delicia gourmet con salsa de trufa negra, champiñones salteados, mozzarella y un toque de rúcula fresca.",
+        "alergenos": ["gluten", "lacteos"]
+      },
+      {
+        "id": 8,
+        "imagen": "pizza_prosciutto.jpg",
+        "nombre": "Pizza Prosciutto e Rúcula",
+        "precio": "13.50€",
+        "descripcion": "Prosciutto crudo de alta calidad, mozzarella fresca y rúcula, coronada con virutas de parmesano y un chorrito de aceite de oliva.",
+        "alergenos": ["gluten", "lacteos"]
+      },
+      {
+        "id": 9,
+        "imagen": "pizza_marinara.jpg",
+        "nombre": "Pizza Marinara",
+        "precio": "12.00€",
+        "descripcion": "Salsa de tomate, ajo, orégano y aceite de oliva. Un clásico italiano sin queso, pero lleno de sabor.",
+        "alergenos": ["gluten"]
+      }
+    ],
+    "appetizers": [
+      {
+        "id": 10,
+        "imagen": "bruschetta.jpg",
+        "nombre": "Bruschetta al Pomodoro",
+        "precio": "6.50€",
+        "descripcion": "Pan tostado con tomate fresco, albahaca, ajo y aceite de oliva. Un entrante ligero y refrescante.",
+        "alergenos": ["gluten"]
+      },
+      {
+        "id": 11,
+        "imagen": "calamari.jpg",
+        "nombre": "Calamari Fritti",
+        "precio": "8.00€",
+        "descripcion": "Aros de calamar crujientes, servidos con salsa marinera. Perfectos para compartir.",
+        "alergenos": ["gluten", "pescado"]
+      },
+      {
+        "id": 12,
+        "imagen": "caprese.jpg",
+        "nombre": "Ensalada Caprese",
+        "precio": "7.50€",
+        "descripcion": "Tomate fresco, mozzarella de búfala, albahaca y aceite de oliva. Un clásico italiano en forma de ensalada.",
+        "alergenos": ["lacteos"]
+      }
+    ],
+    "antipasti": [
+      {
+        "id": 13,
+        "imagen": "prosciutto_melon.jpg",
+        "nombre": "Prosciutto e Melone",
+        "precio": "9.00€",
+        "descripcion": "Finas lonchas de prosciutto crudo acompañadas de melón dulce. Un contraste de sabores perfecto.",
+        "alergenos": []
+      },
+      {
+        "id": 14,
+        "imagen": "carpaccio.jpg",
+        "nombre": "Carpaccio di Manzo",
+        "precio": "10.50€",
+        "descripcion": "Finas láminas de ternera cruda, aliñadas con aceite de oliva, limón, alcaparras y parmesano.",
+        "alergenos": ["lacteos"]
+      },
+      {
+        "id": 15,
+        "imagen": "burrata.jpg",
+        "nombre": "Burrata con Tomate",
+        "precio": "9.50€",
+        "descripcion": "Burrata cremosa servida con tomates cherry, albahaca y un chorrito de aceite de oliva virgen extra.",
+        "alergenos": ["lacteos"]
+      }
+    ]
+  }
 }
