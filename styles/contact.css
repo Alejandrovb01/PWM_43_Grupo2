@@ -1,28 +1,50 @@
-.contact-input-frame {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 600px;
-
+h2 {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .contact-information-section {
     display: flex;
     justify-content: center;
-
+    text-align: justify;
+    align-items: center;
 }
+
 .contact-information-section div {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    max-width: 800px;
 }
 
+.contact-information-section iframe {
+    width: 600px;
+    height: 400px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+/*
 .contact-information-section img {
     width: 100px;
-    height: 200px;
+    height: auto;
     margin-left: 20px;
     margin-right: 10px;
+    max-width: 150px;
+}
+*/
+
+.contact-review-section {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+}
+
+.contact-review-section div {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
@@ -31,9 +53,20 @@ label {
     font-size: 16px;
     color: #333;
     text-align: left;
-    }
+}
+
+.contact-input-frame {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
 
 input[type="text"],textarea {
+    font-family: sans-serif;
     width: 95%;
     padding: 10px;
     margin-top: 8px;
@@ -48,9 +81,49 @@ input[type="text"]:focus {
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
 }
 
+textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+}
+
 .wide-input-area {
     height: 200px;
     padding: 10px;
     max-height: 300px;
     resize: vertical;
+}
+
+/* Ajustar dimensiones para tablet */
+/*
+@media (max-width: 768px) {
+    .contact-input-frame {
+        padding: 50px;
+    }
+
+    .contact-information-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    input[type="text"], textarea {
+        width: 100%;
+    }
+}
+*/
+
+/* Ajustar dimensiones para móvil */
+@media (max-width: 480px) {
+    .contact-information-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-information-section iframe {
+        width: 450px;
+        height: 400px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
 }
