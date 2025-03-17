@@ -4,36 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="AboutUs and Menu responsive.">
-      <change afterPath="$PROJECT_DIR$/assets/bruschetta.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/burrata.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/calamari.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/caprese.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/carpaccio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_carbonara.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_cuatro_quesos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_hawaiana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_margherita.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_marinara.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_prosciutto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_trufa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza_vegetariana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/prosciutto_melon.jpg" afterDir="false" />
+    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="AboutUs Json update.">
+      <change afterPath="$PROJECT_DIR$/assets/calidad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/cocinero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/mision.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/restaurante.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/valores.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vision.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Json/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/Json/menu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/peperoni.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pizza_peperoni.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/menuQRPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/menuQRPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Json/aboutUs.json" beforeDir="false" afterPath="$PROJECT_DIR$/Json/aboutUs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/aboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/aboutUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/menuPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/menuPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/aboutUsMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/aboutUsMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/contactMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/contactMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/dishMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/dishMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/homeMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/homeMain.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/menuMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/menuMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/menuQRMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/menuQRMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cardMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cardMenu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cardSlider.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cardSlider.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cardValues.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cardValues.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/opImages.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/opImages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/review.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/aboutUsPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/aboutUsPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/menu.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,37 +64,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.aboutUs.html.executor": "Run",
-    "JavaScript Debug.aboutUsMain.html.executor": "Run",
-    "JavaScript Debug.aboutUsPage.html.executor": "Run",
-    "JavaScript Debug.cardMenu.html.executor": "Run",
-    "JavaScript Debug.dishPage.html.executor": "Run",
-    "JavaScript Debug.homePage.html.executor": "Run",
-    "JavaScript Debug.menu.html.executor": "Run",
-    "JavaScript Debug.menuMain.html.executor": "Run",
-    "JavaScript Debug.menuPage.html.executor": "Run",
-    "JavaScript Debug.menuQRPage.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "sprint-2",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/gabyt/WebstormProjects/PWM_43_Grupo2/assets",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.aboutUs.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.aboutUsMain.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.aboutUsPage.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.cardMenu.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.dishPage.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.homePage.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menu.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menuMain.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menuPage.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menuQRPage.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sprint-2&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gabyt/WebstormProjects/PWM_43_Grupo2/assets&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\assets" />
       <recent name="C:\Users\David\WebstormProjects\PWM_43_Grupo2\Trello" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\David\WebstormProjects\PWM_43_Grupo2\assets" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -140,6 +129,14 @@
       <workItem from="1741801964807" duration="292000" />
       <workItem from="1741855534664" duration="6518000" />
       <workItem from="1741949628223" duration="2587000" />
+      <workItem from="1741971534531" duration="4000" />
+      <workItem from="1742042160406" duration="3908000" />
+      <workItem from="1742125857836" duration="3224000" />
+      <workItem from="1742204282430" duration="702000" />
+      <workItem from="1742223420067" duration="11000" />
+      <workItem from="1742228339798" duration="907000" />
+      <workItem from="1742230127257" duration="21000" />
+      <workItem from="1742230626833" duration="956000" />
     </task>
     <task id="LOCAL-00001" summary="Menu y about.">
       <option name="closed" value="true" />

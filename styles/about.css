@@ -179,8 +179,32 @@ main {
         width: 90%;
         font-size: 16px;
     }
+
     .card {
         width: 100%;
         max-width: 300px;
     }
+
+    .map {
+        height: 45rem;
+        margin-top: 3rem;
+        z-index: 0;
+    }
+
+    .map__container {
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .map__heading {
+        margin: 0;
+        text-align: center;
+    }
+
+    .map__text {
+        font-size: 1.8rem;
+        margin: 0;
+        line-height: 1rem;
+    }
+
 }
