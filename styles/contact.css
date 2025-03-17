@@ -7,22 +7,24 @@ h2 {
 .contact-information-section {
     display: flex;
     justify-content: center;
-    text-align: justify;
     align-items: center;
+    gap: 50px;
 }
 
-.contact-information-section div {
+.contact-information-details {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 800px;
+    justify-content: center;
+    text-align: left;
 }
 
-.contact-information-section iframe {
+.contact-information-map {
     width: 600px;
     height: 400px;
-    margin-left: 20px;
-    margin-right: 50px;
+}
+
+.contact-information-details span{
+    font-weight: bold;
 }
 
 /*
@@ -38,16 +40,18 @@ h2 {
 .contact-review-section {
     display: flex;
     justify-content: center;
-    text-align: justify;
     align-items: center;
-}
+    gap: 20px;
+    margin: 0;
 
-.contact-review-section div {
-    display: flex;
     flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 95%;
 }
 
-label {
+.contact-review-label {
     display: block;
     margin-bottom: 10px;
     font-size: 16px;
@@ -55,75 +59,44 @@ label {
     text-align: left;
 }
 
-.contact-input-frame {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-}
-
-input[type="text"],textarea {
-    font-family: sans-serif;
-    width: 95%;
+.contact-review-input, .contact-review-textarea {
+    width: 80%;
     padding: 10px;
-    margin-top: 8px;
     font-size: 16px;
     border: 2px solid #ccc;
     border-radius: 4px;
     outline: none;
 }
 
-input[type="text"]:focus {
+.contact-review-input:focus {
     border-color: #4CAF50;
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
 }
 
-textarea:focus {
+.contact-review-textarea:focus {
     border-color: #4CAF50;
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
 }
 
-.wide-input-area {
+.contact-review-textarea {
     height: 200px;
     padding: 10px;
     max-height: 300px;
-    resize: vertical;
 }
 
-/* Ajustar dimensiones para tablet */
-/*
-@media (max-width: 768px) {
-    .contact-input-frame {
-        padding: 50px;
-    }
-
-    .contact-information-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    input[type="text"], textarea {
-        width: 100%;
-    }
+.contact-review-stars{
+    display: flex;
+    justify-content: space-between;
 }
-*/
 
 /* Ajustar dimensiones para móvil */
 @media (max-width: 480px) {
     .contact-information-section {
-        display: grid;
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
-    .contact-information-section iframe {
-        width: 450px;
-        height: 400px;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-bottom: 15px;
+    .contact-information-map {
+        width: 350px;
+        height: 350px;
     }
 }
