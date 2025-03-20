@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Modify menu and add images of dishes">
+    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Contact page improved, minor errors solved.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contactPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contactPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/contactMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/contactMain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/homeMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/homeMain.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/home.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Alejandrovb01/PWM_43_Grupo2.git&quot;,
-    &quot;accountId&quot;: &quot;04693b50-716f-474d-babc-0655a865d315&quot;
+    &quot;accountId&quot;: &quot;12d629f9-5331-4c21-817a-0abfa652b111&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -115,6 +116,10 @@
       <workItem from="1741801964807" duration="292000" />
       <workItem from="1741855534664" duration="6518000" />
       <workItem from="1741949628223" duration="2587000" />
+      <workItem from="1742282154494" duration="2869000" />
+      <workItem from="1742351880908" duration="4831000" />
+      <workItem from="1742442400035" duration="1496000" />
+      <workItem from="1742444181356" duration="188000" />
     </task>
     <task id="LOCAL-00001" summary="Menu y about.">
       <option name="closed" value="true" />
