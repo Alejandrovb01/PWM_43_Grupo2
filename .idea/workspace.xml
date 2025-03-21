@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Contact page improved, minor errors solved.">
+    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="change font and contact page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/aboutUsMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/aboutUsMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/menuMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/menuMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/about.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/contactPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/contactPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/contactMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/contactMain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contactPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contactPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contact.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +40,12 @@
     &quot;assignee&quot;: &quot;002avid&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Alejandrovb01/PWM_43_Grupo2.git&quot;,
-    &quot;accountId&quot;: &quot;12d629f9-5331-4c21-817a-0abfa652b111&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Alejandrovb01/PWM_43_Grupo2.git",
+    "accountId": "a3f205e7-11a6-42c4-b24d-09e366882eb5"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -120,6 +120,7 @@
       <workItem from="1742351880908" duration="4831000" />
       <workItem from="1742442400035" duration="1496000" />
       <workItem from="1742444181356" duration="188000" />
+      <workItem from="1742569554265" duration="4255000" />
     </task>
     <task id="LOCAL-00001" summary="Menu y about.">
       <option name="closed" value="true" />
