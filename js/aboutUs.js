@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             // Cargar la sección "aboutUs_intro"
             const aboutSection = document.querySelector(".menu-about-section");
-            aboutSection.innerHTML = "<h2>About Us</h2>";
             data.aboutUs_intro.forEach((item, index) => {
                 const sectionHTML = `
                     <div class="menu-img-text-section ${index % 2 !== 0 ? 'reverse' : ''}">

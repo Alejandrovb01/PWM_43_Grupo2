@@ -148,10 +148,6 @@
     word-wrap: break-word;
 }
 
-.menu-img-text-section.reverse {
-    flex-direction: row-reverse;
-}
-
 .menu-img-text-section.reverse img {
     margin-right: 0;
     margin-left: 20px;

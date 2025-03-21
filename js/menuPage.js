@@ -1,48 +1,121 @@
 if (document.body.id === 'menuPage') {
-    loadTemplate('../main/menuMain.html', 'main');
+    loadTemplate('../main/menuMain.html', 'main', () => {
+            fetch('../Json/menu.json')
+                .then((response) => response.json())
+                .then((data) => {
+                    const menu = data.menu;
+                    loadTemplate('../templates/cardSlider.html', 'cardSlider1', () => {
+                        fillCardSlider('cardSlider1', menu.clasicas[0]);
+                        addClickListener('cardSlider1', menu.clasicas[0].id);
+                    });loadTemplate('../templates/cardSlider.html', 'cardSlider2', () => {
+                        fillCardSlider('cardSlider2', menu.clasicas[1]);
+                        addClickListener('cardSlider2', menu.clasicas[1].id);
+
+                    });loadTemplate('../templates/cardSlider.html', 'cardSlider3', () => {
+                        fillCardSlider('cardSlider3', menu.clasicas[2]);
+                        addClickListener('cardSlider3', menu.clasicas[2].id);
+                    });
+                    loadTemplate('../templates/cardSlider.html', 'cardSlider4', () => {
+                        fillCardSlider('cardSlider4', menu.bestsellers[0]);
+                        addClickListener('cardSlider4', menu.bestsellers[0].id);
+                    });
+                    loadTemplate('../templates/cardSlider.html', 'cardSlider5', () => {
+                        fillCardSlider('cardSlider5', menu.bestsellers[1]);
+                        addClickListener('cardSlider5', menu.bestsellers[1].id);
+                    });
+                    loadTemplate('../templates/cardSlider.html', 'cardSlider6', () => {
+                        fillCardSlider('cardSlider6', menu.bestsellers[2]);
+                        addClickListener('cardSlider6', menu.bestsellers[2].id);
+                    });
+                    loadTemplate('../templates/cardSlider.html', 'cardSlider7', () => {
+                        fillCardSlider('cardSlider7', menu.gourmet[0]);
+                        addClickListener('cardSlider7', menu.gourmet[0].id);
+                    });
+                    loadTemplate('../templates/cardSlider.html', 'cardSlider8', () => {
+                        fillCardSlider('cardSlider8', menu.gourmet[1]);
+                        addClickListener('cardSlider8', menu.gourmet[1].id);
+                    });
+                    loadTemplate('../templates/cardSlider.html', 'cardSlider9', () => {
+                        fillCardSlider('cardSlider9', menu.gourmet[2]);
+                        addClickListener('cardSlider9', menu.gourmet[2].id);
+                    });
+
+                    loadTemplate('../templates/dishMenuQR.html', 'dishMenu1', () => {
+                        fillDishMenu('dishMenu1', menu.appetizers[0]);
+                        addClickListener('dishMenu1', menu.appetizers[0].id);
+                    });
+
+                    loadTemplate('../templates/dishMenuQR.html', 'dishMenu2', () => {
+                        fillDishMenu('dishMenu2', menu.appetizers[1]);
+                        addClickListener('dishMenu2', menu.appetizers[1].id);
+                    });
+
+                    loadTemplate('../templates/dishMenuQR.html', 'dishMenu3', () => {
+                        fillDishMenu('dishMenu3', menu.appetizers[2]);
+                        addClickListener('dishMenu3', menu.appetizers[2].id);
+                    });
+
+                    loadTemplate('../templates/dishMenuQR.html', 'dishMenu4', () => {
+                        fillDishMenu('dishMenu4', menu.antipasti[0]);
+                        addClickListener('dishMenu4', menu.antipasti[0].id);
+                    });
+
+                    loadTemplate('../templates/dishMenuQR.html', 'dishMenu5', () => {
+                        fillDishMenu('dishMenu5', menu.antipasti[1]);
+                        addClickListener('dishMenu5', menu.antipasti[1].id);
+                    });
+
+                    loadTemplate('../templates/dishMenuQR.html', 'dishMenu6', () => {
+                        fillDishMenu('dishMenu6', menu.antipasti[2]);
+                        addClickListener('dishMenu6', menu.antipasti[2].id);
+                    });
+                })
+                .catch((error) => {
+                    console.error('Error loading menu:', error);
+                });
+        });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("../Json/menu.json")
-        .then(response => response.json())
-        .then(data => {
-            cargarPizzas(data.menu.clasicas.concat(data.menu.bestsellers, data.menu.gourmet));
-            cargarSeccion(".menu-about-section .menu-img-text-section:nth-child(1) .dish-menu", data.menu.appetizers);
-            cargarSeccion(".menu-about-section .menu-img-text-section:nth-child(2) .dish-menu", data.menu.antipasti);
-        })
-        .catch(error => console.error("Error cargando el JSON:", error));
-});
+function fillCardSlider(containerId, dish) {
+    const container = document.getElementById(containerId);
+    if (container) {
+        container.querySelector('img').src = `../assets/${dish.imagen}`;
+        container.querySelector('h3').textContent = dish.nombre;
+        container.querySelector('.description p').textContent = dish.descripcion;
 
-function cargarPizzas(pizzas) {
-    const grid = document.querySelector(".menu-grid-3x3");
-    grid.innerHTML = "";
-
-    pizzas.forEach(pizza => {
-        const card = crearCard(pizza);
-        grid.appendChild(card);
-    });
-}
-
-function cargarSeccion(selector, items) {
-    const sections = document.querySelectorAll(selector);
-    sections.forEach((section, index) => {
-        if (items[index]) {
-            const card = crearCard(items[index]);
-            section.innerHTML = "";
-            section.appendChild(card);
+        // Eliminar el botón si existe
+        const button = container.querySelector('.button');
+        if (button) {
+            button.remove();
         }
-    });
+
+        // Agregar el precio en un nuevo párrafo o actualizar si ya existe
+        let priceElement = container.querySelector('.price');
+        if (!priceElement) {
+            priceElement = document.createElement('p');
+            priceElement.classList.add('price');
+            container.appendChild(priceElement);
+        }
+        priceElement.textContent = `Precio: ${dish.precio}`;
+    }
 }
 
-function crearCard(item) {
-    const div = document.createElement("div");
-    div.classList.add("grid-item", "menu-card");
-    div.innerHTML = `
-      <img src="../assets/${item.imagen}" alt="${item.nombre}">
-      <h3>${item.nombre}</h3>
-      <p>${item.descripcion}</p>
-      <span class="price">${item.precio}</span>
-      <p class="alergenos">Alergenos: ${item.alergenos.join(", ") || "Ninguno"}</p>
-  `;
-    return div;
+
+function addClickListener(containerId, dishId) {
+    const container = document.getElementById(containerId);
+    if (container) {
+        container.addEventListener('click', () => {
+            window.location.href = `dishPageNoQR.html?id=${dishId}`;
+        });
+    }
+}
+function fillDishMenu(containerId, dish) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    container.innerHTML = `
+        <a href="#" class="dish-link">
+            ${dish.nombre} - ${dish.precio} <i class="fas fa-eye"></i>
+        </a>
+    `;
 }
