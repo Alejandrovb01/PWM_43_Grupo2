@@ -23,44 +23,43 @@ h2 {
     height: 400px;
 }
 
-.contact-information-details span{
+.contact-information-details span {
     font-weight: bold;
 }
-
-/*
-.contact-information-section img {
-    width: 100px;
-    height: auto;
-    margin-left: 20px;
-    margin-right: 10px;
-    max-width: 150px;
-}
-*/
 
 .contact-review-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
-    margin: 0 0 50px 0;
-
     flex-direction: column;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto 50px;
 }
 
 .contact-review-label {
-    display: block;
     margin-bottom: 5px;
     margin-top: 10px;
     font-size: 16px;
     color: #333;
     text-align: left;
+    width: 100%;
+}
+
+.contact-review-information {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
 }
 
 .contact-review-input, .contact-review-textarea {
-    width: 80%;
+    width: 95%;
     padding: 10px;
     font-size: 16px;
     border: 2px solid #ccc;
@@ -85,12 +84,28 @@ h2 {
     max-height: 300px;
 }
 
-.contact-review-stars{
+.contact-review-stars {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
 }
 
-/* Ajustar dimensiones para móvil */
+.star {
+    font-size: 40px;
+    color: grey;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star.active {
+    color: gold;
+}
+
+.star:hover ~ .star {
+    color: grey;
+}
+
 @media (max-width: 480px) {
     .contact-information-section {
         flex-direction: column;
@@ -99,5 +114,10 @@ h2 {
     .contact-information-map {
         width: 350px;
         height: 350px;
+    }
+
+    .contact-review-section {
+        width: 90%;
+        padding: 15px;
     }
 }
