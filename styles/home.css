@@ -44,6 +44,14 @@ h2 {
     height: 500px;
 }
 
+.review-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
 /* SLIDER MENÚ */
 .menu-slider-section {
     text-align: center;
@@ -138,5 +146,9 @@ h2 {
     .slider-btn, .prev-review, .next-review {
         font-size: 1em;
         padding: 5px;
+    }
+
+    .review-container{
+        flex-direction: column;
     }
 }
