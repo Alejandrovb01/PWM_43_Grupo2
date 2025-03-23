@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Contact page improved, minor errors solved.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/contactMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/contactMain.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/homeMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/homeMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/home.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
