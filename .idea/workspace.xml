@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Home page map updated and minor changes in Contact page done.">
-      <change afterPath="$PROJECT_DIR$/assets/cocinero_amasando_pizza.jpg" afterDir="false" />
+    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Contact page improved, minor errors solved.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/contactMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/contactMain.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/homeMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/homeMain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contact.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/home.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,36 +54,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.aboutUs.html.executor": "Run",
-    "JavaScript Debug.aboutUsMain.html.executor": "Run",
-    "JavaScript Debug.aboutUsPage.html.executor": "Run",
-    "JavaScript Debug.cardMenu.html.executor": "Run",
-    "JavaScript Debug.dishPage.html.executor": "Run",
-    "JavaScript Debug.homePage.html.executor": "Run",
-    "JavaScript Debug.menu.html.executor": "Run",
-    "JavaScript Debug.menuMain.html.executor": "Run",
-    "JavaScript Debug.menuPage.html.executor": "Run",
-    "JavaScript Debug.menuQRPage.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "sprint-2",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/aleja/WebstormProjects/PWM_43_Grupo2/assets",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.aboutUs.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.aboutUsMain.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.aboutUsPage.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.cardMenu.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.dishPage.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.homePage.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menu.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menuMain.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menuPage.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.menuQRPage.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sprint-2&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gabyt/WebstormProjects/PWM_43_Grupo2/assets&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\aleja\WebstormProjects\PWM_43_Grupo2\assets" />
       <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\assets" />
       <recent name="C:\Users\David\WebstormProjects\PWM_43_Grupo2\Trello" />
     </key>
@@ -119,8 +119,7 @@
       <workItem from="1742282154494" duration="2869000" />
       <workItem from="1742351880908" duration="4831000" />
       <workItem from="1742442400035" duration="1496000" />
-      <workItem from="1742444181356" duration="441000" />
-      <workItem from="1742541888335" duration="6092000" />
+      <workItem from="1742444181356" duration="188000" />
     </task>
     <task id="LOCAL-00001" summary="Menu y about.">
       <option name="closed" value="true" />
@@ -178,15 +177,7 @@
       <option name="project" value="LOCAL" />
       <updated>1741968443650</updated>
     </task>
-    <task id="LOCAL-00008" summary="Home page map updated and minor changes in Contact page done.">
-      <option name="closed" value="true" />
-      <created>1742444462779</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1742444462779</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +202,6 @@
     <MESSAGE value="Untracked Files error solution try" />
     <MESSAGE value="AboutUs and Menu responsive." />
     <MESSAGE value="Modify menu and add images of dishes" />
-    <MESSAGE value="Home page map updated and minor changes in Contact page done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Home page map updated and minor changes in Contact page done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify menu and add images of dishes" />
   </component>
 </project>
