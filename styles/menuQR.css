@@ -12,3 +12,18 @@
 .dish-slider span{
     border-bottom: 1px solid black;
 }
+
+.dish-slider-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .dish-slider-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "reviews": [
+    {
+      "name": "Carlos Gómez",
+      "stars": 4,
+      "description": "Una experiencia muy agradable. La comida estaba fresca y llena de sabor, especialmente el risotto de champiñones. El servicio fue atento, aunque hubo una pequeña demora con el postre. ¡Volveré para probar más platos!"
+    },
+    {
+      "name": "Ana Martínez",
+      "stars": 5,
+      "description": "¡Simplemente espectacular! Desde el momento en que entramos, nos sentimos como en casa. El chef nos sorprendió con un menú degustación que fue una explosión de sabores. El personal fue extremadamente amable y conocedor. Definitivamente, nuestro nuevo restaurante favorito."
+    },
+    {
+      "name": "María Fernández",
+      "stars": 4,
+      "description": "Un lugar encantador con una decoración moderna y acogedora. La paella estaba deliciosa, aunque un poco más de marisco no habría estado mal. El servicio fue impecable, y el ambiente perfecto para una cena romántica. ¡Muy recomendable!"
+    }
+  ]
+}

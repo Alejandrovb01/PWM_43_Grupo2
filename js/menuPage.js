@@ -83,13 +83,11 @@ function fillCardSlider(containerId, dish) {
         container.querySelector('h3').textContent = dish.nombre;
         container.querySelector('.description p').textContent = dish.descripcion;
 
-        // Eliminar el botón si existe
         const button = container.querySelector('.button');
         if (button) {
             button.remove();
         }
 
-        // Agregar el precio en un nuevo párrafo o actualizar si ya existe
         let priceElement = container.querySelector('.price');
         if (!priceElement) {
             priceElement = document.createElement('p');
