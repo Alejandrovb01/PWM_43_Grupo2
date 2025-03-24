@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto es una página web para el restaurante Luigi's, desarrollada durante el Sprint 1. Hemos creado una interfaz atractiva y funcional utilizando HTML, CSS y JavaScript. La estructura del proyecto incluye bocetos, mockups diseñados en Figma, y la implementación de templates y estilos.
+Este proyecto es una página web para el restaurante Luigi's, desarrollada durante el Sprint 2. En esta fase, hemos mejorado la accesibilidad y funcionalidad del sitio web, asegurando que sea completamente responsive para todos los dispositivos. Además, hemos implementado mejoras dinámicas mediante JSON y validaciones nativas de HTML5.
 
 ## Integrantes del Equipo
 
@@ -11,103 +11,114 @@ Este proyecto es una página web para el restaurante Luigi's, desarrollada duran
 - David González Espino
 - Alejandro Van Baumberghen Quintana
 
-## Funcionalidades
+## Mejoras Implementadas en el Sprint 2
 
-La aplicación web de Luigi's Restaurant está diseñada para ofrecer una experiencia completa tanto para los clientes que visitan el restaurante como para el personal que trabaja en él. La web proporciona información detallada sobre el restaurante, su menú, historia y datos de contacto. Además, incluye una funcionalidad innovadora que permite a los clientes realizar pedidos escaneando un código QR, lo que facilita la comunicación entre los clientes y la cocina.
+### 1. **Diseño Responsive**
+- Adaptación completa de la web para que sea accesible en cualquier dispositivo (móvil, tablet y desktop).
+- Mejora de estilos CSS para una mejor experiencia de usuario en diferentes resoluciones.
 
-## Funcionalidades Principales
+### 2. **Carga Dinámica de Datos**
+- Creación de archivos JSON para almacenar información:
+  - `menu.json`: Contiene los datos del menú.
+  - `review.json`: Almacena las reseñas de los clientes.
+- Implementación de JavaScript para cargar estos datos dinámicamente en la web.
 
-### 1. **Información del Restaurante**
-- **Home**: Página principal con una introducción al restaurante, imágenes destacadas y enlaces a otras secciones.
-- **Nosotros**: Información sobre la historia del restaurante, su filosofía y equipo.
-- **Menú**: Visualización del menú del restaurante con categorías, descripciones y precios de los platos.
-- **Contacto**: Formulario de contacto y detalles de ubicación, horarios y redes sociales.
+### 3. **Validación de Formularios**
+- Implementación de validaciones nativas de HTML5 en los formularios de reseñas.
+- Mejora en la interacción del usuario mediante mensajes de error personalizados.
 
-### 2. **Pedidos a través de QR**
-- **Escaneo de QR**: Los clientes pueden escanear un código QR en su mesa para acceder a la página de pedidos.
-- **Realización de Pedidos**: Los clientes seleccionan los platos que desean ordenar directamente desde la página web.
-- **Confirmación de Pedidos**: Una vez realizado el pedido, este se envía automáticamente a la cocina.
-
-### 3. **Gestión de Pedidos en Cocina**
-- **Recepción de Pedidos**: La cocina recibe los pedidos en tiempo real a través de una interfaz dedicada.
-- **Tiempo de Preparación**: El personal de cocina puede indicar el tiempo estimado de preparación para cada pedido.
-- **Notificaciones**: Los clientes reciben una notificación con el tiempo estimado y un contador que muestra el tiempo restante.
+### 4. **Templates Dinámicos con Fetch**
+- Carga de templates de forma dinámica utilizando `fetch` para mejorar la modularidad del código.
+- Integración de componentes reutilizables en las páginas principales.
 
 ## Estructura del Proyecto
 
-El proyecto está organizado de la siguiente manera:
-
-- **Boceto**: Contiene los bocetos iniciales del diseño.
-- **main**: Archivos HTML principales.
-    - `aboutUsMain.html`
-    - `contactMain.html`
-    - `dishMain.html`
-    - `homeMain.html`
-    - `menuMain.html`
-    - `menuQRMain.html`
-- **Mockups**: Diseños creados en Figma.
-- **styles**: Archivos CSS para estilos.
-    - `about.css`
-    - `cardSlider.css`
-    - `contact.css`
-    - `dishMenuQR.css`
-    - `dishPage.css`
-    - `footer.css`
-    - `header.css`
-    - `home.css`
-    - `loginworkers.css`
-    - `menu.css`
-    - `menuDish.css`
-    - `menuQR.css`
-    - `notification.css`
-    - `review.css`
-    - `style.css`
-- **templates**: Templates HTML reutilizables.
-    - `cardMenu.html`
-    - `cardSlider.html`
-    - `cardValues.html`
-    - `dishMenuQR.html`
-    - `footer.html`
-    - `header.html`
-    - `Notification.html`
-    - `opImages.html`
-    - `review.html`
-- **Trello**: Archivos relacionados con la gestión del proyecto en Trello.
-- `aboutUsPage.html`
-- `contactPage.html`
-- `dishPage.html`
-- `homePage.html`
-- `loginWorkers.html`
-- `menuPage.html`
-- `menuQRPage.html`
-- `NotificationPage.html`
-- **README.md**: Este archivo.
-- **xlu-include-file.js**: Librería JavaScript para incluir templates.
+- **`assets/`** - Recursos multimedia.
+- **`js/`** - Scripts JavaScript.
+  - `aboutUs.js`
+  - `contactPage.js`
+  - `dishPage.js`
+  - `dishPageNoQR.js`
+  - `global.js` - Funcionalidades globales.
+  - `homePage.js`
+  - `menuPage.js`
+  - `menuQRPage.js`
+  - `NotificationPage.js`
+- **`Json/`** - Archivos de datos.
+  - `aboutUs.json`
+  - `menu.json` - Datos del menú.
+  - `review.json` - Reseñas de clientes.
+- **`main/`** - Páginas principales.
+  - `aboutUsMain.html`
+  - `contactMain.html`
+  - `dishMain.html`
+  - `dishMainNoQR.html`
+  - `homeMain.html`
+  - `menuMain.html`
+  - `menuQRMain.html`
+  - `notificationMain.html`
+- **`mockups/`** - Diseños iniciales.
+- **`pages/`** - Páginas completas.
+  - `aboutUsPage.html`
+  - `contactPage.html`
+  - `dishPage.html`
+  - `dishPageNoQR.html`
+  - `homePage.html`
+  - `loginWorkers.html`
+  - `menuPage.html`
+  - `menuQRPage.html`
+  - `NotificationPage.html`
+- **`styles/`** - Estilos CSS.
+  - `about.css`
+  - `cardSlider.css`
+  - `contact.css`
+  - `dishMenuQR.css`
+  - `dishPage.css`
+  - `footer.css`
+  - `header.css`
+  - `home.css`
+  - `loginworkers.css`
+  - `menu.css`
+  - `menuDish.css`
+  - `menuQR.css`
+  - `notification.css`
+  - `review.css`
+  - `style.css` - Estilos globales.
+- **`templates/`** - Componentes reutilizables.
+  - `cardSlider.html`
+  - `cardValues.html`
+  - `dishMenuQR.html`
+  - `footer.html`
+  - `header.html`
+  - `Notification.html`
+  - `opImages.html`
+  - `review.html`
+- **`README.md`** - Este archivo.
 
 ## Tecnologías Utilizadas
 
-- **HTML**: Para la estructura de la página.
-- **CSS**: Para los estilos y diseño.
-- **JavaScript**: Para la funcionalidad y la inclusión dinámica de templates.
-- **WebStorm**: Como entorno de desarrollo integrado (IDE).
+- **HTML5**: Estructura del sitio web.
+- **CSS3**: Estilos y diseño responsive.
+- **JavaScript**: Programación de funcionalidades y carga dinámica.
+- **JSON**: Almacenamiento y gestión de datos del menú y reseñas.
+- **WebStorm**: Entorno de desarrollo.
 
 ## Instrucciones de Uso
 
 1. Clona el repositorio en tu máquina local.
 2. Abre el proyecto en WebStorm o cualquier otro editor de texto.
-3. Navega por los diferentes archivos HTML para ver las distintas secciones de la página.
-4. Los estilos CSS están organizados por secciones para facilitar su mantenimiento.
-5. Utiliza la librería `xlu-include-file.js` para incluir templates dinámicamente en las páginas.
+3. Utiliza un servidor local para probar las funcionalidades de `fetch` y JSON.
+4. Explora las distintas secciones de la página y prueba la interactividad.
 
 ## Enlaces
-**Link Figma**
 
-https://www.figma.com/design/d7QA36de4T0m12a2ifsf4L/PWM?node-id=0-1&t=j3eLO3TWJ09O6Kew-1
+**Link Figma**  
+[Diseño en Figma](https://www.figma.com/design/d7QA36de4T0m12a2ifsf4L/PWM?node-id=0-1&t=j3eLO3TWJ09O6Kew-1)
 
-**Link Trello**
-
-https://trello.com/invite/b/67aa35d78c547bc075e7a705/ATTI6c4e7ea6f9ce2312fc8bbf3e624fde3303151BE2/pwm
+**Link Trello**  
+[Tablero de Trello](https://trello.com/invite/b/67cb0b0ea93c0c2fd4ea4b9f/ATTI30a4b31cd95ce668d39f194f6e95989e6D891BC1/pwm-sprint-2)
 
 ---
 
 ¡Gracias por visitar el proyecto de Luigi's Restaurant! Esperamos que disfrutes explorando nuestro trabajo.
+
