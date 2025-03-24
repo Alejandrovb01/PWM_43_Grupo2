@@ -63,7 +63,7 @@ Este proyecto es una página web para el restaurante Luigi's, desarrollada duran
   - `contactPage.html`
   - `dishPage.html`
   - `dishPageNoQR.html`
-  - `homePage.html`
+  - `homePage.html` - Archivo index
   - `loginWorkers.html`
   - `menuPage.html`
   - `menuQRPage.html`
