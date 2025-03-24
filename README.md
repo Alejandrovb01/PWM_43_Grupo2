@@ -107,8 +107,9 @@ Este proyecto es una página web para el restaurante Luigi's, desarrollada duran
 
 1. Clona el repositorio en tu máquina local.
 2. Abre el proyecto en WebStorm o cualquier otro editor de texto.
-3. Utiliza un servidor local para probar las funcionalidades de `fetch` y JSON.
-4. Explora las distintas secciones de la página y prueba la interactividad.
+3. Abre el archivo de inicio `/pages/homePage.html`
+4. Utiliza un servidor local para probar las funcionalidades de `fetch` y JSON.
+5. Explora las distintas secciones de la página y prueba la interactividad.
 
 ## Enlaces
 
