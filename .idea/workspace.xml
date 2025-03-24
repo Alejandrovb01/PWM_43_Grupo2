@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Estilos de AboutUs y Menu modificados.">
+    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Modify Notification Page and Home Page Button and Review">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/menuPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/menuPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +37,12 @@
     &quot;assignee&quot;: &quot;002avid&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Alejandrovb01/PWM_43_Grupo2.git&quot;,
-    &quot;accountId&quot;: &quot;04693b50-716f-474d-babc-0655a865d315&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Alejandrovb01/PWM_43_Grupo2.git",
+    "accountId": "a3f205e7-11a6-42c4-b24d-09e366882eb5"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -83,6 +83,9 @@
       <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\assets" />
       <recent name="C:\Users\David\WebstormProjects\PWM_43_Grupo2\Trello" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\assets" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -117,9 +120,6 @@
       <workItem from="1742351880908" duration="4831000" />
       <workItem from="1742442400035" duration="1496000" />
       <workItem from="1742444181356" duration="188000" />
-      <workItem from="1742569554265" duration="4255000" />
-      <workItem from="1742737508679" duration="53000" />
-      <workItem from="1742828113022" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="Menu y about.">
       <option name="closed" value="true" />
@@ -202,7 +202,6 @@
     <MESSAGE value="Untracked Files error solution try" />
     <MESSAGE value="AboutUs and Menu responsive." />
     <MESSAGE value="Modify menu and add images of dishes" />
-    <MESSAGE value="Estilos de AboutUs y Menu modificados." />
-    <option name="LAST_COMMIT_MESSAGE" value="Estilos de AboutUs y Menu modificados." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify menu and add images of dishes" />
   </component>
 </project>

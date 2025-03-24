@@ -44,10 +44,6 @@
     cursor: pointer;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
-}
 
 .grid {
     display: flex;
@@ -84,7 +80,7 @@ main {
     color: #555;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Muestra solo 3 líneas */
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
 
@@ -205,6 +201,17 @@ main {
     transform: scale(0.95);
 }
 
+.about-map{
+    width: 95%;
+    margin: 50px 0 0 0;
+    height: 400px;
+}
+
+.about-map-section{
+    display: flex;
+    justify-content: center;
+}
+
 
 @media (max-width: 768px) {
     .img-text-section {
@@ -237,5 +244,9 @@ main {
     .card {
         width: 100%;
         max-width: 300px;
+    }
+
+    .about-map{
+        height: 250px;
     }
 }
