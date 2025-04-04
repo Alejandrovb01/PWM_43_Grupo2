@@ -4,13 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc8f1ac7-7a55-437e-986f-ac963ff797e1" name="Changes" comment="delete angular directory">
+    <list default="true" id="dc8f1ac7-7a55-437e-986f-ac963ff797e1" name="Changes" comment="wip: migrate to angular">
+      <change afterPath="$PROJECT_DIR$/sprint-3/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-3/src/environments/environment.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-3/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -85,7 +96,7 @@
       <workItem from="1743602729059" duration="1048000" />
       <workItem from="1743622069575" duration="865000" />
       <workItem from="1743767479550" duration="7000" />
-      <workItem from="1743775843706" duration="1674000" />
+      <workItem from="1743775843706" duration="4057000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -111,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743776111518</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="wip: migrate to angular">
+      <option name="closed" value="true" />
+      <created>1743777723495</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743777723495</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +140,7 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Init Angular Project" />
     <MESSAGE value="delete angular directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete angular directory" />
+    <MESSAGE value="wip: migrate to angular" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip: migrate to angular" />
   </component>
 </project>
