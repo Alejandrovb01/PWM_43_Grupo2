@@ -1,0 +1,46 @@
+<section class="menu-about-section">
+  <div *ngFor="let item of aboutIntro; let i = index" [class.reverse]="i % 2 !== 0" class="menu-img-text-section">
+    <img [src]="item.imagen" [alt]="item.titulo" />
+    <div>
+      <h3>{{ item.titulo }}</h3>
+      <p class="description" [class.expanded]="item.expanded">
+        {{ item.expanded ? item.descripcion : (item.descripcion | slice:0:100) + '...' }}
+      </p>
+      <button class="toggle-text" (click)="toggleDescription(item)">
+        {{ item.expanded ? 'Ver menos' : 'Ver más' }}
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="grid">
+  <article *ngFor="let item of aboutGrid" class="card">
+    <img [src]="item.imagen" [alt]="item.titulo" />
+    <h2>{{ item.titulo }}</h2>
+    <p class="description" [class.expanded]="item.expanded">
+      {{ item.expanded ? item.descripcion : (item.descripcion | slice:0:100) + '...' }}
+    </p>
+    <button class="toggle-text" (click)="toggleDescription(item)">
+      {{ item.expanded ? 'Ver menos' : 'Ver más' }}
+    </button>
+  </article>
+</section>
+
+<div class="about-map-section">
+  <iframe class="about-map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-15.454834699630739%2C28.0710241643908%2C-15.447753667831423%2C28.075075856535385&amp;layer=mapnik&amp;marker=28.073050029564666%2C-15.451294183731079">
+  </iframe>
+</div>
+
+<section class="last-section" *ngIf="aboutLast">
+  <h2>{{ aboutLast.titulo }}</h2>
+  <div class="img-text-section">
+    <img [src]="aboutLast.imagen" [alt]="aboutLast.titulo" />
+    <p class="description" [class.expanded]="aboutLast.expanded">
+      {{ aboutLast.expanded ? aboutLast.descripcion : (aboutLast.descripcion | slice:0:100) + '...' }}
+    </p>
+    <button class="toggle-text" (click)="toggleDescription(aboutLast)">
+      {{ aboutLast.expanded ? 'Ver menos' : 'Ver más' }}
+    </button>
+  </div>
+</section>
