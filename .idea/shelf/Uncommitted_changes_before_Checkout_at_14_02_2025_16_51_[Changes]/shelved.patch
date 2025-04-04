@@ -1,0 +1,17 @@
+Index: header.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Title</title>\r\n</head>\r\n<body>\r\n\r\n</body>\r\n</html>
+===================================================================
+diff --git a/header.html b/header.html
+--- a/header.html	(revision 12b6e1abfc3940127ff53d9261f03a769a69f22d)
++++ b/header.html	(date 1739551831890)
+@@ -2,7 +2,7 @@
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+-    <title>Title</title>
++    <title>Header</title>
+ </head>
+ <body>
+ 

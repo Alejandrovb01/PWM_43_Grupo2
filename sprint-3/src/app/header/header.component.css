@@ -1,0 +1,142 @@
+.header {
+  background-color: #00BB57; /* v.$blackColor */
+  -webkit-box-shadow: 0 17px 10px -13px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0 17px 10px -13px rgba(0,0,0,0.35);
+  box-shadow: 0 17px 10px -13px rgba(0,0,0,0.35);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.header__name {
+  display: none;
+}
+
+.header__container-logo{
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 100px;
+  height: 100px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu__link {
+  display: block;
+  padding: 7px 15px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.2s all ease-in-out;
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.menu__link--current {
+  color: #ffffff;
+}
+
+.menu__section {
+  display: flex;
+  justify-content: left;
+}
+
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 950px) {
+  .menu {
+    flex-direction: column;
+    background-color: #000000;
+    align-items: start;
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2px;
+  }
+
+  .menu__link {
+    margin-left: 12px;
+    color: #ffffff;
+  }
+
+  .menu__li {
+    margin-bottom: 10px;
+  }
+
+  .menu__section {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #000000;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header__name {
+    display: block;
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu__section {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu__link:hover {
+    color: #ffffff;
+  }
+
+  .header__escudo {
+    width: 10rem;
+    display: block;
+  }
+}
