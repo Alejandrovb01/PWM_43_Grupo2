@@ -1,10 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MenuService } from '../services/menu.service';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-dish-page-no-qr',
   templateUrl: './dish-page-no-qr.component.html',
+  standalone: true,
+  imports: [
+    NgForOf,
+    NgIf
+  ],
   styleUrls: ['./dish-page-no-qr.component.css']
 })
 export class DishPageNoQrComponent implements OnInit {
@@ -39,8 +45,11 @@ export class DishPageNoQrComponent implements OnInit {
     const dish = this.menuService.getDishById(id);
     if (dish) {
       this.dish = {
-        ...dish,
-        allergens: this.menuService.getAllergenImages(dish.alergenos || [])
+        nombre: 'Pizza Margherita',
+        imagen: 'pizza_margherita.jpg',
+        precio: '9.50€',
+        descripcion: 'La clásica pizza italiana...',
+        alergenos: ['gluten', 'lacteos']
       };
     } else {
       this.error = 'Plato no encontrado';
