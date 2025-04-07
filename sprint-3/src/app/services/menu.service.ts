@@ -11,7 +11,7 @@ export class MenuService {
   constructor(private http: HttpClient) { }
 
   loadMenuData() {
-    return this.http.get('assets/menu.json').pipe(
+    return this.http.get('assets/data/menu.json').pipe(
       map(data => {
         this.menuData = data;
         return data;

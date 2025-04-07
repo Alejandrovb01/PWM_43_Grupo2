@@ -1,10 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MenuService } from '../services/menu.service';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-dish-page-no-qr',
   templateUrl: './dish-page-no-qr.component.html',
+  standalone: true,
+  imports: [
+    NgForOf,
+    NgIf
+  ],
   styleUrls: ['./dish-page-no-qr.component.css']
 })
 export class DishPageNoQrComponent implements OnInit {
