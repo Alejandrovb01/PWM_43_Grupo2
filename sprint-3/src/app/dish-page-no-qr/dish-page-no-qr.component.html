@@ -1,0 +1,31 @@
+<div class="dish-page">
+
+  <main class="dish-page__main">
+    <div *ngIf="loading" class="loading">Cargando...</div>
+
+    <div *ngIf="error" class="error">{{ error }}</div>
+
+    <div *ngIf="dish && !loading">
+      <section class="dish-description">
+        <img [src]="'assets/images/' + dish.imagen" [alt]="dish.nombre" class="dish-image">
+        <div class="dish-text">
+          <h1 class="dish-title">{{ dish.nombre }}</h1>
+          <p class="dish-price">{{ dish.precio }}</p>
+          <p class="dish-description">{{ dish.descripcion }}</p>
+        </div>
+      </section>
+
+      <section class="dish-options" *ngIf="dish.allergens.length > 0">
+        <h2 class="options-title">Alérgenos</h2>
+        <div class="options-list">
+          <img *ngFor="let allergen of dish.allergens"
+               [src]="allergen.image"
+               [alt]="allergen.name"
+               [title]="allergen.name">
+        </div>
+      </section>
+
+      <button class="buy-button">Añadir al carrito</button>
+    </div>
+  </main>
+</div>

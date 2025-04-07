@@ -6,8 +6,6 @@ import {BrowserModule} from '@angular/platform-browser';
   imports: [
     BrowserModule,
     HttpClientModule,
-    ...
   ],
-  ...
 })
 export class AppModule { }
