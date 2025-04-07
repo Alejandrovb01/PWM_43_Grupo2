@@ -37,7 +37,6 @@ export class MenuService {
       'lacteos': 'assets/icons/lacteos.png',
       'huevo': 'assets/icons/huevo.png',
       'pescado': 'assets/icons/pescado.png'
-      // Añade más alérgenos según necesites
     };
 
     return allergens.map(allergen => ({
