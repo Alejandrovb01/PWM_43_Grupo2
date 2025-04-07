@@ -1,3 +1,20 @@
+// src/app/app.routes.ts
 import { Routes } from '@angular/router';
+import { LayoutComponent } from './layout/layout.component';
+import { HomeComponent } from './home/home.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { MenuComponent } from './menu/menu.component';
+import { ContactComponent } from './contact/contact.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      { path: '', component: HomeComponent },
+      { path: 'about-us', component: AboutUsComponent },
+      { path: 'menu', component: MenuComponent },
+      { path: 'contact', component: ContactComponent },
+    ]
+  },
+];
