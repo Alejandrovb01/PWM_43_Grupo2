@@ -45,11 +45,8 @@ export class DishPageNoQrComponent implements OnInit {
     const dish = this.menuService.getDishById(id);
     if (dish) {
       this.dish = {
-        nombre: 'Pizza Margherita',
-        imagen: 'pizza_margherita.jpg',
-        precio: '9.50€',
-        descripcion: 'La clásica pizza italiana...',
-        alergenos: ['gluten', 'lacteos']
+        ...dish,
+        allergens: this.menuService.getAllergenImages(dish.alergenos || [])
       };
     } else {
       this.error = 'Plato no encontrado';
