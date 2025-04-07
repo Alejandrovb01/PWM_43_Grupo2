@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="Update Readme">
+    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="wip: routing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/about-us.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/login/login.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\danie\\WebstormProjects\\PWM_43_Grupo2\\sprint-3\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\gabyt\\WebstormProjects\\PWM_43_Grupo2\\sprint-3\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -226,6 +226,7 @@
     <MESSAGE value="AboutUs and Menu responsive." />
     <MESSAGE value="Modify menu and add images of dishes" />
     <MESSAGE value="Update Readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Readme" />
+    <MESSAGE value="wip: routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip: routing" />
   </component>
 </project>
