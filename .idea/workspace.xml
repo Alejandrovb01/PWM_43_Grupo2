@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="wip: routing">
+    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="wip: menu-qr">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/card-slider/card-slider.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/card-slider/card-slider.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +200,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742837946560</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="wip: menu-qr">
+      <option name="closed" value="true" />
+      <created>1744388995571</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1744388995571</updated>
+    </task>
+    <task id="LOCAL-00011" summary="wip: menu-qr">
+      <option name="closed" value="true" />
+      <created>1744389082867</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1744389082867</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +243,7 @@
     <MESSAGE value="Modify menu and add images of dishes" />
     <MESSAGE value="Update Readme" />
     <MESSAGE value="wip: routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: routing" />
+    <MESSAGE value="wip: menu-qr" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip: menu-qr" />
   </component>
 </project>
