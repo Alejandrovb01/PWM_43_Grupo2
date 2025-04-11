@@ -1,47 +1,80 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
+import { Observable, map, shareReplay } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+interface Dish {
+  id: number;
+  imagen: string;
+  nombre: string;
+  precio: string;
+  descripcion: string;
+  alergenos?: string[];
+}
+
+interface MenuData {
+  menu: {
+    clasicas: Dish[];
+    bestsellers: Dish[];
+    gourmet: Dish[];
+    appetizers: Dish[];
+    antipasti: Dish[];
+  };
+}
+
+@Injectable({ providedIn: 'root' })
 export class MenuService {
-  private menuData: any;
+  private menuData$: Observable<MenuData>;
 
-  constructor(private http: HttpClient) { }
-
-  loadMenuData() {
-    return this.http.get('assets/data/menu.json').pipe(
-      map(data => {
-        this.menuData = data;
-        return data;
-      })
+  constructor(private http: HttpClient) {
+    this.menuData$ = this.http.get<MenuData>('assets/data/menu.json').pipe(
+      shareReplay(1)
     );
   }
 
-  getDishById(id: number) {
-    if (!this.menuData) return null;
-
-    // Busca en todas las categorías
-    for (const category of Object.values(this.menuData.menu)) {
-      const dish = (category as any[]).find(item => item.id === id);
-      if (dish) return dish;
-    }
-    return null;
+  getPizzas(): Observable<Dish[]> {
+    return this.menuData$.pipe(
+      map(data => [...data.menu.clasicas, ...data.menu.bestsellers, ...data.menu.gourmet])
+    );
   }
 
-  getAllergenImages(allergens: string[]) {
-    // Mapeo de nombres de alérgenos a imágenes
-    const allergenMap: {[key: string]: string} = {
-      'gluten': 'assets/icons/gluten.png',
-      'lacteos': 'assets/icons/lacteos.png',
-      'huevo': 'assets/icons/huevo.png',
-      'pescado': 'assets/icons/pescado.png'
+  getAppetizers(): Observable<Dish[]> {
+    return this.menuData$.pipe(
+      map(data => data.menu.appetizers || [])
+    );
+  }
+
+  getAntipasti(): Observable<Dish[]> {
+    return this.menuData$.pipe(
+      map(data => data.menu.antipasti || [])
+    );
+  }
+
+  getAllergenImages(allergens: string[]): {name: string, image: string}[] {
+    const allergenMap: Record<string, string> = {
+      'gluten': 'gluten.png',
+      'lacteos': 'milk.png',
+      'huevo': 'egg.png',
+      'pescado': 'fish.png'
     };
 
-    return allergens.map(allergen => ({
-      name: allergen,
-      image: allergenMap[allergen.toLowerCase()] || 'assets/icons/default-allergen.png'
+    return allergens.map(name => ({
+      name,
+      image: `assets/${allergenMap[name] || 'unknown.png'}`
     }));
+  }
+
+  getDishById(id: number): Observable<Dish | undefined> {
+    return this.menuData$.pipe(
+      map(data => {
+        const allDishes = [
+          ...data.menu.clasicas,
+          ...data.menu.bestsellers,
+          ...data.menu.gourmet,
+          ...data.menu.appetizers,
+          ...data.menu.antipasti
+        ];
+        return allDishes.find(dish => dish.id === id);
+      })
+    );
   }
 }

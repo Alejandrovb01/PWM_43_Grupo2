@@ -1,0 +1,9 @@
+.compact-view {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.dish-page.compact {
+  padding: 0;
+  box-shadow: none;
+}

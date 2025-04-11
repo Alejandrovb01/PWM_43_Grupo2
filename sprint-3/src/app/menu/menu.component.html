@@ -1,1 +1,44 @@
-<p>menu works!</p>
+<section class="menu-grid-section">
+  <h1>Pizzas</h1>
+  <section class="menu-grid-3x3">
+    <ng-container *ngIf="pizzas$ | async as pizzas">
+      <app-card-slider
+        *ngFor="let pizza of pizzas"
+        [image]="pizza.imagen"
+        [title]="pizza.nombre"
+        [price]="pizza.precio"
+        [description]="pizza.descripcion">
+      </app-card-slider>
+    </ng-container>
+  </section>
+</section>
+
+<section class="menu-about-section">
+  <div class="menu1-img-text-section">
+    <div>
+      <h3>Appetizers</h3>
+      <ng-container *ngIf="(appetizers$ | async) as appetizers">
+        <app-dish-menu-item
+          *ngFor="let item of appetizers"
+          [title]="item.nombre"
+          [price]="item.precio">
+        </app-dish-menu-item>
+      </ng-container>
+    </div>
+    <img src="assets/calamari.jpg" alt="Apetizers Image">
+  </div>
+
+  <div class="menu1-img-text-section reverse">
+    <img src="assets/burrata.jpg" alt="Antipasti Image">
+    <div>
+      <h3>Antipasti</h3>
+      <ng-container *ngIf="(antipasti$ | async) as antipasti">
+        <app-dish-menu-item
+          *ngFor="let item of antipasti"
+          [title]="item.nombre"
+          [price]="item.precio">
+        </app-dish-menu-item>
+      </ng-container>
+    </div>
+  </div>
+</section>
