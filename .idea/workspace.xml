@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="wip: routing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/card-slider/card-slider.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/card-slider/card-slider.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/dish-page-no-qr/dish-page-no-qr.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/dish-page-no-qr/dish-page-no-qr.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/dish-page-no-qr/dish-page-no-qr.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/dish-page-no-qr/dish-page-no-qr.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/menu/menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/menu/menu.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/services/menu.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/services/menu.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/home/home.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +42,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Alejandrovb01/PWM_43_Grupo2.git&quot;,
-    &quot;accountId&quot;: &quot;04693b50-716f-474d-babc-0655a865d315&quot;
+    &quot;accountId&quot;: &quot;8331f2ae-e276-46a1-8ec3-7cd49fd66a1d&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -81,7 +77,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\David\\WebstormProjects\\PWM_43_Grupo2\\sprint-3\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\gabyt\\WebstormProjects\\PWM_43_Grupo2\\sprint-3\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -98,7 +94,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-WS-243.24978.60" />
       </set>
     </attachedChunks>
   </component>
@@ -132,8 +128,6 @@
       <workItem from="1743777934752" duration="1278000" />
       <workItem from="1744036389768" duration="2000" />
       <workItem from="1744042602235" duration="1018000" />
-      <workItem from="1744366642994" duration="4242000" />
-      <workItem from="1744379846214" duration="3746000" />
     </task>
     <task id="LOCAL-00001" summary="Menu y about.">
       <option name="closed" value="true" />
