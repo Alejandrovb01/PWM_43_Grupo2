@@ -26,19 +26,18 @@ export class DishPageNoQrComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    const id = +this.route.snapshot.params['id'];
-    this.loadDish(id);
+    this.route.params.subscribe(params => {
+      const id = +params['id'];
+      this.loadDish(id);
+    });
   }
 
   loadDish(id: number) {
     this.menuService.getDishById(id).subscribe({
       next: (dish) => {
         if (dish) {
-          this.dishImage = 'assets/' + dish.imagen;
+          this.dishImage = 'assets/images/' + dish.imagen;
           this.dishTitle = dish.nombre;
-          this.dishPrice = dish.precio;
-          this.dishDescription = dish.descripcion;
-          this.allergens = this.menuService.getAllergenImages(dish.alergenos || []);
         } else {
           this.error = 'Plato no encontrado';
         }

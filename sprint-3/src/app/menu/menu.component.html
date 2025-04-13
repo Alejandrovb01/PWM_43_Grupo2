@@ -4,6 +4,7 @@
     <ng-container *ngIf="pizzas$ | async as pizzas">
       <app-card-slider
         *ngFor="let pizza of pizzas"
+        [id]="pizza.id"
         [image]="pizza.imagen"
         [title]="pizza.nombre"
         [price]="pizza.precio"
@@ -20,6 +21,7 @@
       <ng-container *ngIf="(appetizers$ | async) as appetizers">
         <app-dish-menu-item
           *ngFor="let item of appetizers"
+          [id]="item.id"
           [title]="item.nombre"
           [price]="item.precio">
         </app-dish-menu-item>
@@ -35,6 +37,7 @@
       <ng-container *ngIf="(antipasti$ | async) as antipasti">
         <app-dish-menu-item
           *ngFor="let item of antipasti"
+          [id]="item.id"
           [title]="item.nombre"
           [price]="item.precio">
         </app-dish-menu-item>

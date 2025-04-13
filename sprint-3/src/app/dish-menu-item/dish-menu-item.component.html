@@ -1,4 +1,6 @@
-<div class="dish-menu-item">
-  <h3>{{ title }}</h3>
-  <p class="price">{{ price }}</p>
+<div class="menu-item" (click)="navigateToDetail()">
+  <div class="item-content">
+    <h3 class="item-title">{{ title }}</h3>
+    <p class="item-price">{{ price }}</p>
+  </div>
 </div>

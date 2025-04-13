@@ -1,6 +1,7 @@
-import { Injectable } from '@angular/core';
+import {inject, Injectable} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map, shareReplay } from 'rxjs';
+import {Router} from '@angular/router';
 
 interface Dish {
   id: number;
@@ -23,13 +24,17 @@ interface MenuData {
 
 @Injectable({ providedIn: 'root' })
 export class MenuService {
-  private menuData$: Observable<MenuData>;
+  private http = inject(HttpClient);
+  private router = inject(Router);
 
-  constructor(private http: HttpClient) {
-    this.menuData$ = this.http.get<MenuData>('assets/data/menu.json').pipe(
-      shareReplay(1)
-    );
-  }
+  private menuData$: Observable<MenuData> = this.http.get<MenuData>('assets/data/menu.json').pipe(
+    shareReplay(1)
+  );
+
+    navigateToDish(id: number): void {
+      this.router.navigate(['/dish', id]);
+    }
+
 
   getPizzas(): Observable<Dish[]> {
     return this.menuData$.pipe(
