@@ -15,6 +15,37 @@
   width: 600px;
 }
 
+/* Estilos para la sección de alérgenos */
+.allergens-section {
+  margin-top: 20px;
+}
+
+.allergens-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.allergen-tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.allergen-tag img {
+  width: 24px; /* Tamaño ajustable */
+  height: 24px; /* Tamaño ajustable */
+  object-fit: contain;
+}
+
+.allergen-tag span {
+  font-size: 0.9em;
+}
+
 .dish-text {
   display: flex;
   flex-direction: column;
@@ -27,6 +58,13 @@
 .dish-title {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.dish-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .options-title {

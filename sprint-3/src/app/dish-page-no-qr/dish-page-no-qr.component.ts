@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { MenuService } from '../services/menu.service';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { MenuService } from '../services/menu.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -11,12 +11,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./dish-page-no-qr.component.css']
 })
 export class DishPageNoQrComponent implements OnInit {
-  @Input() dishImage: string = '';
-  @Input() dishTitle: string = '';
-  @Input() dishPrice: string = '';
-  @Input() dishDescription: string = '';
-
-  loading: boolean = true;
+  dish: any = null;
+  loading = true;
   error: string | null = null;
   allergens: any[] = [];
 
@@ -26,18 +22,20 @@ export class DishPageNoQrComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.route.params.subscribe(params => {
-      const id = +params['id'];
-      this.loadDish(id);
-    });
+    const id = this.route.snapshot.params['id'];
+    console.log('ID recibido:', id);
+    this.loadDish(id);
   }
 
   loadDish(id: number) {
     this.menuService.getDishById(id).subscribe({
       next: (dish) => {
         if (dish) {
-          this.dishImage = 'assets/images/' + dish.imagen;
-          this.dishTitle = dish.nombre;
+          this.dish = {
+            ...dish,
+            imagePath: 'assets/' + dish.imagen
+          };
+          this.allergens = this.menuService.getAllergenImages(dish.alergenos || []);
         } else {
           this.error = 'Plato no encontrado';
         }

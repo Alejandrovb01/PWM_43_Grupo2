@@ -31,9 +31,9 @@ export class MenuService {
     shareReplay(1)
   );
 
-    navigateToDish(id: number): void {
-      this.router.navigate(['/dish', id]);
-    }
+  navigateToDish(id: number): void {
+    this.router.navigate(['/dish', id]);
+  }
 
 
   getPizzas(): Observable<Dish[]> {
@@ -54,12 +54,12 @@ export class MenuService {
     );
   }
 
-  getAllergenImages(allergens: string[]): {name: string, image: string}[] {
+  getAllergenImages(allergens: string[]): { name: string, image: string }[] {
     const allergenMap: Record<string, string> = {
       'gluten': 'gluten.png',
-      'lacteos': 'milk.png',
-      'huevo': 'egg.png',
-      'pescado': 'fish.png'
+      'lacteos': 'lacteos.png',
+      'huevo': 'huevo.png',
+      'pescado': 'pescado.png'
     };
 
     return allergens.map(name => ({
@@ -68,9 +68,10 @@ export class MenuService {
     }));
   }
 
-  getDishById(id: number): Observable<Dish | undefined> {
+  getDishById(id: number): Observable<any> {
     return this.menuData$.pipe(
       map(data => {
+        // Convierte el objeto de categorías en un array plano de platos
         const allDishes = [
           ...data.menu.clasicas,
           ...data.menu.bestsellers,
@@ -78,8 +79,12 @@ export class MenuService {
           ...data.menu.appetizers,
           ...data.menu.antipasti
         ];
-        return allDishes.find(dish => dish.id === id);
-      })
+
+        // Busca el plato (comparando números si el ID es numérico)
+        return allDishes.find(dish =>
+          +dish.id === +id // El "+" convierte a número
+        ) || null;
+      }),
     );
   }
 }

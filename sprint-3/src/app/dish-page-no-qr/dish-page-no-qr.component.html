@@ -1,26 +1,30 @@
-<div class="dish-page">
-  <div *ngIf="loading" class="loading">Cargando...</div>
+<div class="dish-detail-container">
+  <div *ngIf="loading" class="loading-spinner">Cargando...</div>
 
-  <div *ngIf="error" class="error">{{ error }}</div>
+  <div *ngIf="error" class="error-message">{{ error }}</div>
 
-  <div *ngIf="!loading && !error">
-    <section class="dish-description">
-      <img [src]="dishImage" [alt]="dishTitle" class="dish-image">
-      <div class="dish-text">
-        <h1 class="dish-title">{{ dishTitle }}</h1>
-        <p class="dish-price">{{ dishPrice }}</p>
-        <p class="dish-description">{{ dishDescription }}</p>
+  <div *ngIf="dish && !loading" class="dish-content">
+    <div class="dish-header">
+      <h1>{{ dish.nombre }}</h1>
+      <span class="price">{{ dish.precio }}</span>
+    </div>
+
+    <div class="dish-body">
+      <img class="dish-image" [src]="dish.imagePath" [alt]="dish.nombre">
+
+      <div class="dish-info">
+        <p class="description">{{ dish.descripcion }}</p>
+
+        <div *ngIf="allergens.length" class="allergens-section">
+          <h3>Alérgenos:</h3>
+          <div class="allergens-list">
+            <div *ngFor="let allergen of allergens" class="allergen-tag">
+              <img [src]="allergen.image" [alt]="allergen.name">
+              <span>{{ allergen.name }}</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <section class="dish-options" *ngIf="allergens.length > 0">
-      <h2 class="options-title">Alérgenos</h2>
-      <div class="options-list">
-        <img *ngFor="let allergen of allergens"
-             [src]="allergen.image"
-             [alt]="allergen.name"
-             [title]="allergen.name">
-      </div>
-    </section>
+    </div>
   </div>
 </div>
