@@ -1,0 +1,30 @@
+.menu-qr{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.dish-slider h2{
+  margin: 30px 0;
+}
+
+.dish-slider span{
+  border-bottom: 1px solid black;
+}
+
+.dish-slider-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .dish-slider-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

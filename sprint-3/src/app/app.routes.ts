@@ -6,7 +6,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MenuComponent } from './menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
-import {DishPageNoQrComponent} from './dish-page-no-qr/dish-page-no-qr.component';
+import {MenuQrComponent} from './menu-qr/menu-qr.component';
 
 export const routes: Routes = [
   {
@@ -18,7 +18,7 @@ export const routes: Routes = [
       { path: 'menu', component: MenuComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'login', component: LoginComponent },
-      {path: 'dish/:id', component: DishPageNoQrComponent }
+      { path: 'menu-qr', component: MenuQrComponent },
     ]
   },
 ];

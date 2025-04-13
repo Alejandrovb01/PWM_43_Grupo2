@@ -1,0 +1,24 @@
+<main class="menu-qr">
+  <ng-container *ngFor="let category of categoryOrder">
+    <section class="dish-slider">
+      <h2>{{ category }}</h2>
+      <div class="dish-slider-content">
+        <ng-container *ngFor="let item of menuItems[category]">
+          <app-card-slider
+            *ngIf="['Clásicas', 'Bestsellers', 'Gourmet'].includes(category)"
+            [image]="item.image"
+            [title]="item.name"
+            [description]="item.description"
+            [price]="item.price"
+          ></app-card-slider>
+          <app-dish-menu
+            *ngIf="['Appetizers', 'Antipasti'].includes(category)"
+            [title]="item.name"
+            [price]="item.price"
+            [description]="item.description"
+          ></app-dish-menu>
+        </ng-container>
+      </div>
+    </section>
+  </ng-container>
+</main>
