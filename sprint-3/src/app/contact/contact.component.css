@@ -1,0 +1,124 @@
+
+h2 {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-information-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.contact-information-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.contact-information-map {
+  width: 600px;
+  height: 400px;
+}
+
+.contact-information-details span {
+  font-weight: bold;
+}
+
+.contact-review-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto 50px;
+}
+
+.contact-review-label {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  width: 100%;
+}
+
+.contact-review-information {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.contact-review-input, .contact-review-textarea {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  text-align: left;
+}
+
+.contact-review-input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+}
+
+.contact-review-textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+}
+
+.contact-review-textarea {
+  height: 200px;
+  padding: 10px;
+  max-height: 300px;
+}
+
+.contact-review-stars {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.star {
+  font-size: 40px;
+  color: grey;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star.active {
+  color: gold;
+}
+
+.star:hover ~ .star {
+  color: grey;
+}
+
+@media (max-width: 480px) {
+  .contact-information-section {
+    flex-direction: column;
+  }
+
+  .contact-information-map {
+    width: 350px;
+    height: 350px;
+  }
+
+  .contact-review-section {
+    width: 90%;
+    padding: 15px;
+  }
+}

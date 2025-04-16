@@ -1,1 +1,39 @@
-<p>contact works!</p>
+<h2>Contacto</h2>
+<section>
+    <div class="contact-information-section">
+        <iframe class="contact-information-map"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-15.454834699630739%2C28.0710241643908%2C-15.447753667831423%2C28.075075856535385&amp;layer=mapnik&amp;marker=28.073050029564666%2C-15.451294183731079">
+        </iframe>
+        <div class="contact-information-details">
+            <p><span>Dirección</span>: C. Practicante Ignacio Rodríguez, 7,<br>
+                35017 Las Palmas de Gran Canaria, Las Palmas</p>
+            <p><span>Teléfono</span>: +442076379356</p>
+            <p><span>Horario</span>: lunes a domingo de 12:30 a 22:30</p>
+            <p><span>E-mail</span>: luigi.ristorante&#64;gmail.com</p>
+        </div>
+    </div>
+</section>
+
+<h2>Escribe una reseña</h2>
+<section>
+  <form #reviewForm id="reviewForm" class="contact-review-section" action="#" method="post">
+        <label class="contact-review-label" for="entradaNombre">Nombre y apellidos:</label>
+        <input class="contact-review-input" type="text" id="entradaNombre" name="entradaNombre" placeholder="Introduce tu nombre." required>
+
+        <label class="contact-review-label" for="entradaCorreo">Correo electrónico:</label>
+        <input class="contact-review-input" type="email" id="entradaCorreo" name="entradaCorreo" placeholder="Introduce tu correo." required>
+
+        <label class="contact-review-label" for="entradaReseña">Valoración:</label>
+        <textarea class="contact-review-textarea" id="entradaReseña" name="entradaReseña" placeholder="Describe tu experiencia." required></textarea>
+
+        <div class="contact-review-stars" id="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+        <input type="submit" class="go-to-button" value="Enviar reseña">
+    </form>
+</section>
