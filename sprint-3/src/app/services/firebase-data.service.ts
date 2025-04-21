@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import { getFirestore, collection } from 'firebase/firestore'; // Importa collection
+import { collectionData } from 'rxfire/firestore'; // Importa collectionData desde 'rxfire/firestore'
 import { environment } from '../../environments/environment';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -24,16 +25,12 @@ export class FirebaseDataService {
     }
   }
 
-  async getData(collectionName: string): Promise<any[]> {
+  getData(collectionName: string): Observable<any[]> { // Cambia el tipo de retorno a Observable
     if (!this.isConnectedSubject.value) {
       console.error('No se puede obtener datos. No hay conexión con Firebase.');
-      return [];
+      return new Observable<any[]>(subscriber => subscriber.next([])); // Retorna un Observable vacío si no hay conexión
     }
-    const data: any[] = [];
-    const querySnapshot = await getDocs(collection(this.db, collectionName));
-    querySnapshot.forEach((doc) => {
-      data.push({ id: doc.id, ...doc.data() });
-    });
-    return data;
+    const collectionRef = collection(this.db, collectionName);
+    return collectionData(collectionRef, { idField: 'id' }); // Usa collectionData desde 'rxfire/firestore'
   }
 }

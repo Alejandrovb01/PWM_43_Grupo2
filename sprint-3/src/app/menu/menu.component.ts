@@ -9,7 +9,7 @@ import {DishMenuItemComponent} from '../dish-menu-item/dish-menu-item.component'
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule, AsyncPipe, CardSliderComponent, DishPageNoQrComponent, DishMenuItemComponent],
+  imports: [CommonModule, AsyncPipe, CardSliderComponent, DishMenuItemComponent],
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
