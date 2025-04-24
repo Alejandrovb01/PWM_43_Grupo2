@@ -6,6 +6,7 @@ import { CardSliderComponent } from '../card-slider/card-slider.component';
 import { Observable, map, tap, of, Subscription } from 'rxjs';
 import { BehaviorSubject } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
+import { serverTimestamp } from 'firebase/firestore';
 
 interface CartItem {
   id: string;
@@ -102,7 +103,7 @@ export class MenuQrComponent implements OnInit, OnDestroy {
     if (this.cart.length > 0 && this.tableNumber) {
       this.orderSent = true;
       try {
-        await this.firebaseDataService.addOrder('orders', { table: this.tableNumber, items: this.cart });
+        await this.firebaseDataService.addOrder('orders', { table: this.tableNumber, items: this.cart, status: 'Pendiente', timestamp: serverTimestamp() });
         this.cart = [];
       } catch (error) {
         console.error('Error al enviar la comanda a Firebase:', error);

@@ -25,13 +25,13 @@ export class FirebaseDataService {
     }
   }
 
-  getData(collectionName: string): Observable<any[]> { // Cambia el tipo de retorno a Observable
+  getData(collectionName: string): Observable<any[]> {
     if (!this.isConnectedSubject.value) {
       console.error('No se puede obtener datos. No hay conexión con Firebase.');
       return new Observable<any[]>(subscriber => subscriber.next([])); // Retorna un Observable vacío si no hay conexión
     }
     const collectionRef = collection(this.db, collectionName);
-    return collectionData(collectionRef, { idField: 'id' }); // Usa collectionData desde 'rxfire/firestore'
+    return collectionData(collectionRef, { idField: 'id' });
   }
 
   async addOrder(collectionName: string, orderData: any): Promise<any> {

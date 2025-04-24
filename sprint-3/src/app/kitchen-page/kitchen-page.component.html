@@ -1,0 +1,25 @@
+<div class="kitchen-page-container">
+  <h1>Panel de Cocina</h1>
+  <h2>Comandas Activas</h2>
+  <div *ngFor="let order of orders$ | async" class="order-card">
+    <div class="order-header">
+      <span class="mesa">Mesa: {{ order.table }}</span>
+      <span class="fecha">{{ order.timestamp?.toDate() | date:'HH:mm dd/MM/yyyy' }}</span>
+      <span class="estado">Estado: {{ order.status }}</span>
+    </div>
+    <ul class="order-items">
+      <li *ngFor="let item of order.items" class="order-item">
+        <span class="cantidad">{{ item.quantity }}x</span>
+        <span class="nombre">{{ item.name }}</span>
+      </li>
+    </ul>
+    <div class="order-actions">
+      <label for="status-{{ order.id }}">Cambiar Estado:</label>
+      <select id="status-{{ order.id }}" [ngModel]="order.status" (ngModelChange)="updateStatus(order.id!, $event)">
+        <option *ngFor="let status of orderStatuses" [value]="status">{{ status }}</option>
+      </select>
+    </div>
+  </div>
+
+  <h2>Gestión del Menú</h2>
+</div>
