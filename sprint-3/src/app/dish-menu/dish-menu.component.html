@@ -1,3 +1,9 @@
-<h3 class="title">{{ title }}</h3>
-<p class="price">{{ price }}€</p>
-<p class="description">{{ description }}</p>
+<div class="dish-menu-item" (click)="navigateToDetail()">
+  <div class="dish-info">
+    <h3 class="title">{{ title }}</h3>
+    <p class="description">{{ description }}</p>
+  </div>
+  <div class="dish-actions">
+    <button class="button-dish-menu" (click)="addToCart($event)">Añadir - {{ price }}€</button>
+  </div>
+</div>

@@ -1,1 +1,15 @@
-<p>dish-page works!</p>
+<section class="dish-description">
+  <img [src]="'assets/' + dish.image" [alt]="dish.name" class="dish-image">
+  <div class="dish-text">
+    <h1 class="dish-title">{{ dish.name }}</h1>
+    <p>{{ dish.description }}</p>
+  </div>
+</section>
+
+<section class="dish-options">
+  <h2 class="options-title">Alérgenos</h2>
+  <div class="options-list">
+    <img *ngFor="let alergeno of dish.alergenos" [src]="'assets/alergenos/' + alergeno.name + '.png'" [alt]="alergeno.name">
+  </div>
+  <button class="buy-button" *ngIf="showAddToCart" (click)="addToCart(dish)">Añadir por {{ dish.price }}€</button>
+</section>

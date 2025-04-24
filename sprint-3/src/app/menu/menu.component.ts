@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule, AsyncPipe } from '@angular/common';
 import { MenuService } from '../services/menu.service';
 import { CardSliderComponent } from '../card-slider/card-slider.component';
-import { DishPageNoQrComponent } from '../dish-page-no-qr/dish-page-no-qr.component';
 import { Observable } from 'rxjs';
 import {DishMenuItemComponent} from '../dish-menu-item/dish-menu-item.component';
 

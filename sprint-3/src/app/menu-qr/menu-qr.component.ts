@@ -1,10 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FirebaseDataService } from '../services/firebase-data.service';
 import { DishMenuComponent } from '../dish-menu/dish-menu.component';
 import { NgForOf, NgIf, AsyncPipe } from '@angular/common';
 import { CardSliderComponent } from '../card-slider/card-slider.component';
-import { Observable, map, tap, of } from 'rxjs'; // Asegúrate de importar 'of'
+import { Observable, map, tap, of, Subscription } from 'rxjs';
 import { BehaviorSubject } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
+
+interface CartItem {
+  id: string;
+  name: string;
+  price: number;
+  quantity: number;
+}
 
 @Component({
   selector: 'app-menu-qr',
@@ -19,21 +27,40 @@ import { BehaviorSubject } from 'rxjs';
   templateUrl: './menu-qr.component.html',
   styleUrl: './menu-qr.component.css'
 })
-export class MenuQrComponent implements OnInit {
-  menuItems$: Observable<{ [category: string]: any[] }> = of({}); // Inicialización con 'of({})'
+export class MenuQrComponent implements OnInit, OnDestroy {
+  menuItems$: Observable<{ [category: string]: any[] }> = of({});
   categoryOrder: string[] = ['Clásicas', 'Bestsellers', 'Gourmet', 'Appetizers', 'Antipasti'];
   loading = new BehaviorSubject<boolean>(true);
   loading$ = this.loading.asObservable();
+  tableNumber: string | null = null;
+  cart: CartItem[] = [];
+  showCart = false;
+  orderSent = false;
+  routeSubscription: Subscription | undefined;
+  addToCartConfirmation = new BehaviorSubject<string | null>(null);
+  addToCartConfirmation$ = this.addToCartConfirmation.asObservable();
 
-  constructor(private firebaseDataService: FirebaseDataService) { }
+  constructor(
+    private firebaseDataService: FirebaseDataService,
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.routeSubscription = this.route.queryParams.subscribe(params => {
+      this.tableNumber = params['mesa'];
+    });
+
     this.menuItems$ = this.firebaseDataService.getData('menu').pipe(
       tap(() => this.loading.next(true)),
-      tap(items => console.log('Datos de Firebase:', items)), // Agrega este log
       map(items => this.groupByCategory(items)),
       tap(() => this.loading.next(false))
     );
+  }
+
+  ngOnDestroy(): void {
+    if (this.routeSubscription) {
+      this.routeSubscription.unsubscribe();
+    }
   }
 
   groupByCategory(items: any[]): { [category: string]: any[] } {
@@ -47,5 +74,42 @@ export class MenuQrComponent implements OnInit {
     return grouped;
   }
 
-  protected readonly String = String;
+  handleAddToCart(dish: any): void {
+    const existingItem = this.cart.find(item => item.id === dish.id);
+    if (existingItem) {
+      existingItem.quantity++;
+    } else {
+      this.cart.push({ id: dish.id, name: dish.name, price: dish.price, quantity: 1 });
+    }
+    this.addToCartConfirmation.next(`${dish.name} añadido al carrito`);
+    setTimeout(() => this.addToCartConfirmation.next(null), 2000);
+  }
+
+  updateQuantity(item: CartItem, quantity: number): void {
+    item.quantity = quantity > 0 ? quantity : 0;
+    this.cart = this.cart.filter(i => i.quantity > 0);
+  }
+
+  removeFromCart(itemId: string): void {
+    this.cart = this.cart.filter(item => item.id !== itemId);
+  }
+
+  toggleCart(): void {
+    this.showCart = !this.showCart;
+  }
+
+  async processOrder(): Promise<void> {
+    if (this.cart.length > 0 && this.tableNumber) {
+      this.orderSent = true;
+      try {
+        await this.firebaseDataService.addOrder('orders', { table: this.tableNumber, items: this.cart });
+        this.cart = [];
+      } catch (error) {
+        console.error('Error al enviar la comanda a Firebase:', error);
+        this.orderSent = false;
+      }
+    } else {
+      alert('El carrito está vacío o no se ha detectado el número de mesa.');
+    }
+  }
 }

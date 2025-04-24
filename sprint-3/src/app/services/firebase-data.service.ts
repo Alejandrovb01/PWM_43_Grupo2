@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection } from 'firebase/firestore'; // Importa collection
-import { collectionData } from 'rxfire/firestore'; // Importa collectionData desde 'rxfire/firestore'
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { collectionData } from 'rxfire/firestore';
 import { environment } from '../../environments/environment';
 import { BehaviorSubject, Observable } from 'rxjs';
 
@@ -32,5 +32,21 @@ export class FirebaseDataService {
     }
     const collectionRef = collection(this.db, collectionName);
     return collectionData(collectionRef, { idField: 'id' }); // Usa collectionData desde 'rxfire/firestore'
+  }
+
+  async addOrder(collectionName: string, orderData: any): Promise<any> {
+    if (!this.isConnectedSubject.value) {
+      console.error('No se puede enviar la comanda. No hay conexión con Firebase.');
+      throw new Error('No hay conexión con Firebase.');
+    }
+    try {
+      const collectionRef = collection(this.db, collectionName);
+      const docRef = await addDoc(collectionRef, orderData);
+      console.log('Comanda enviada con ID:', docRef.id);
+      return docRef;
+    } catch (error) {
+      console.error('Error al añadir la comanda a Firebase:', error);
+      throw error;
+    }
   }
 }
