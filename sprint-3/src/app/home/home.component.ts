@@ -8,10 +8,8 @@ import { Component, AfterViewInit } from '@angular/core';
 export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
-    this.loadTemplate('assets/main/homeMain.html', 'main', () => {
-      this.loadReviews();
-      this.loadMenu();
-    });
+    this.loadReviews();
+    this.loadMenu();
   }
 
   private loadTemplate(path: string, containerId: string, callback?: () => void): void {
