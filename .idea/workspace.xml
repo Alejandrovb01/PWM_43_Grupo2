@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="wip: menu-qr" />
+    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="finish kitchen page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/app.config.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +30,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -37,12 +41,9 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Alejandrovb01/PWM_43_Grupo2.git&quot;,
-    &quot;accountId&quot;: &quot;12d629f9-5331-4c21-817a-0abfa652b111&quot;
+    &quot;accountId&quot;: &quot;a3f205e7-11a6-42c4-b24d-09e366882eb5&quot;
   }
 }</component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -75,7 +76,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\aleja\\WebstormProjects\\PWM_43_Grupo2\\sprint-3\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\gabyt\\WebstormProjects\\PWM_43_Grupo2\\sprint-3\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -86,6 +87,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\sprint-3\src\app\services" />
+      <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\sprint-3\src\assets\alergenos" />
       <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\assets" />
     </key>
   </component>
@@ -127,6 +129,10 @@
       <workItem from="1744036389768" duration="2000" />
       <workItem from="1744042602235" duration="1018000" />
       <workItem from="1744794741257" duration="395000" />
+      <workItem from="1745255704176" duration="959000" />
+      <workItem from="1745507800588" duration="13657000" />
+      <workItem from="1745574150373" duration="8411000" />
+      <workItem from="1745589475210" duration="3444000" />
     </task>
     <task id="LOCAL-00001" summary="Menu y about.">
       <option name="closed" value="true" />
@@ -216,7 +222,71 @@
       <option name="project" value="LOCAL" />
       <updated>1744389082867</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="wip: menu-qr">
+      <option name="closed" value="true" />
+      <created>1745254882828</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745254882828</updated>
+    </task>
+    <task id="LOCAL-00013" summary="wip: menu-qr">
+      <option name="closed" value="true" />
+      <created>1745313914789</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1745313914789</updated>
+    </task>
+    <task id="LOCAL-00014" summary="wip: menu-qr">
+      <option name="closed" value="true" />
+      <created>1745313922231</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745313922231</updated>
+    </task>
+    <task id="LOCAL-00015" summary="finish menu-qr and add cart">
+      <option name="closed" value="true" />
+      <created>1745520127820</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1745520127820</updated>
+    </task>
+    <task id="LOCAL-00016" summary="wip: kitchen page">
+      <option name="closed" value="true" />
+      <created>1745523707119</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1745523707119</updated>
+    </task>
+    <task id="LOCAL-00017" summary="wip: kitchen page">
+      <option name="closed" value="true" />
+      <created>1745578947237</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1745578947237</updated>
+    </task>
+    <task id="LOCAL-00018" summary="wip: kitchen page">
+      <option name="closed" value="true" />
+      <created>1745582628181</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1745582628181</updated>
+    </task>
+    <task id="LOCAL-00019" summary="finish kitchen page">
+      <option name="closed" value="true" />
+      <created>1745592513183</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1745592513183</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +314,9 @@
     <MESSAGE value="Update Readme" />
     <MESSAGE value="wip: routing" />
     <MESSAGE value="wip: menu-qr" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: menu-qr" />
+    <MESSAGE value="finish menu-qr and add cart" />
+    <MESSAGE value="wip: kitchen page" />
+    <MESSAGE value="finish kitchen page" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish kitchen page" />
   </component>
 </project>
