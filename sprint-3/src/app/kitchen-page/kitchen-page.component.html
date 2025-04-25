@@ -21,5 +21,44 @@
     </div>
   </div>
 
-  <h2>Gestión del Menú</h2>
+  <h2>Gestión del Menú <button (click)="toggleMenuManagement()">{{ showMenuManagement ? 'Ocultar' : 'Mostrar' }}</button></h2>
+
+  <div *ngIf="showMenuManagement" class="menu-management-container">
+    <h3>Añadir Nuevo Plato</h3>
+    <form (ngSubmit)="addItem()">
+      <input type="text" placeholder="Nombre" [(ngModel)]="newItem.name" name="name" required>
+      <textarea placeholder="Descripción" [(ngModel)]="newItem.description" name="description"></textarea>
+      <input type="number" placeholder="Precio" [(ngModel)]="newItem.price" name="price" required>
+      <input type="text" placeholder="URL de la Imagen" [(ngModel)]="newItem.image" name="image">
+      <input type="text" placeholder="Categoría" [(ngModel)]="newItem.category" name="category" required>
+      <label>En Stock: <input type="checkbox" [(ngModel)]="newItem.stock" name="stock"></label>
+      <button type="submit">Añadir Plato</button>
+    </form>
+
+    <h3>Lista de Platos</h3>
+    <div *ngFor="let item of menuItems$ | async" class="menu-item">
+      <div *ngIf="editingItem?.id !== item.id">
+        <img [src]="'assets/' + item.image" alt="{{ item.name }}" width="50" *ngIf="item.image">
+        <span>{{ item.name }}</span>
+        <span>{{ item.price }}€</span>
+        <span>Categoría: {{ item.category }}</span>
+        <button (click)="editItem(item)">Editar</button>
+        <button (click)="deleteItem(item.id!)">Eliminar</button>
+      </div>
+      <div *ngIf="editingItem?.id === item.id">
+        <h4>Editar Plato</h4>
+        <form *ngIf="editingItem" (ngSubmit)="saveEdit()">
+          <input type="hidden" [(ngModel)]="editingItem.id" name="id">
+          <input type="text" placeholder="Nombre" [(ngModel)]="editingItem.name" name="name" required>
+          <textarea placeholder="Descripción" [(ngModel)]="editingItem.description" name="description"></textarea>
+          <input type="number" placeholder="Precio" [(ngModel)]="editingItem.price" name="price" required>
+          <input type="text" placeholder="URL de la Imagen" [(ngModel)]="editingItem.image" name="image">
+          <input type="text" placeholder="Categoría" [(ngModel)]="editingItem.category" name="category" required>
+          <label>En Stock: <input type="checkbox" [(ngModel)]="editingItem.stock" name="stock"></label>
+          <button type="submit">Guardar</button>
+          <button type="button" (click)="cancelEdit()">Cancelar</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>

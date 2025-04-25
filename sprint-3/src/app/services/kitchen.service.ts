@@ -1,46 +1,72 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { AngularFirestore, AngularFirestoreCollection, DocumentReference } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
-import { map, tap } from 'rxjs/operators';
-
-export interface OrderItem {
-  id: string;
-  name: string;
-  price: number;
-  quantity: number;
-}
+import { map } from 'rxjs/operators';
 
 export interface Order {
   id?: string;
-  items: OrderItem[];
-  table: string;
+  customerId: string;
+  items: { name: string; quantity: number }[];
   status: string;
-  timestamp: any;
+  table: string;
+  timestamp?: any;
+}
+
+export interface Dish {
+  id?: string;
+  name: string;
+  description?: string;
+  image?: string;
+  price: number;
+  category: string;
+  stock: boolean;
 }
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class KitchenService {
   private ordersCollection: AngularFirestoreCollection<Order>;
-  orders$: Observable<Order[]>;
+  private menuCollection: AngularFirestoreCollection<Dish>;
 
   constructor(private firestore: AngularFirestore) {
-    this.ordersCollection = firestore.collection<Order>('orders', ref => ref.orderBy('timestamp', 'desc'));
-    this.orders$ = this.ordersCollection.snapshotChanges().pipe(
+    this.ordersCollection = firestore.collection<Order>('orders');
+    this.menuCollection = firestore.collection<Dish>('menu');
+  }
+
+  getOrders(): Observable<Order[]> {
+    return this.ordersCollection.snapshotChanges().pipe(
       map(actions => actions.map(a => {
         const data = a.payload.doc.data() as Order;
         const id = a.payload.doc.id;
         return { id, ...data };
-      })),
+      }))
     );
   }
 
-  getOrders(): Observable<Order[]> {
-    return this.orders$;
+  updateOrderStatus(orderId: string, newStatus: string): Promise<void> {
+    return this.ordersCollection.doc(orderId).update({ status: newStatus });
   }
 
-  updateOrderStatus(orderId: string, newStatus: string): Promise<void> {
-    return this.firestore.doc(`orders/${orderId}`).update({ status: newStatus });
+  getMenuItems(): Observable<Dish[]> {
+    return this.menuCollection.snapshotChanges().pipe(
+      map(actions => actions.map(a => ({
+        id: a.payload.doc.id,
+        ...a.payload.doc.data() as Dish
+      })))
+    );
+  }
+
+  addMenuItem(dish: Dish): Promise<DocumentReference<Dish>> {
+    return this.menuCollection.add(dish);
+  }
+
+  updateMenuItem(id: string, dish: Dish): Promise<void> {
+    return this.menuCollection.doc(id).update(dish);
+  }
+
+  deleteMenuItem(id: string): Promise<void> {
+    return this.menuCollection.doc(id).delete();
   }
 }
