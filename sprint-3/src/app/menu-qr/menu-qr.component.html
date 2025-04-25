@@ -69,9 +69,34 @@
     </div>
   </div>
 
-  <div class="order-confirmation" *ngIf="orderSent">
-    <h2>¡Pedido Enviado!</h2>
-    <p>Tu comanda ha sido enviada a la cocina.</p>
-    <button (click)="orderSent = false; toggleCart()">Cerrar</button>
+  <div class="modal-overlay" *ngIf="showOrderStatus">
+    <div class="modal-content">
+      <h2>¡Pedido Enviado!</h2>
+      <p>Tu comanda ha sido enviada a la cocina.</p>
+
+      <hr>
+
+      <ng-container *ngIf="orderStatus$ | async as order">
+        <h3>Estado actual: <span>{{ order.status }}</span></h3>
+
+        <div *ngIf="remainingTime$ | async as timeLeft">
+          <p *ngIf="timeLeft > 0">
+            Tiempo restante:
+            {{ timeLeft / 60000 | number:'1.0-0' }} min
+            {{ (timeLeft % 60000) / 1000 | number:'2.0-0' }} seg
+          </p>
+          <p *ngIf="timeLeft <= 0 && order.status !== 'Entregado'">
+            ¡Tu pedido debería estar listo!
+          </p>
+          <p *ngIf="order.status === 'Entregado'">
+            ✅ ¡Tu pedido ha sido entregado!
+          </p>
+        </div>
+      </ng-container>
+
+      <button (click)="cerrarModal()">Cerrar</button>
+    </div>
   </div>
+
+
 </main>

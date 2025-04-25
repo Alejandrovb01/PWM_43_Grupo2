@@ -43,8 +43,10 @@ export class KitchenPageComponent implements OnInit {
 
   saveEdit(): void {
     if (this.editingItem?.id) {
-      this.kitchenService.updateMenuItem(this.editingItem.id, this.editingItem).then(() => {
+      const { id, ...data } = this.editingItem;
+      this.kitchenService.updateMenuItem(id, data).then(() => {
         this.editingItem = null;
+        this.showConfirmation('Plato actualizado con éxito');
       });
     }
   }
@@ -56,19 +58,28 @@ export class KitchenPageComponent implements OnInit {
   deleteItem(id: string): void {
     if (confirm('¿Estás seguro de que quieres eliminar este plato?')) {
       this.kitchenService.deleteMenuItem(id);
+      this.showConfirmation('Plato eliminado con éxito');
     }
+  }
+
+  updateTime(orderId: string, minutes: number): void {
+    this.kitchenService.updateOrderEstimatedTime(orderId, minutes);
   }
 
   addItem(): void {
     this.kitchenService.addMenuItem(this.newItem).then(() => {
       this.newItem = { name: '', description: '', image: '', price: 0, category: '', stock: true };
+      this.showConfirmation('Plato añadido con éxito');
     });
   }
 
-  updateStock(item: Dish, newStock: boolean): void {
-    this.kitchenService.updateMenuItem(item.id!, { ...item, stock: newStock });
+  confirmationMessage: string | null = null;
+
+  private showConfirmation(message: string): void {
+    this.confirmationMessage = message;
+    setTimeout(() => {
+      this.confirmationMessage = null;
+    }, 2000);
   }
 
-  protected readonly HTMLInputElement = HTMLInputElement;
-  checked: any;
 }

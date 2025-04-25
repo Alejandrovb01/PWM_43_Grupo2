@@ -4,6 +4,7 @@ import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import { collectionData } from 'rxfire/firestore';
 import { environment } from '../../environments/environment';
 import { BehaviorSubject, Observable } from 'rxjs';
+import {doc, docData} from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +25,12 @@ export class FirebaseDataService {
       this.isConnectedSubject.next(false);
     }
   }
+
+  getDocObservable(collectionName: string, id: string): Observable<any> {
+    const ref = doc(this.db, `${collectionName}/${id}`);
+    return docData(ref, { idField: 'id' });
+  }
+
 
   getData(collectionName: string): Observable<any[]> {
     if (!this.isConnectedSubject.value) {

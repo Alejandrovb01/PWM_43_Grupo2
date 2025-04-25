@@ -1,4 +1,8 @@
 <div class="kitchen-page-container">
+  <div class="confirmation-message" *ngIf="confirmationMessage">
+    {{ confirmationMessage }}
+  </div>
+
   <h1>Panel de Cocina</h1>
   <h2>Comandas Activas</h2>
   <div *ngFor="let order of orders$ | async" class="order-card">
@@ -18,6 +22,9 @@
       <select id="status-{{ order.id }}" [ngModel]="order.status" (ngModelChange)="updateStatus(order.id!, $event)">
         <option *ngFor="let status of orderStatuses" [value]="status">{{ status }}</option>
       </select>
+      <label for="time-{{ order.id }}">Tiempo estimado (min):</label>
+      <input type="number" id="time-{{ order.id }}" [ngModel]="order.estimatedTime"
+             (ngModelChange)="updateTime(order.id!, $event)" min="0">
     </div>
   </div>
 

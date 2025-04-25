@@ -30,8 +30,8 @@
 }
 
 .menu-qr-container {
-  position: relative; /* Para posicionar absolutamente el botón flotante */
-  padding-bottom: 70px; /* Espacio para el botón flotante */
+  position: relative;
+  padding-bottom: 70px;
 }
 
 .table-number {
@@ -209,20 +209,7 @@
   color: green;
 }
 
-.order-confirmation button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 15px;
-}
 
-.order-confirmation button:hover {
-  background-color: #0056b3;
-}
 
 .add-to-cart-message {
   position: fixed;
@@ -264,3 +251,62 @@
 .add-to-cart-button:hover {
   background-color: #0056b3;
 }
+
+.order-status-box {
+  background: #f0f0f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.order-status-box h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.order-status-box span {
+  font-weight: bold;
+  color: #007b00;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+
