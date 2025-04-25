@@ -20,7 +20,8 @@ export class CardSliderComponent {
   constructor(private router: Router) { }
 
   navigateToDetail() {
-    this.router.navigate(['/dish', this.id], { state: { fromMenuQr: true } });
+    const isFromMenuQr = this.router.url.startsWith('/menu-qr');
+    this.router.navigate(['/dish', this.id], { state: { fromMenuQr: isFromMenuQr } });
   }
 
   get isMenuPage(): boolean {
