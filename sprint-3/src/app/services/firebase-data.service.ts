@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection } from 'firebase/firestore'; // Importa collection
-import { collectionData } from 'rxfire/firestore'; // Importa collectionData desde 'rxfire/firestore'
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { collectionData } from 'rxfire/firestore';
 import { environment } from '../../environments/environment';
 import { BehaviorSubject, Observable } from 'rxjs';
+import {doc, docData} from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
@@ -25,12 +26,34 @@ export class FirebaseDataService {
     }
   }
 
-  getData(collectionName: string): Observable<any[]> { // Cambia el tipo de retorno a Observable
+  getDocObservable(collectionName: string, id: string): Observable<any> {
+    const ref = doc(this.db, `${collectionName}/${id}`);
+    return docData(ref, { idField: 'id' });
+  }
+
+
+  getData(collectionName: string): Observable<any[]> {
     if (!this.isConnectedSubject.value) {
       console.error('No se puede obtener datos. No hay conexión con Firebase.');
       return new Observable<any[]>(subscriber => subscriber.next([])); // Retorna un Observable vacío si no hay conexión
     }
     const collectionRef = collection(this.db, collectionName);
-    return collectionData(collectionRef, { idField: 'id' }); // Usa collectionData desde 'rxfire/firestore'
+    return collectionData(collectionRef, { idField: 'id' });
+  }
+
+  async addOrder(collectionName: string, orderData: any): Promise<any> {
+    if (!this.isConnectedSubject.value) {
+      console.error('No se puede enviar la comanda. No hay conexión con Firebase.');
+      throw new Error('No hay conexión con Firebase.');
+    }
+    try {
+      const collectionRef = collection(this.db, collectionName);
+      const docRef = await addDoc(collectionRef, orderData);
+      console.log('Comanda enviada con ID:', docRef.id);
+      return docRef;
+    } catch (error) {
+      console.error('Error al añadir la comanda a Firebase:', error);
+      throw error;
+    }
   }
 }
