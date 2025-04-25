@@ -1,47 +1,34 @@
-<section class="menu-grid-section">
-  <h1>Pizzas</h1>
-  <section class="menu-grid-3x3">
-    <ng-container *ngIf="pizzas$ | async as pizzas">
-      <app-card-slider
-        *ngFor="let pizza of pizzas"
-        [id]="pizza.id"
-        [image]="pizza.imagen"
-        [title]="pizza.nombre"
-        [price]="pizza.precio"
-        [description]="pizza.descripcion">
-      </app-card-slider>
+<main class="menu-qr-container">
+
+  <div *ngIf="loading$ | async" class="loading-indicator">
+    <p>Cargando el menú...</p>
+  </div>
+  <ng-container *ngIf="(menuItems$ | async) as menuItems">
+    <ng-container *ngFor="let category of categoryOrder">
+      <section class="dish-slider">
+        <h2>{{ category }}</h2>
+        <div class="dish-slider-content">
+          <ng-container *ngFor="let item of menuItems[category]">
+            <app-card-slider
+              *ngIf="['Clásicas', 'Bestsellers', 'Gourmet'].includes(category)"
+              [image]="item.image"
+              [title]="item.name"
+              [description]="item.description"
+              [price]="item.price"
+              [id]="item.id"
+            ></app-card-slider>
+            <app-dish-menu
+              *ngIf="['Appetizers', 'Antipasti'].includes(category)"
+              [title]="item.name"
+              [price]="item.price"
+              [description]="item.description"
+              [id]="item.id"
+            ></app-dish-menu>
+          </ng-container>
+        </div>
+      </section>
     </ng-container>
-  </section>
-</section>
+  </ng-container>
 
-<section class="menu-about-section">
-  <div class="menu1-img-text-section">
-    <div>
-      <h3>Appetizers</h3>
-      <ng-container *ngIf="(appetizers$ | async) as appetizers">
-        <app-dish-menu-item
-          *ngFor="let item of appetizers"
-          [id]="item.id"
-          [title]="item.nombre"
-          [price]="item.precio">
-        </app-dish-menu-item>
-      </ng-container>
-    </div>
-    <img src="assets/calamari.jpg" alt="Apetizers Image">
-  </div>
 
-  <div class="menu1-img-text-section reverse">
-    <img src="assets/burrata.jpg" alt="Antipasti Image">
-    <div>
-      <h3>Antipasti</h3>
-      <ng-container *ngIf="(antipasti$ | async) as antipasti">
-        <app-dish-menu-item
-          *ngFor="let item of antipasti"
-          [id]="item.id"
-          [title]="item.nombre"
-          [price]="item.precio">
-        </app-dish-menu-item>
-      </ng-container>
-    </div>
-  </div>
-</section>
+</main>

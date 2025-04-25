@@ -8,15 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint-3/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint-3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/kitchen-page/kitchen-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/kitchen-page/kitchen-page.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/kitchen-page/kitchen-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/kitchen-page/kitchen-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/kitchen-page/kitchen-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/kitchen-page/kitchen-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/menu-qr/menu-qr.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/menu-qr/menu-qr.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/menu-qr/menu-qr.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/menu-qr/menu-qr.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/menu-qr/menu-qr.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/menu-qr/menu-qr.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/services/firebase-data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/services/firebase-data.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/services/kitchen.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/services/kitchen.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/menu/menu.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/menu/menu.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/menu/menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/menu/menu.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/services/menu.service.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,34 +57,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.aboutUs.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.aboutUsMain.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.aboutUsPage.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.cardMenu.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.dishPage.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.homePage.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.menu.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.menuMain.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.menuPage.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.menuQRPage.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;sprint-3&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gabyt/WebstormProjects/PWM_43_Grupo2/assets&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\gabyt\\WebstormProjects\\PWM_43_Grupo2\\sprint-3\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.aboutUs.html.executor": "Run",
+    "JavaScript Debug.aboutUsMain.html.executor": "Run",
+    "JavaScript Debug.aboutUsPage.html.executor": "Run",
+    "JavaScript Debug.cardMenu.html.executor": "Run",
+    "JavaScript Debug.dishPage.html.executor": "Run",
+    "JavaScript Debug.homePage.html.executor": "Run",
+    "JavaScript Debug.menu.html.executor": "Run",
+    "JavaScript Debug.menuMain.html.executor": "Run",
+    "JavaScript Debug.menuPage.html.executor": "Run",
+    "JavaScript Debug.menuQRPage.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "sprint-3",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/gabyt/WebstormProjects/PWM_43_Grupo2/assets",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "C:\\Users\\David\\WebstormProjects\\PWM_43_Grupo2\\sprint-3\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\assets" />
