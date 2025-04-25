@@ -7,7 +7,6 @@ import { MenuComponent } from './menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import {MenuQrComponent} from './menu-qr/menu-qr.component';
-import {DishMenuItemComponent} from './dish-menu-item/dish-menu-item.component';
 import {DishPageNoQrComponent} from './dish-page-no-qr/dish-page-no-qr.component';
 
 export const routes: Routes = [
