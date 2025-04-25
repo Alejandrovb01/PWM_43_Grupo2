@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {Router} from "@angular/router";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-card-slider',
@@ -14,13 +14,17 @@ export class CardSliderComponent {
   @Input() title: string = '';
   @Input() description: string = '';
   @Input() price: string = '';
-  @Input() id!: number;
+  @Input() id!: string;
+  @Output() addToCartEvent = new EventEmitter<any>();
 
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router) { }
 
   navigateToDetail() {
-    this.router.navigate(['/dish', this.id]);
+    this.router.navigate(['/dish', this.id], { state: { fromMenuQr: true } });
   }
 
+  addToCart(event: Event) {
+    event.stopPropagation();
+    this.addToCartEvent.emit({ id: this.id, name: this.title, price: parseFloat(this.price) });
+  }
 }

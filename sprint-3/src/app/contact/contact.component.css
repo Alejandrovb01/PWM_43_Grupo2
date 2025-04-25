@@ -122,3 +122,21 @@ h2 {
     padding: 15px;
   }
 }
+
+.send-review-button {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.2em;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.go-to-button:hover {
+  background-color: #333;
+}

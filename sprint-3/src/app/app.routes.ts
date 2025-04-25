@@ -7,7 +7,8 @@ import { MenuComponent } from './menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import {MenuQrComponent} from './menu-qr/menu-qr.component';
-import {DishPageNoQrComponent} from './dish-page-no-qr/dish-page-no-qr.component';
+import {DishPageComponent} from './dish-page/dish-page.component';
+import {KitchenPageComponent} from './kitchen-page/kitchen-page.component';
 
 export const routes: Routes = [
   {
@@ -20,7 +21,8 @@ export const routes: Routes = [
       { path: 'contact', component: ContactComponent },
       { path: 'login', component: LoginComponent },
       { path: 'menu-qr', component: MenuQrComponent },
-      { path: 'dish/:id', component: DishPageNoQrComponent }
+      { path: 'dish/:id', component: DishPageComponent },
+      { path: 'kitchen', component: KitchenPageComponent }
     ]
   },
 ];

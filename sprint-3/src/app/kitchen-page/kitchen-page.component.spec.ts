@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DishPageNoQrComponent } from './dish-page-no-qr.component';
+import { KitchenPageComponent } from './kitchen-page.component';
 
-describe('DishPageNoQrComponent', () => {
-  let component: DishPageNoQrComponent;
-  let fixture: ComponentFixture<DishPageNoQrComponent>;
+describe('KitchenPageComponent', () => {
+  let component: KitchenPageComponent;
+  let fixture: ComponentFixture<KitchenPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DishPageNoQrComponent]
+      imports: [KitchenPageComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DishPageNoQrComponent);
+    fixture = TestBed.createComponent(KitchenPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

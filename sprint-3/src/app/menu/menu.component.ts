@@ -2,14 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule, AsyncPipe } from '@angular/common';
 import { MenuService } from '../services/menu.service';
 import { CardSliderComponent } from '../card-slider/card-slider.component';
-import { DishPageNoQrComponent } from '../dish-page-no-qr/dish-page-no-qr.component';
 import { Observable } from 'rxjs';
 import {DishMenuItemComponent} from '../dish-menu-item/dish-menu-item.component';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule, AsyncPipe, CardSliderComponent, DishPageNoQrComponent, DishMenuItemComponent],
+  imports: [CommonModule, AsyncPipe, CardSliderComponent, DishMenuItemComponent],
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })

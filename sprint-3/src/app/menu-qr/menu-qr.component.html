@@ -1,24 +1,102 @@
-<main class="menu-qr">
-  <ng-container *ngFor="let category of categoryOrder">
-    <section class="dish-slider">
-      <h2>{{ category }}</h2>
-      <div class="dish-slider-content">
-        <ng-container *ngFor="let item of menuItems[category]">
-          <app-card-slider
-            *ngIf="['Clásicas', 'Bestsellers', 'Gourmet'].includes(category)"
-            [image]="item.image"
-            [title]="item.name"
-            [description]="item.description"
-            [price]="item.price"
-          ></app-card-slider>
-          <app-dish-menu
-            *ngIf="['Appetizers', 'Antipasti'].includes(category)"
-            [title]="item.name"
-            [price]="item.price"
-            [description]="item.description"
-          ></app-dish-menu>
-        </ng-container>
-      </div>
-    </section>
+<main class="menu-qr-container">
+  <div class="table-number" *ngIf="tableNumber">
+    Mesa: {{ tableNumber }}
+  </div>
+
+  <div class="add-to-cart-message" *ngIf="addToCartConfirmation$ | async as message">
+    {{ message }}
+  </div>
+
+  <div *ngIf="loading$ | async" class="loading-indicator">
+    <p>Cargando el menú...</p>
+  </div>
+  <ng-container *ngIf="(menuItems$ | async) as menuItems">
+    <ng-container *ngFor="let category of categoryOrder">
+      <section class="dish-slider">
+        <h2>{{ category }}</h2>
+        <div class="dish-slider-content">
+          <ng-container *ngFor="let item of menuItems[category]">
+            <app-card-slider
+              *ngIf="['Clásicas', 'Bestsellers', 'Gourmet'].includes(category)"
+              [image]="item.image"
+              [title]="item.name"
+              [description]="item.description"
+              [price]="item.price"
+              [id]="item.id"
+              (addToCartEvent)="handleAddToCart(item)"
+            ></app-card-slider>
+            <app-dish-menu
+              *ngIf="['Appetizers', 'Antipasti'].includes(category)"
+              [title]="item.name"
+              [price]="item.price"
+              [description]="item.description"
+              [id]="item.id"
+              (addToCartEvent)="handleAddToCart(item)"
+            ></app-dish-menu>
+          </ng-container>
+        </div>
+      </section>
+    </ng-container>
   </ng-container>
+
+  <button class="floating-cart-button" (click)="toggleCart()">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="1.5"> <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path> <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path> <path d="M17 17h-11v-14h-2"></path> <path d="M6 5l14 1l-1 7h-13"></path> </svg>
+    ({{ cart.length }})
+  </button>
+
+  <div class="cart-overlay" *ngIf="showCart">
+    <div class="cart-panel">
+      <h2>Carrito de Pedidos</h2>
+      <ul *ngIf="cart.length > 0; else emptyCart">
+        <li *ngFor="let item of cart">
+          <span>{{ item.name }}</span>
+          <div class="quantity-controls">
+            <button (click)="updateQuantity(item, item.quantity - 1)">-</button>
+            <span>{{ item.quantity }}</span>
+            <button (click)="updateQuantity(item, item.quantity + 1)">+</button>
+          </div>
+          <span>{{ item.price * item.quantity }}€</span>
+          <button class="remove-button" (click)="removeFromCart(item.id)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="1.5"> <path d="M4 7l16 0"></path> <path d="M10 11l0 6"></path> <path d="M14 11l0 6"></path> <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path> <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path> </svg> </button>
+        </li>
+      </ul>
+      <ng-template #emptyCart>
+        <p>El carrito está vacío.</p>
+      </ng-template>
+      <button class="process-order-button" (click)="processOrder()" *ngIf="cart.length > 0">
+        Procesar Pedido
+      </button>
+      <button class="close-cart-button" (click)="toggleCart()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="1.5"> <path d="M18 6l-12 12"></path> <path d="M6 6l12 12"></path> </svg> </button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" *ngIf="showOrderStatus">
+    <div class="modal-content">
+      <h2>¡Pedido Enviado!</h2>
+      <p>Tu comanda ha sido enviada a la cocina.</p>
+
+      <hr>
+
+      <ng-container *ngIf="orderStatus$ | async as order">
+        <h3>Estado actual: <span>{{ order.status }}</span></h3>
+
+        <div *ngIf="remainingTime$ | async as timeLeft">
+          <p *ngIf="timeLeft > 0">
+            Tiempo restante:
+            {{ timeLeft / 60000 | number:'1.0-0' }} min
+            {{ (timeLeft % 60000) / 1000 | number:'2.0-0' }} seg
+          </p>
+          <p *ngIf="timeLeft <= 0 && order.status !== 'Entregado'">
+            ¡Tu pedido debería estar listo!
+          </p>
+          <p *ngIf="order.status === 'Entregado'">
+            ✅ ¡Tu pedido ha sido entregado!
+          </p>
+        </div>
+      </ng-container>
+
+      <button (click)="cerrarModal()">Cerrar</button>
+    </div>
+  </div>
+
+
 </main>
