@@ -18,12 +18,13 @@ import {CommonModule, NgForOf, SlicePipe} from '@angular/common';
 export class AboutUsComponent implements OnInit {
   aboutIntro: AboutUsItem[] = [];
   aboutGrid: AboutUsItem[] = [];
-  aboutLast!: AboutUsItem;
+  aboutLast: AboutUsItem = {} as AboutUsItem;
+
 
   constructor(private aboutUsService: AboutUsService) {}
 
   ngOnInit(): void {
-    this.aboutUsService.getData().subscribe(data => {
+    this.aboutUsService.getAboutUsData().then(data => {
       this.aboutIntro = data.aboutUs_intro.map((item: AboutUsItem) => ({ ...item, expanded: false }));
       this.aboutGrid = data.aboutUs_grid.map((item: AboutUsItem) => ({ ...item, expanded: false }));
       this.aboutLast = { ...data.aboutUs_last[0], expanded: false };

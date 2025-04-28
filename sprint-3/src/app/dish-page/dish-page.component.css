@@ -13,7 +13,7 @@
 
 .dish-image {
   width: 600px;
-  max-width: 100%; /* Para que sea responsiva */
+  max-width: 100%;
   height: auto;
 }
 

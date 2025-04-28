@@ -5,7 +5,6 @@ import {NgForOf, NgIf, AsyncPipe} from '@angular/common';
 import { CardSliderComponent } from '../card-slider/card-slider.component';
 import {Observable, map, tap, of, Subscription} from 'rxjs';
 import { BehaviorSubject } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-menu-qr',
