@@ -70,4 +70,9 @@ export class KitchenService {
     const dishRef = doc(this.firestore, `menu/${id}`);
     return deleteDoc(dishRef);
   }
+
+  deleteOrderId(id: string): Promise<void> {
+    const orderRef = doc(this.firestore, `orders/${id}`);
+    return deleteDoc(orderRef);
+  }
 }

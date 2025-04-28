@@ -4,6 +4,13 @@
     <p class="description">{{ description }}</p>
   </div>
   <div class="dish-actions">
-    <button class="button-dish-menu" (click)="addToCart($event)">Añadir - {{ price }}€</button>
+    <ng-container *ngIf="showAddButton; else showPriceOnly">
+      <button class="button-dish-menu" (click)="addToCart($event); $event.stopPropagation()">
+        Añadir - {{ price }}€
+      </button>
+    </ng-container>
+    <ng-template #showPriceOnly>
+      <span class="dish-price">{{ price }}€</span>
+    </ng-template>
   </div>
 </div>

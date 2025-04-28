@@ -62,6 +62,13 @@ export class KitchenPageComponent implements OnInit {
     }
   }
 
+  removeOrder(id: string): void {
+    if (confirm('¿Estás seguro de que quieres eliminar esta comanda?')) {
+      this.kitchenService.deleteOrderId(id);
+      this.showConfirmation('Comanda eliminada con éxito');
+    }
+  }
+
   updateTime(orderId: string, minutes: number): void {
     this.kitchenService.updateOrderEstimatedTime(orderId, minutes);
   }

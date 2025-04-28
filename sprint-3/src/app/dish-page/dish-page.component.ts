@@ -7,7 +7,6 @@ import { collection, getDocs } from 'firebase/firestore';
 
 interface Alergeno {
   name: string;
-  // Podría haber otros campos en tus documentos de alérgeno
 }
 
 interface Dish {
@@ -46,7 +45,7 @@ export class DishPageComponent implements OnInit {
   };
   loading = new BehaviorSubject<boolean>(true);
   loading$ = this.loading.asObservable();
-  showAddToCart = false;
+  showAddButton = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -58,7 +57,7 @@ export class DishPageComponent implements OnInit {
   ngOnInit(): void {
     const navigationState = this.location.getState() as NavigationState;
     if (navigationState?.fromMenuQr) {
-      this.showAddToCart = true;
+      this.showAddButton = true;
     }
 
     this.route.paramMap.subscribe(params => {
