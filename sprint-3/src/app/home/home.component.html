@@ -30,19 +30,27 @@
 </section>
 
 <section class="home-menu-section">
-    <h2>Nuestros mejores platos</h2>
-    <div class="home-menu-content">
-        <div class="card-slider" id="item1"></div>
-        <div class="card-slider" id="item2"></div>
-        <div class="card-slider" id="item3"></div>
-    </div>
-    <div class="home-menu-footer">
-        <a href="../menu"><button class="go-to-button">Ir al menú</button></a>
-    </div>
+  <h2>Nuestros mejores platos</h2>
+  <div class="dish-slider-content">
+    <ng-container *ngFor="let dish of bestDishes">
+      <app-card-slider
+        [image]="dish.image ? dish.image : ''"
+        [title]="dish.name ? dish.name : ''"
+        [description]="dish.description ? dish.description : ''"
+        [price]="dish.price !== undefined ? dish.price : 0"
+        [id]="dish.id ? dish.id : ''">
+      </app-card-slider>
+    </ng-container>
+  </div>
+  <div class="home-menu-footer">
+    <a href="../menu">
+      <button class="go-to-button">Ir al menú</button>
+    </a>
+  </div>
 </section>
 
 <section>
-    <h2>Nuestros clientes</h2>
+  <h2>Nuestros clientes</h2>
   <div class="review-container">
     <div class="review-card" *ngFor="let review of reviews">
       <h4 class="review-name">{{ review.name }}</h4>
@@ -58,3 +66,4 @@
     </div>
   </div>
 </section>
+
