@@ -1,12 +1,37 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { Review } from '../models/review.model';
+import {ReviewsService} from '../services/contact.service';
+import {DatePipe, NgForOf} from '@angular/common';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  standalone: true,
+  imports: [
+    NgForOf,
+    DatePipe
+  ],
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent {
 
+  reviews: Review[] = [];
+
+  constructor(private reviewsService: ReviewsService) {}
+
+  ngOnInit() {
+    this.reviewsService.getReview().subscribe(allReviews => {
+      this.reviews = allReviews
+        .sort((a, b) => {
+          const dateA = a.date?.toDate ? a.date.toDate() : new Date(a.date);
+          const dateB = b.date?.toDate ? b.date.toDate() : new Date(b.date);
+          return dateB.getTime() - dateA.getTime();
+        })
+        .slice(0, 3);
+    });
+  }
+
+  /*
   ngAfterViewInit(): void {
     this.loadReviews();
     this.loadMenu();
@@ -110,4 +135,7 @@ export class HomeComponent implements AfterViewInit {
     const shuffled = dishes.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
   }
+  */
+
+
 }

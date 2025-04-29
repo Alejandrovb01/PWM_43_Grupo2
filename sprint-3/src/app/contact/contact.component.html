@@ -16,15 +16,21 @@
 
 <h2>Escribe una reseña</h2>
 <section>
-  <form #reviewForm id="reviewForm" class="contact-review-section" action="#" method="post">
+  <form [formGroup]="reviewForm"  (ngSubmit)="sendReview()" class="contact-review-section">
         <label class="contact-review-label" for="entradaNombre">Nombre y apellidos:</label>
-        <input class="contact-review-input" type="text" id="entradaNombre" name="entradaNombre" placeholder="Introduce tu nombre." required>
-
+        <input class="contact-review-input" type="text" id="entradaNombre" formControlName="name" placeholder="Introduce tu nombre." required>
+        <div *ngIf="reviewForm.get('name')?.invalid && (reviewForm.get('name')?.touched || reviewForm.get('name')?.dirty)" style="color: red;">
+          <small *ngIf="reviewForm.get('name')?.errors?.['required']">El nombre es obligatorio.</small>
+        </div>
         <label class="contact-review-label" for="entradaCorreo">Correo electrónico:</label>
-        <input class="contact-review-input" type="email" id="entradaCorreo" name="entradaCorreo" placeholder="Introduce tu correo." required>
+        <input class="contact-review-input" type="email" id="entradaCorreo" formControlName="email" placeholder="Introduce tu correo." required>
+        <div *ngIf="reviewForm.get('email')?.invalid && (reviewForm.get('email')?.touched || reviewForm.get('email')?.dirty)" style="color: red;">
+          <small *ngIf="reviewForm.get('email')?.errors?.['required']">El correo es obligatorio.</small>
+          <small *ngIf="reviewForm.get('email')?.errors?.['email']">El formato del correo no es válido.</small>
+        </div>
 
         <label class="contact-review-label" for="entradaReseña">Valoración:</label>
-        <textarea class="contact-review-textarea" id="entradaReseña" name="entradaReseña" placeholder="Describe tu experiencia." required></textarea>
+        <textarea class="contact-review-textarea" id="entradaReseña" formControlName="review" placeholder="Describe tu experiencia." required></textarea>
 
         <div class="contact-review-stars" id="star-rating">
             <span class="star" data-value="1">&#9733;</span>
@@ -34,6 +40,6 @@
             <span class="star" data-value="5">&#9733;</span>
         </div>
 
-        <input type="submit" class="send-review-button" value="Enviar reseña">
+        <button type="submit" class="send-review-button">Enviar reseña</button>
     </form>
 </section>

@@ -1,41 +1,43 @@
-import {
-  Component,
-  AfterViewInit,
-  ElementRef,
-  ViewChild
-} from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import {NgIf} from '@angular/common';
+import { Review } from '../models/review.model';
+import { ReviewsService } from '../services/contact.service';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
+  standalone: true,
+  imports: [ReactiveFormsModule, NgIf]
 })
 
 export class ContactComponent implements AfterViewInit {
-  @ViewChild('reviewForm') reviewForm!: ElementRef<HTMLFormElement>;
-  hiddenInput!: HTMLInputElement;
+  reviewForm!: FormGroup;
+
+  constructor(
+    private formBuilder: FormBuilder,
+    private reviewsService: ReviewsService) {
+    this.reviewForm = this.formBuilder.group({
+      name: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
+      review: ['', [Validators.required]],
+      rating: [0, [Validators.required, Validators.min(1), Validators.max(5)]]
+    })
+  }
 
   ngAfterViewInit(): void {
     const starContainer = document.getElementById('star-rating');
     const stars = document.querySelectorAll<HTMLSpanElement>('.star');
 
-    // Crear el input oculto
-    this.hiddenInput = document.createElement('input');
-    this.hiddenInput.type = 'hidden';
-    this.hiddenInput.name = 'rating';
-    this.hiddenInput.value = '0';
-
-    if (starContainer) {
-      starContainer.appendChild(this.hiddenInput);
-    }
-
     stars.forEach(star => {
       star.addEventListener('click', () => {
-        const value = star.getAttribute('data-value') || '0';
-        this.hiddenInput.value = value;
+        const value = parseInt(star.getAttribute('data-value') || '0', 10);
+        this.reviewForm.get('rating')?.setValue(value);
+
 
         stars.forEach(s => {
-          if ((s.getAttribute('data-value') || '0') <= value) {
+          if (parseInt(s.getAttribute('data-value') || '0', 10) <= value) {
             s.classList.add('active');
           } else {
             s.classList.remove('active');
@@ -44,10 +46,10 @@ export class ContactComponent implements AfterViewInit {
       });
 
       star.addEventListener('mouseover', () => {
-        const value = star.getAttribute('data-value') || '0';
+        const value = parseInt(star.getAttribute('data-value') || '0', 10);
         stars.forEach(s => {
           s.style.color =
-            (s.getAttribute('data-value') || '0') <= value ? 'gold' : 'grey';
+            parseInt(s.getAttribute('data-value') || '0', 10) <= value ? 'gold' : 'grey';
         });
       });
 
@@ -59,15 +61,28 @@ export class ContactComponent implements AfterViewInit {
         });
       });
     });
+  }
 
-    // Validar antes de enviar
-    if (this.reviewForm) {
-      this.reviewForm.nativeElement.addEventListener('submit', (event) => {
-        if (this.hiddenInput.value === '0') {
-          alert('Por favor, selecciona una valoración.');
-          event.preventDefault();
-        }
-      });
+  async sendReview() {
+    if (this.reviewForm.invalid) {
+      alert('Por favor, completa todos los campos obligatorios correctamente, incluyendo la valoración.');
+      return;
     }
+
+    const reviewConFecha = {
+      ...this.reviewForm.value,
+      date: new Date()
+    };
+
+    console.log('Valoración enviada:', reviewConFecha);
+    const response = await this.reviewsService.addReview(reviewConFecha);
+    console.log(response);
+
+    this.reviewForm.reset();
+    const stars = document.querySelectorAll<HTMLSpanElement>('.star');
+    stars.forEach(s => {
+      s.classList.remove('active');
+      s.style.color = 'grey';
+    });
   }
 }
