@@ -11,5 +11,13 @@
   <div class="options-list">
     <img *ngFor="let alergeno of dish.alergenos" [src]="'assets/alergenos/' + alergeno.name + '.png'" [alt]="alergeno.name">
   </div>
-  <button class="buy-button" *ngIf="showAddToCart" (click)="addToCart(dish)">Añadir por {{ dish.price }}€</button>
+  <ng-container *ngIf="showAddButton; else showPriceOnly">
+    <button class="buy-button" (click)="addToCart(dish); $event.stopPropagation()">
+      Añadir - {{ dish.price }}€
+    </button>
+  </ng-container>
+  <ng-template #showPriceOnly>
+    <span class="price">{{ dish.price }}€</span>
+  </ng-template>
+
 </section>

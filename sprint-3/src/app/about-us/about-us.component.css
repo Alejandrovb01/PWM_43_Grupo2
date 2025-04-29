@@ -76,13 +76,15 @@
 }
 
 .description {
-  font-size: 14px;
-  color: #555;
+  max-height: 100px;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  transition: max-height 0.3s ease;
 }
+
+.description.expanded {
+  max-height: 1000px;
+}
+
 
 .card {
   background: #f3f3f3;
@@ -157,6 +159,7 @@
 .last-section {
   text-align: center;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .last-section img {
@@ -165,6 +168,7 @@
   object-fit: cover;
   margin-right: 20px;
   border-radius: 10px;
+  margin-bottom: 5px;
 }
 
 .last-section h2 {
@@ -178,7 +182,7 @@
 }
 
 .toggle-text {
-  background-color: #3fbb17; /* Azul moderno */
+  background-color: #3fbb17;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -192,7 +196,7 @@
 }
 
 .toggle-text:hover {
-  background-color: #00b140fb; /* Azul más oscuro en hover */
+  background-color: #00b140fb;
   transform: scale(1.05);
 }
 

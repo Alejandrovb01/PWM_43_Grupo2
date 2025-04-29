@@ -11,6 +11,11 @@ import {DishPageComponent} from './dish-page/dish-page.component';
 import {KitchenPageComponent} from './kitchen-page/kitchen-page.component';
 
 export const routes: Routes = [
+  // Ruta independiente para login, sin Layout
+  { path: 'login', component: LoginComponent },
+  { path: 'kitchen', component: KitchenPageComponent },
+
+  // Todas las demás usan el Layout
   {
     path: '',
     component: LayoutComponent,
@@ -19,10 +24,8 @@ export const routes: Routes = [
       { path: 'about-us', component: AboutUsComponent },
       { path: 'menu', component: MenuComponent },
       { path: 'contact', component: ContactComponent },
-      { path: 'login', component: LoginComponent },
       { path: 'menu-qr', component: MenuQrComponent },
       { path: 'dish/:id', component: DishPageComponent },
-      { path: 'kitchen', component: KitchenPageComponent }
     ]
-  },
+  }
 ];
