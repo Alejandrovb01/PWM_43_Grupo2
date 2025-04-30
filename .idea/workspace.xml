@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="finish home">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/dish-menu-item/dish-menu-item.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/dish-menu-item/dish-menu-item.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/dish-menu-item/dish-menu-item.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/dish-menu-item/dish-menu-item.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/services/environment.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/services/environment.service.ts" beforeDir="false" />
-    </list>
+    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="update project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -321,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746023499656</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update project">
+      <option name="closed" value="true" />
+      <created>1746027617242</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1746027617242</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,6 +366,7 @@
     <MESSAGE value="finish kitchen page" />
     <MESSAGE value="Lectura y escritura de reseñas añadida a home y contact." />
     <MESSAGE value="finish home" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish home" />
+    <MESSAGE value="update project" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project" />
   </component>
 </project>
