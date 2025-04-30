@@ -24,12 +24,8 @@ export class CardSliderComponent {
     this.router.navigate(['/dish', this.id], { state: { fromMenuQr: isFromMenuQr } });
   }
 
-  get isMenuPage(): boolean {
-    return this.router.url === '/menu';
-  }
-
   get showAddButton(): boolean {
-    return !this.isMenuPage;
+    return this.router.url.startsWith('/menu-qr');
   }
 
   addToCart(event: Event) {

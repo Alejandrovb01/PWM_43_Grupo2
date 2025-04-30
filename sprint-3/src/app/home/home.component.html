@@ -31,23 +31,24 @@
 
 <section class="home-menu-section">
   <h2>Nuestros mejores platos</h2>
-  <div class="dish-slider-content">
+  <div class="home-menu-content">
     <ng-container *ngFor="let dish of bestDishes">
       <app-card-slider
-        [image]="dish.image ? dish.image : ''"
-        [title]="dish.name ? dish.name : ''"
-        [description]="dish.description ? dish.description : ''"
-        [price]="dish.price !== undefined ? dish.price : 0"
-        [id]="dish.id ? dish.id : ''">
+        [image]="dish.image || ''"
+        [title]="dish.name || ''"
+        [description]="dish.description || ''"
+        [price]="String(dish.price)"
+        [id]="dish.id || ''">
       </app-card-slider>
     </ng-container>
   </div>
   <div class="home-menu-footer">
-    <a href="../menu">
+    <a routerLink="/menu">
       <button class="go-to-button">Ir al menú</button>
     </a>
   </div>
 </section>
+
 
 <section>
   <h2>Nuestros clientes</h2>

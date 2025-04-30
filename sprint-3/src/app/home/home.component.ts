@@ -11,7 +11,6 @@ import { CardSliderComponent } from '../card-slider/card-slider.component';
   standalone: true,
   imports: [
     NgForOf,
-    NgIf,
     DatePipe,
     CardSliderComponent
   ],
@@ -37,14 +36,17 @@ export class HomeComponent {
         .slice(0, 3);
     });
 
-    this.dishesService.getMenuItems().subscribe(allMenuItems => {
-      const allDishes: Dish[] = Object.values(allMenuItems).flat();
-      this.bestDishes = this.getRandomDishes(allDishes, 3);
+    this.dishesService.getMenuItems().subscribe(allDishes => {
+      const gourmetDishes = allDishes.filter(dish => dish.category === 'Clásicas');
+      this.bestDishes = this.getRandomDishes(gourmetDishes, 3);
     });
+
   }
 
   private getRandomDishes(dishes: Dish[], count: number): Dish[] {
     const shuffled = [...dishes].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
   }
+
+  protected readonly String = String;
 }
