@@ -67,6 +67,7 @@ h2 {
   border-radius: 4px;
   outline: none;
   text-align: left;
+  resize: vertical;
 }
 
 .contact-review-input:focus {
