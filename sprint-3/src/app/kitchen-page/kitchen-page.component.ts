@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { KitchenService, Order, Dish } from '../services/kitchen.service';
+import { KitchenService } from '../services/kitchen.service';
 import { Observable, of } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import {Order} from '../models/order.model';
+import {Dish} from '../models/dish.model';
 
 @Component({
   selector: 'app-kitchen-page',
