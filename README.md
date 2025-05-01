@@ -33,7 +33,7 @@ Todos los templates, scripts y páginas del Sprint anterior han sido reemplazado
 - `DishPageComponent` – Vista detallada de un plato con información de alérgenos.
 - `FooterComponent` – Footer reutilizable en todas las páginas.
 - `HeaderComponent` – Header reutilizable en todas las páginas.
-- `FooterComponent` – Vista de la página de inicio, donde se muestra la información del restaurante, como las reseñas y platos destacados.
+- `HomeComponent` – Vista de la página de inicio, donde se muestra la información del restaurante, como las reseñas y platos destacados.
 - `KitchenPageComponent` – Panel de cocina con CRUD de platos y gestión de comandas.
 - `LayoutComponent` – Plantilla donde se incorpora dinámicamente los componentes de las vistas de las páginas con el header y footer correspondiente.
 - `LoginPageComponent` – Página de acceso para personal del restaurante.
@@ -99,7 +99,7 @@ Una vez enviado el pedido:
 
 ## Instrucciones para Probar el Proyecto
 
-1. Clona el repositorio:
+1. Clonar el repositorio:
    ```bash
    git clone <URL-del-repo>
    cd <nombre-del-proyecto>
@@ -108,7 +108,7 @@ Una vez enviado el pedido:
    ```bash
    npm install
    ```
-3. Inicia servidor:
+3. Iniciar servidor:
    ```bash
    cd sprint3
    ng serve
