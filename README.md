@@ -110,7 +110,7 @@ Una vez enviado el pedido:
    ```
 3. Iniciar servidor:
    ```bash
-   cd sprint3
+   cd sprint-3
    ng serve
    ```
 4. Entrar al explorador en:
