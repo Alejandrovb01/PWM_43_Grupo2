@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Review } from '../models/review.model';
 import { ReviewsService } from '../services/contact.service';
-import { Dish, KitchenService } from '../services/kitchen.service';
+import { KitchenService } from '../services/kitchen.service';
 import { DatePipe, NgForOf, NgIf } from '@angular/common';
 import { CardSliderComponent } from '../card-slider/card-slider.component';
 import {RouterLink} from '@angular/router';
+import {Dish} from '../models/dish.model';
 
 @Component({
   selector: 'app-home',

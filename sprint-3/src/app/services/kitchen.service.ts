@@ -9,26 +9,8 @@ import {
   addDoc,
 } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
-
-export interface Order {
-  id?: string;
-  customerId: string;
-  items: { name: string; quantity: number }[];
-  status: string;
-  table: string;
-  timestamp?: any;
-  estimatedTime?: number;
-}
-
-export interface Dish {
-  id?: string;
-  name: string;
-  description?: string;
-  image?: string;
-  price: number;
-  category: string;
-  stock: boolean;
-}
+import {Order} from '../models/order.model';
+import {Dish} from '../models/dish.model';
 
 @Injectable({
   providedIn: 'root',
