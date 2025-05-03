@@ -4,6 +4,7 @@ import { ReviewsService } from '../services/contact.service';
 import { Dish, KitchenService } from '../services/kitchen.service';
 import { DatePipe, NgForOf, NgIf } from '@angular/common';
 import { CardSliderComponent } from '../card-slider/card-slider.component';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,8 @@ import { CardSliderComponent } from '../card-slider/card-slider.component';
   imports: [
     NgForOf,
     DatePipe,
-    CardSliderComponent
+    CardSliderComponent,
+    RouterLink
   ],
   styleUrls: ['./home.component.css']
 })

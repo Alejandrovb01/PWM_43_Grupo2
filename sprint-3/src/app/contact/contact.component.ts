@@ -74,6 +74,7 @@ export class ContactComponent implements AfterViewInit {
       date: new Date()
     };
 
+    alert('¡Gracias por su valoración!.');
     console.log('Valoración enviada:', reviewConFecha);
     const response = await this.reviewsService.addReview(reviewConFecha);
     console.log(response);
