@@ -1,0 +1,141 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f66b42c4-185a-447f-a832-da78219db5fd\" name=\"Changes\" comment=\"update project\">\r\n      <change afterPath=\"$PROJECT_DIR$/sprint-3/src/app/models/dish.model.ts\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/sprint-3/src/app/models/order.model.ts\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/sprint-3/src/app/home/home.component.ts\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/sprint-3/src/app/home/home.component.ts\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/sprint-3/src/app/kitchen-page/kitchen-page.component.ts\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/sprint-3/src/app/kitchen-page/kitchen-page.component.ts\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/sprint-3/src/app/services/api.service.spec.ts\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/sprint-3/src/app/services/api.service.spec.ts\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/sprint-3/src/app/services/kitchen.service.ts\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/sprint-3/src/app/services/kitchen.service.ts\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/sprint-3/src/app/services/menu.service.spec.ts\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n        <option value=\"JavaScript File\" />\r\n        <option value=\"tsconfig.json\" />\r\n        <option value=\"TypeScript File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"sprint-2\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;002avid&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/Alejandrovb01/PWM_43_Grupo2.git\",\r\n    \"accountId\": \"a3f205e7-11a6-42c4-b24d-09e366882eb5\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2tB8krzgoQSqQ9VVSrRyNFXeKTd\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"JavaScript Debug.aboutUs.html.executor\": \"Run\",\r\n    \"JavaScript Debug.aboutUsMain.html.executor\": \"Run\",\r\n    \"JavaScript Debug.aboutUsPage.html.executor\": \"Run\",\r\n    \"JavaScript Debug.cardMenu.html.executor\": \"Run\",\r\n    \"JavaScript Debug.dishPage.html.executor\": \"Run\",\r\n    \"JavaScript Debug.homePage.html.executor\": \"Run\",\r\n    \"JavaScript Debug.menu.html.executor\": \"Run\",\r\n    \"JavaScript Debug.menuMain.html.executor\": \"Run\",\r\n    \"JavaScript Debug.menuPage.html.executor\": \"Run\",\r\n    \"JavaScript Debug.menuQRPage.html.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"sprint-3\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/aleja/WebstormProjects/examen_crud_2025_42\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"ts.external.directory.path\": \"C:\\\\Users\\\\gabyt\\\\WebstormProjects\\\\PWM_43_Grupo2\\\\sprint-3\\\\node_modules\\\\typescript\\\\lib\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\gabyt\\WebstormProjects\\PWM_43_Grupo2\\assets\" />\r\n      <recent name=\"C:\\Users\\David\\WebstormProjects\\PWM_43_Grupo2\\Trello\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\gabyt\\WebstormProjects\\PWM_43_Grupo2\\sprint-3\\src\\app\\services\" />\r\n      <recent name=\"C:\\Users\\gabyt\\WebstormProjects\\PWM_43_Grupo2\\sprint-3\\src\\assets\\alergenos\" />\r\n      <recent name=\"C:\\Users\\gabyt\\WebstormProjects\\PWM_43_Grupo2\\assets\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f66b42c4-185a-447f-a832-da78219db5fd\" name=\"Changes\" comment=\"\" />\r\n      <created>1739814254129</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1739814254129</updated>\r\n      <workItem from=\"1739814255273\" duration=\"3284000\" />\r\n      <workItem from=\"1739880520373\" duration=\"997000\" />\r\n      <workItem from=\"1740150573541\" duration=\"4592000\" />\r\n      <workItem from=\"1740754737581\" duration=\"5401000\" />\r\n      <workItem from=\"1741359458856\" duration=\"848000\" />\r\n      <workItem from=\"1741365206763\" duration=\"1010000\" />\r\n      <workItem from=\"1741366242372\" duration=\"147000\" />\r\n      <workItem from=\"1741603400730\" duration=\"4129000\" />\r\n      <workItem from=\"1741622096404\" duration=\"2515000\" />\r\n      <workItem from=\"1741626521647\" duration=\"5755000\" />\r\n      <workItem from=\"1741692920138\" duration=\"55000\" />\r\n      <workItem from=\"1741801964807\" duration=\"292000\" />\r\n      <workItem from=\"1741855534664\" duration=\"6518000\" />\r\n      <workItem from=\"1741949628223\" duration=\"2587000\" />\r\n      <workItem from=\"1742282154494\" duration=\"2869000\" />\r\n      <workItem from=\"1742351880908\" duration=\"4831000\" />\r\n      <workItem from=\"1742442400035\" duration=\"1496000\" />\r\n      <workItem from=\"1742444181356\" duration=\"188000\" />\r\n      <workItem from=\"1742835290821\" duration=\"1882000\" />\r\n      <workItem from=\"1743777934752\" duration=\"1278000\" />\r\n      <workItem from=\"1744036389768\" duration=\"2000\" />\r\n      <workItem from=\"1744042602235\" duration=\"1018000\" />\r\n      <workItem from=\"1744794741257\" duration=\"395000\" />\r\n      <workItem from=\"1745255704176\" duration=\"959000\" />\r\n      <workItem from=\"1745507800588\" duration=\"13657000\" />\r\n      <workItem from=\"1745574150373\" duration=\"8411000\" />\r\n      <workItem from=\"1745589475210\" duration=\"3444000\" />\r\n      <workItem from=\"1745668924842\" duration=\"22505000\" />\r\n      <workItem from=\"1745773785010\" duration=\"269000\" />\r\n      <workItem from=\"1745774127133\" duration=\"6000\" />\r\n      <workItem from=\"1745781314809\" duration=\"313000\" />\r\n      <workItem from=\"1745782406917\" duration=\"30000\" />\r\n      <workItem from=\"1745785982519\" duration=\"14000\" />\r\n      <workItem from=\"1745786283005\" duration=\"36000\" />\r\n      <workItem from=\"1745786550020\" duration=\"1646000\" />\r\n      <workItem from=\"1745839677069\" duration=\"13000\" />\r\n      <workItem from=\"1745842600846\" duration=\"516000\" />\r\n      <workItem from=\"1745851487499\" duration=\"506000\" />\r\n      <workItem from=\"1745857480147\" duration=\"4123000\" />\r\n      <workItem from=\"1745866151719\" duration=\"1717000\" />\r\n      <workItem from=\"1745934501672\" duration=\"15921000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Menu y about.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1740150800686</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1740150800686</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Deslizador de alto menu arreglado.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1740156590327</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1740156590327</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Tamaño de los entrantes del menú ajustados.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1740757938566</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1740757938566</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Trello actualizado.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1740760379606</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1740760379606</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Untracked Files error solution try\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1741365996717</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1741365996717</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"AboutUs and Menu responsive.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1741856220561</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1741856220561</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Modify menu and add images of dishes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1741968443650</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1741968443650</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Update Readme\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1742818089941</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1742818089941</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Update Readme\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1742837946560</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1742837946560</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"wip: menu-qr\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744388995571</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744388995571</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"wip: menu-qr\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744389082867</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744389082867</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"wip: menu-qr\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745254882828</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745254882828</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"wip: menu-qr\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745313914789</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745313914789</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"wip: menu-qr\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745313922231</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745313922231</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"finish menu-qr and add cart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745520127820</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745520127820</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"wip: kitchen page\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745523707119</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745523707119</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"wip: kitchen page\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745578947237</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745578947237</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"wip: kitchen page\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745582628181</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745582628181</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"finish kitchen page\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745592513183</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745592513183</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"Lectura y escritura de reseñas añadida a home y contact.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745948950701</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745948950701</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"finish home\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1746023499656</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1746023499656</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"update project\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1746027617242</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1746027617242</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"23\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/sprint-3\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Menu y about.\" />\r\n    <MESSAGE value=\"Deslizador de alto menu arreglado.\" />\r\n    <MESSAGE value=\"Tamaño de los entrantes del menú ajustados.\" />\r\n    <MESSAGE value=\"Trello actualizado.\" />\r\n    <MESSAGE value=\"Untracked Files error solution try\" />\r\n    <MESSAGE value=\"AboutUs and Menu responsive.\" />\r\n    <MESSAGE value=\"Modify menu and add images of dishes\" />\r\n    <MESSAGE value=\"Update Readme\" />\r\n    <MESSAGE value=\"wip: routing\" />\r\n    <MESSAGE value=\"wip: menu-qr\" />\r\n    <MESSAGE value=\"finish menu-qr and add cart\" />\r\n    <MESSAGE value=\"wip: kitchen page\" />\r\n    <MESSAGE value=\"finish kitchen page\" />\r\n    <MESSAGE value=\"Lectura y escritura de reseñas añadida a home y contact.\" />\r\n    <MESSAGE value=\"finish home\" />\r\n    <MESSAGE value=\"update project\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"update project\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 25a6f3d390aadfaa42d683a08ae779b47019d0c6)
++++ b/.idea/workspace.xml	(date 1746261774188)
+@@ -4,15 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="update project">
+-      <change afterPath="$PROJECT_DIR$/sprint-3/src/app/models/dish.model.ts" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/sprint-3/src/app/models/order.model.ts" afterDir="false" />
++    <list default="true" id="f66b42c4-185a-447f-a832-da78219db5fd" name="Changes" comment="final refactor">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/home/home.component.ts" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/kitchen-page/kitchen-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/kitchen-page/kitchen-page.component.ts" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/services/api.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/services/api.service.spec.ts" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/services/kitchen.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-3/src/app/services/kitchen.service.ts" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/sprint-3/src/app/services/menu.service.spec.ts" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -44,12 +37,12 @@
+     &quot;assignee&quot;: &quot;002avid&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/Alejandrovb01/PWM_43_Grupo2.git",
+-    "accountId": "a3f205e7-11a6-42c4-b24d-09e366882eb5"
+-  }
+-}]]></component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/Alejandrovb01/PWM_43_Grupo2.git&quot;,
++    &quot;accountId&quot;: &quot;a3f205e7-11a6-42c4-b24d-09e366882eb5&quot;
++  }
++}</component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 7
+ }</component>
+@@ -58,34 +51,34 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "JavaScript Debug.aboutUs.html.executor": "Run",
+-    "JavaScript Debug.aboutUsMain.html.executor": "Run",
+-    "JavaScript Debug.aboutUsPage.html.executor": "Run",
+-    "JavaScript Debug.cardMenu.html.executor": "Run",
+-    "JavaScript Debug.dishPage.html.executor": "Run",
+-    "JavaScript Debug.homePage.html.executor": "Run",
+-    "JavaScript Debug.menu.html.executor": "Run",
+-    "JavaScript Debug.menuMain.html.executor": "Run",
+-    "JavaScript Debug.menuPage.html.executor": "Run",
+-    "JavaScript Debug.menuQRPage.html.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "sprint-3",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "last_opened_file_path": "C:/Users/aleja/WebstormProjects/examen_crud_2025_42",
+-    "list.type.of.created.stylesheet": "CSS",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "ts.external.directory.path": "C:\\Users\\gabyt\\WebstormProjects\\PWM_43_Grupo2\\sprint-3\\node_modules\\typescript\\lib",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
++    &quot;JavaScript Debug.aboutUs.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.aboutUsMain.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.aboutUsPage.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.cardMenu.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.dishPage.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.homePage.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.menu.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.menuMain.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.menuPage.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.menuQRPage.html.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;sprint-3&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/aleja/WebstormProjects/examen_crud_2025_42&quot;,
++    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\gabyt\\WebstormProjects\\PWM_43_Grupo2\\sprint-3\\node_modules\\typescript\\lib&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\assets" />
+@@ -153,6 +146,7 @@
+       <workItem from="1745857480147" duration="4123000" />
+       <workItem from="1745866151719" duration="1717000" />
+       <workItem from="1745934501672" duration="15921000" />
++      <workItem from="1746260988055" duration="781000" />
+     </task>
+     <task id="LOCAL-00001" summary="Menu y about.">
+       <option name="closed" value="true" />
+@@ -330,7 +324,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1746027617242</updated>
+     </task>
+-    <option name="localTasksCounter" value="23" />
++    <task id="LOCAL-00023" summary="final refactor">
++      <option name="closed" value="true" />
++      <created>1746127968433</created>
++      <option name="number" value="00023" />
++      <option name="presentableId" value="LOCAL-00023" />
++      <option name="project" value="LOCAL" />
++      <updated>1746127968433</updated>
++    </task>
++    <option name="localTasksCounter" value="24" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -376,6 +378,7 @@
+     <MESSAGE value="Lectura y escritura de reseñas añadida a home y contact." />
+     <MESSAGE value="finish home" />
+     <MESSAGE value="update project" />
+-    <option name="LAST_COMMIT_MESSAGE" value="update project" />
++    <MESSAGE value="final refactor" />
++    <option name="LAST_COMMIT_MESSAGE" value="final refactor" />
+   </component>
+ </project>
+\ No newline at end of file
