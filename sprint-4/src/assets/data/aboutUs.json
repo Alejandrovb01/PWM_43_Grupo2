@@ -1,0 +1,39 @@
+{
+  "aboutUs_intro": [
+    {
+      "imagen": "../assets/cocinero.jpg",
+      "titulo": "¿Quiénes somos?",
+      "descripcion": "Somos un restaurante italiano apasionado por ofrecer la auténtica experiencia culinaria de Italia, con recetas tradicionales y un ambiente acogedor."
+    },
+    {
+      "imagen": "../assets/restaurante.jpg",
+      "titulo": "El restaurante",
+      "descripcion": "Un rincón de Italia en la ciudad, donde cada plato cuenta una historia y cada ingrediente refleja nuestra dedicación a la calidad y el sabor."
+    }
+
+  ],
+  "aboutUs_grid": [
+    {
+      "imagen": "../assets/vision.jpg",
+      "titulo": "Visión",
+      "descripcion": "Ser el restaurante italiano de referencia en la ciudad, reconocido por su calidad, hospitalidad y ambiente que transporta a Italia."
+    },
+    {
+      "imagen": "../assets/mision.jpg",
+      "titulo": "Misión",
+      "descripcion": "Ofrecer auténtica cocina italiana con ingredientes frescos y recetas tradicionales, creando una experiencia cálida y acogedora para cada comensal."
+    },
+    {
+      "imagen": "../assets/valores.jpg",
+      "titulo": "Valores",
+      "descripcion": "Autenticidad – Respetamos las recetas y tradiciones italianas.\nCalidad – Solo usamos ingredientes frescos y de primera.\nHospitalidad – Hacemos que cada cliente se sienta en casa.\nPasión – Cocinamos con amor y dedicación."
+    }
+  ],
+  "aboutUs_last":[
+    {
+      "imagen": "../assets/calidad.jpg",
+      "titulo": "Calidad",
+      "descripcion": "Cada plato es una obra maestra, elaborado con ingredientes seleccionados y el amor por la cocina italiana que nos define."
+    }
+  ]
+}
