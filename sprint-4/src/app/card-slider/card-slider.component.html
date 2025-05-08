@@ -1,0 +1,17 @@
+<div class="card-slider" (click)="navigateToDetail()">
+  <img [src]="'assets/' + image" [alt]="title" class="card-image">
+  <h3 class="card-title">{{ title }}</h3>
+  <div class="description">
+    <p class="card-description">{{ description }}</p>
+  </div>
+  <div class="dish-actions">
+    <ng-container *ngIf="showAddButton; else showPriceOnly">
+      <ion-button expand="block" size="small" fill="outline" (click)="addToCart($event); $event.stopPropagation()">
+        Añadir - {{ price }}€
+      </ion-button>
+    </ng-container>
+    <ng-template #showPriceOnly>
+      <span class="price">{{ price }}€</span>
+    </ng-template>
+  </div>
+</div>
