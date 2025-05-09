@@ -1,8 +1,9 @@
-<main class="menu-qr-container">
+<div class="menu-qr-container">
   <div *ngIf="loading$ | async" class="loading-indicator">
     <ion-spinner name="dots"></ion-spinner>
     <p>Cargando el menú...</p>
   </div>
+
   <ng-container *ngIf="(menuItems$ | async) as menuItems">
     <ng-container *ngFor="let category of categoryOrder">
       <section class="dish-slider">
@@ -15,10 +16,10 @@
               [description]="item.description"
               [price]="item.price"
               [id]="item.id"
-            ></app-card-slider>
+              ></app-card-slider>
           </ng-container>
         </div>
       </section>
     </ng-container>
   </ng-container>
-</main>
+</div>

@@ -27,7 +27,10 @@
 
 .menu-qr-container {
   position: relative;
-  padding-bottom: 70px;
+  padding: 16px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .table-number {
