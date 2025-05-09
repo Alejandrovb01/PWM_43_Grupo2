@@ -5,48 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac2b33ee-e0b6-4ca0-9aa3-8680611c68b0" name="Changes" comment="init project">
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/blackLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/bruschetta.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/burrata.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/calamari.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/calidad.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/caprese.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/carpaccio.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/cocinero.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/cocinero_amasando_pizza.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/mision.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/pizza_carbonara.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/pizza_cartel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/pizza_cuatro_quesos.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/pizza_hawaiana.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/pizza_home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/pizza_margherita.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/pizza_marinara.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/pizza_peperoni.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/pizza_prosciutto.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/pizza_trufa.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/pizza_vegetariana.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/prosciutto_melon.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/restaurante.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/valores.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-4/src/assets/vision.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_04_2025_16_40_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_04_2025_16_40__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-4/capacitor.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/java/com/ulpgc/luigis/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-land-hdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-land-mdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-land-xhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-land-xxhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-land-xxxhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-port-hdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-port-mdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-port-xhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-port-xxhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-port-xxxhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/xml/file_paths.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/variables.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint-4/capacitor.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/home/home.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/home/home.page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/home/home.page.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/home/home.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,41 +74,41 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "GabrielDT13"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GabrielDT13&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Alejandrovb01/PWM_43_Grupo2.git&quot;,
     &quot;accountId&quot;: &quot;a3f205e7-11a6-42c4-b24d-09e366882eb5&quot;
   }
 }</component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2woLtTGp7wbLNfJ4XGQxCUnCZLE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "sprint-4",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\gabyt\\WebstormProjects\\PWM_43_Grupo2\\sprint-4\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sprint-4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\gabyt\\WebstormProjects\\PWM_43_Grupo2\\sprint-4\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\sprint-4\src\app" />
@@ -126,9 +139,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746703198454</updated>
-      <workItem from="1746703199710" duration="3753000" />
+      <workItem from="1746703199710" duration="4835000" />
+      <workItem from="1746786073568" duration="752000" />
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init project">
+      <option name="closed" value="true" />
+      <created>1746707096816</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746707096816</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init project">
+      <option name="closed" value="true" />
+      <created>1746707288647</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746707288647</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
