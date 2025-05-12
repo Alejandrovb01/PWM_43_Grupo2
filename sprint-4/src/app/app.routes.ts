@@ -1,4 +1,5 @@
 import {Routes} from "@angular/router";
+import {AboutUsPage} from "./about-us/about-us.page";
 
 export const routes: Routes = [
   /*{
@@ -18,6 +19,10 @@ export const routes: Routes = [
         loadComponent: () => import('./dish-page/dish-page.component').then(m => m.DishPageComponent)
       }
     ]
+  },
+  {
+    path: 'about-us',
+    loadComponent: () => import('./about-us/about-us.page').then(m => m.AboutUsPage)
   },
   {
     path: '**',
