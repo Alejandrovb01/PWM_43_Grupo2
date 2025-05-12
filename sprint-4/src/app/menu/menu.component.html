@@ -4,7 +4,7 @@
     <p>Cargando el menú...</p>
   </div>
 
-  <ng-container *ngIf="!loading && (menuItems$ | async) as menuItems">
+  <ng-container *ngIf="!loading">
     <section class="dish-slider" *ngFor="let category of categoryOrder">
       <h2>{{ category }}</h2>
       <div class="dish-slider-content">

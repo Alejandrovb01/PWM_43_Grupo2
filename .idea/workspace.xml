@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ac2b33ee-e0b6-4ca0-9aa3-8680611c68b0" name="Changes" comment="update project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/card-slider/card-slider.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/card-slider/card-slider.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/card-slider/card-slider.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/card-slider/card-slider.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/card-slider/card-slider.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/card-slider/card-slider.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/footer/footer.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/header/header.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint-4/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/layout/layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/layout/layout.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.ts" afterDir="false" />
     </list>
@@ -101,7 +92,7 @@
       <workItem from="1746703199710" duration="4835000" />
       <workItem from="1746786073568" duration="752000" />
       <workItem from="1747068500068" duration="64000" />
-      <workItem from="1747075469853" duration="2298000" />
+      <workItem from="1747075469853" duration="3293000" />
     </task>
     <task id="LOCAL-00002" summary="init project">
       <option name="closed" value="true" />
@@ -127,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747076541414</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update project">
+      <option name="closed" value="true" />
+      <created>1747078023470</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747078023470</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
