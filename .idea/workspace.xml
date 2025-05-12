@@ -4,62 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac2b33ee-e0b6-4ca0-9aa3-8680611c68b0" name="Changes" comment="init project">
-      <change afterPath="$PROJECT_DIR$/sprint-4/capacitor.config.json" afterDir="false" />
+    <list default="true" id="ac2b33ee-e0b6-4ca0-9aa3-8680611c68b0" name="Changes" comment="update project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/java/com/ulpgc/luigis/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-land-hdpi/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-land-mdpi/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-land-xhdpi/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-land-xxhdpi/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-land-xxxhdpi/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-port-hdpi/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-port-mdpi/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-port-xhdpi/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-port-xxhdpi/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-port-xxxhdpi/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/drawable/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/main/res/xml/file_paths.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/android/variables.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/capacitor.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +90,8 @@
       <updated>1746703198454</updated>
       <workItem from="1746703199710" duration="4835000" />
       <workItem from="1746786073568" duration="752000" />
+      <workItem from="1747068500068" duration="64000" />
+      <workItem from="1747075469853" duration="1004000" />
     </task>
     <task id="LOCAL-00002" summary="init project">
       <option name="closed" value="true" />

@@ -17,18 +17,16 @@
 }
 
 @media (max-width: 768px) {
-  .dish-slider-content{
+  .dish-slider-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: stretch;
   }
 }
 
 .menu-qr-container {
   position: relative;
   padding: 16px;
-  display: block;
   width: 100%;
   box-sizing: border-box;
 }

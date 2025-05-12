@@ -3,7 +3,6 @@
   -webkit-box-shadow: 0 17px 10px -13px rgba(0,0,0,0.35);
   -moz-box-shadow: 0 17px 10px -13px rgba(0,0,0,0.35);
   box-shadow: 0 17px 10px -13px rgba(0,0,0,0.35);
-  position: sticky;
   top: 0;
   z-index: 5;
   width: 100%;
