@@ -1,7 +1,7 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from "@angular/router";
-import {IonicModule} from "@ionic/angular";
+import { IonicModule } from "@ionic/angular";
 
 @Component({
   selector: 'app-card-slider',
@@ -10,28 +10,16 @@ import {IonicModule} from "@ionic/angular";
   templateUrl: './card-slider.component.html',
   styleUrls: ['./card-slider.component.css'],
 })
-
 export class CardSliderComponent {
   @Input() image: string = '';
   @Input() title: string = '';
   @Input() description: string = '';
   @Input() price: string = '';
   @Input() id!: string;
-  @Output() addToCartEvent = new EventEmitter<any>();
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   navigateToDetail() {
-    const isFromMenuQr = this.router.url.startsWith('/menu-qr');
-    this.router.navigate(['/dish', this.id], { state: { fromMenuQr: isFromMenuQr } });
-  }
-
-  get showAddButton(): boolean {
-    return this.router.url.startsWith('/menu-qr');
-  }
-
-  addToCart(event: Event) {
-    event.stopPropagation();
-    this.addToCartEvent.emit({ id: this.id, name: this.title, price: parseFloat(this.price) });
+    this.router.navigate(['/dish', this.id]);
   }
 }
