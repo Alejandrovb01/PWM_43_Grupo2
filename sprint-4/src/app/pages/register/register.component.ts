@@ -30,7 +30,7 @@ export class RegisterComponent {
 
     this.authService.signup(this.email, this.password)
       .then(() => {
-        this.router.navigate(['/']);
+        this.router.navigate(['/app']);
       })
       .catch(err => {
         this.errorMessage = 'Error al crear cuenta: ' + err.message;

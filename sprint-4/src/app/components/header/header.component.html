@@ -1,6 +1,6 @@
 <div class="header">
   <nav class="header__nav">
-    <a routerLink="/" class="header__logo-container">
+    <div class="header__logo-container">
       <img
         class="header__logo"
         ngSrc="../../../assets/blackLogo.png"
@@ -8,14 +8,12 @@
         width="500"
         height="500"
       />
-
-      <h3 class="header__name">Luigi's</h3>
-    </a>
+    </div>
 
     <ul class="header__menu">
       <li><a routerLink="/app" class="header__link">Inicio</a></li>
       <li><a routerLink="/app/favorites" class="header__link">Favoritos</a></li>
-      <li><button (click)="logout()" class="header__link logout-button">Cerrar sesión</button></li>
+      <li><button (click)="logout()" class="header__link logout-button">X</button></li>
     </ul>
   </nav>
 </div>
