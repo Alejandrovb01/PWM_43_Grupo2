@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FirebaseDataService } from '../services/firebase-data.service';
+import { FirebaseDataService } from '../../services/firebase-data.service';
 import { NgIf, NgForOf } from '@angular/common';
-import { CardSliderComponent } from '../card-slider/card-slider.component';
+import { CardSliderComponent } from '../../components/card-slider/card-slider.component';
 import { IonicModule } from '@ionic/angular';
 
 @Component({

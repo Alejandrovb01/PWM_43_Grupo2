@@ -3,7 +3,7 @@
     <a routerLink="/" class="header__logo-container">
       <img
         class="header__logo"
-        ngSrc="assets/blackLogo.png"
+        ngSrc="../../../assets/blackLogo.png"
         alt="Logo de Luigi's"
         width="500"
         height="500"
@@ -13,8 +13,9 @@
     </a>
 
     <ul class="header__menu">
-      <li><a routerLink="/" class="header__link">Inicio</a></li>
-      <li><a routerLink="/favorites" class="header__link">Favoritos</a></li>
+      <li><a routerLink="/app" class="header__link">Inicio</a></li>
+      <li><a routerLink="/app/favorites" class="header__link">Favoritos</a></li>
+      <li><button (click)="logout()" class="header__link logout-button">Cerrar sesión</button></li>
     </ul>
   </nav>
 </div>

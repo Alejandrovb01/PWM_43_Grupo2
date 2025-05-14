@@ -48,3 +48,17 @@
 .header__link:hover {
   color: #ffffff;
 }
+
+.logout-button {
+  background: none;
+  border: none;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.logout-button:hover {
+  color: #ffffff;
+}

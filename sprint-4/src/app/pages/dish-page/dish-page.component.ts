@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { FirebaseDataService } from '../services/firebase-data.service';
+import { FirebaseDataService } from '../../services/firebase-data.service';
 import { CommonModule, Location } from '@angular/common';
 import { BehaviorSubject, Observable, switchMap, of } from 'rxjs';
 import { collection, getDocs } from 'firebase/firestore';

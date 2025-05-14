@@ -6,9 +6,37 @@
   <component name="ChangeListManager">
     <list default="true" id="ac2b33ee-e0b6-4ca0-9aa3-8680611c68b0" name="Changes" comment="update project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/card-slider/card-slider.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/card-slider/card-slider.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/card-slider/card-slider.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/card-slider/card-slider.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/card-slider/card-slider.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/card-slider/card-slider.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/card-slider/card-slider.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/card-slider/card-slider.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/dish-page/dish-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/pages/dish-page/dish-page.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/dish-page/dish-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/pages/dish-page/dish-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/dish-page/dish-page.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/pages/dish-page/dish-page.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/dish-page/dish-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/pages/dish-page/dish-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/footer/footer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/footer/footer.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/footer/footer.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/footer/footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/header/header.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/header/header.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/layout/layout.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/layout/layout.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/layout/layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/layout/layout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/layout/layout.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/layout/layout.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/layout/layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/layout/layout.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/pages/menu/menu.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/pages/menu/menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/pages/menu/menu.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/pages/menu/menu.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/services/about-us.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/services/api.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/services/api.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/services/login.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/services/login.service.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +89,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\sprint-4\src\app\components" />
+      <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\sprint-4\src\app\pages" />
       <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\sprint-4\src\app" />
       <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\sprint-4\src\assets" />
       <recent name="C:\Users\gabyt\WebstormProjects\PWM_43_Grupo2\sprint-4\src\environments" />
@@ -93,6 +123,7 @@
       <workItem from="1746786073568" duration="752000" />
       <workItem from="1747068500068" duration="64000" />
       <workItem from="1747075469853" duration="3293000" />
+      <workItem from="1747220015348" duration="1668000" />
     </task>
     <task id="LOCAL-00002" summary="init project">
       <option name="closed" value="true" />
