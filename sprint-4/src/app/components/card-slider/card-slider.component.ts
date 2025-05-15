@@ -20,6 +20,6 @@ export class CardSliderComponent {
   constructor(private router: Router) {}
 
   navigateToDetail() {
-    this.router.navigate(['/dish', this.id]);
+    this.router.navigate(['/app/dish', this.id]);
   }
 }

@@ -4,6 +4,8 @@ import { FirebaseDataService } from '../../services/firebase-data.service';
 import { CommonModule, Location } from '@angular/common';
 import { BehaviorSubject, Observable, switchMap, of } from 'rxjs';
 import { collection, getDocs } from 'firebase/firestore';
+import { IonicModule, ToastController } from '@ionic/angular';
+
 
 interface Alergeno {
   name: string;
@@ -27,7 +29,7 @@ interface NavigationState {
 @Component({
   selector: 'app-dish-page',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, IonicModule],
   templateUrl: './dish-page.component.html',
   styleUrl: './dish-page.component.css'
 })
@@ -51,14 +53,13 @@ export class DishPageComponent implements OnInit {
     private route: ActivatedRoute,
     private firebaseDataService: FirebaseDataService,
     private router: Router,
-    private location: Location
-  ) { }
+    private location: Location,
+    private toastController: ToastController
+  ) {}
 
   ngOnInit(): void {
     const navigationState = this.location.getState() as NavigationState;
-    if (navigationState?.fromMenuQr) {
-      this.showAddButton = true;
-    }
+    this.showAddButton = !!navigationState?.fromMenuQr;
 
     this.route.paramMap.subscribe(params => {
       this.dishId = params.get('id');
@@ -73,10 +74,8 @@ export class DishPageComponent implements OnInit {
     this.firebaseDataService.getData('menu').pipe(
       switchMap(menuItems => {
         const foundItem = menuItems.find(item => item.id === id);
-        let foundDish: Dish | undefined;
         if (foundItem) {
-          foundDish = foundItem as Dish;
-          this.dish = { ...foundDish, alergenos: [] };
+          this.dish = { ...foundItem, alergenos: [] } as Dish;
           const alergenosCollection = collection(this.firebaseDataService['db'], 'menu', id, 'alérgenos');
           return new Observable(subscriber => {
             getDocs(alergenosCollection)
@@ -94,29 +93,41 @@ export class DishPageComponent implements OnInit {
               });
           });
         } else {
-          console.log(`Plato con ID ${id} no encontrado.`);
+          console.warn(`Plato con ID ${id} no encontrado.`);
           return of(null);
         }
       })
-    ).subscribe(
-      (dishWithAlergenos) => {
-        if (dishWithAlergenos) {
-          this.dish = <Dish>dishWithAlergenos;
-        }
+    ).subscribe({
+      next: (dishWithAlergenos) => {
+        if (dishWithAlergenos) this.dish = dishWithAlergenos as Dish;
         this.loading.next(false);
       },
-      (error) => {
+      error: (error) => {
         console.error('Error al obtener los detalles del plato:', error);
         this.loading.next(false);
       }
-    );
+    });
   }
 
-  addToCart(dish: Dish): void {
+  async addToCart(dish: Dish): Promise<void> {
     console.log('Añadir al carrito:', dish);
+    const toast = await this.toastController.create({
+      message: `${dish.name} añadido al carrito.`,
+      duration: 2000,
+      color: 'success'
+    });
+    await toast.present();
+  }
+
+
+  addToFavorites(dish: Dish) {
+    // Pendiente
   }
 
   goBack(): void {
     this.router.navigate(['/menu-qr']);
   }
+
+
+
 }

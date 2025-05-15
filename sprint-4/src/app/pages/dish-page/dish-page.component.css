@@ -1,4 +1,5 @@
-.dish-page {
+/*.dish-page {
+
   padding: 20px;
   box-sizing: border-box;
 }
@@ -108,4 +109,150 @@
 .price{
   text-align: center;
   font-size: 1.2em;
+}
+
+
+*/
+.dish-page {
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.dish-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.dish-image {
+  width: 100%;
+  max-width: 500px;
+  max-height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dish-text {
+  padding: 0 12px;
+}
+
+.dish-text p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.dish-title {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.options-title {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.options-element {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.options-element img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f9f9f9;
+  padding: 4px;
+}
+
+@media (min-width: 768px) {
+  .dish-description {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .options-element img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dish-image {
+    max-width: 600px;
+  }
+
+  .options-element img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.button-container {
+  margin-top: 30px;
+  padding: 0 16px;
+}
+
+.buy-button, .price {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.buy-button:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.price {
+  background-color: transparent;
+  color: #000;
+}
+
+.back-button {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  padding: 10px 14px;
+  background-color: #f0f0f0;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+}
+
+.heart-container {
+  text-align: right;
 }

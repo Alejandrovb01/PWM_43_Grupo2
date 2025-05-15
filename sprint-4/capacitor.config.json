@@ -1,6 +1,9 @@
 {
-  "appId": "com.ulpgc.luigis",
-  "appName": "sprint-4",
+  "appId": "com.ulpgc.luigirestaurant",
+  "appName": "LuigiRestaurant",
   "webDir": "www",
-  "bundledWebRuntime": false
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
 }
