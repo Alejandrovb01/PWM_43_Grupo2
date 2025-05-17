@@ -27,6 +27,10 @@ export const routes: Routes = [
       {
         path: 'dish/:id',
         loadComponent: () => import('./pages/dish-page/dish-page.component').then(m => m.DishPageComponent)
+      },
+      {
+        path: 'favorites',
+        loadComponent: () => import('./pages/favorites/favorites/favorites.page').then( m => m.FavoritesPage)
       }
     ]
   },
@@ -34,4 +38,5 @@ export const routes: Routes = [
     path: '**',
     redirectTo: 'login'
   }
+
 ];

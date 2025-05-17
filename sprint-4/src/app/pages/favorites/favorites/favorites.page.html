@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Favoritos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="favoriteDishes.length > 0">
+    <ion-item
+      *ngFor="let dish of favoriteDishes"
+      (click)="goToDetail(dish.id)"
+    >
+      <ion-label>
+        <h2>{{ dish.name }}</h2>
+        <p>{{ dish.description }}</p>
+        <p>{{ dish.price | currency:'EUR' }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <div *ngIf="favoriteDishes.length === 0" class="ion-padding">
+    <p>No tienes platos favoritos aún.</p>
+  </div>
+</ion-content>

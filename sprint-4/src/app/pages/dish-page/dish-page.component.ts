@@ -5,6 +5,7 @@ import { CommonModule, Location } from '@angular/common';
 import { BehaviorSubject, Observable, switchMap, of } from 'rxjs';
 import { collection, getDocs } from 'firebase/firestore';
 import { IonicModule, ToastController } from '@ionic/angular';
+import {FavoritesService} from "../../services/favorites.service";
 
 
 interface Alergeno {
@@ -48,13 +49,16 @@ export class DishPageComponent implements OnInit {
   loading = new BehaviorSubject<boolean>(true);
   loading$ = this.loading.asObservable();
   showAddButton = false;
+  isFavoriteDish: boolean = false;
+
 
   constructor(
     private route: ActivatedRoute,
     private firebaseDataService: FirebaseDataService,
     private router: Router,
     private location: Location,
-    private toastController: ToastController
+    private toastController: ToastController,
+    private favoritesService: FavoritesService
   ) {}
 
   ngOnInit(): void {
@@ -76,6 +80,9 @@ export class DishPageComponent implements OnInit {
         const foundItem = menuItems.find(item => item.id === id);
         if (foundItem) {
           this.dish = { ...foundItem, alergenos: [] } as Dish;
+          this.favoritesService.isFavorite(this.dish.id).then(isFav => {
+            this.isFavoriteDish = isFav;
+          });
           const alergenosCollection = collection(this.firebaseDataService['db'], 'menu', id, 'alérgenos');
           return new Observable(subscriber => {
             getDocs(alergenosCollection)
@@ -105,6 +112,7 @@ export class DishPageComponent implements OnInit {
       error: (error) => {
         console.error('Error al obtener los detalles del plato:', error);
         this.loading.next(false);
+        this.checkIfFavorite();
       }
     });
   }
@@ -119,15 +127,41 @@ export class DishPageComponent implements OnInit {
     await toast.present();
   }
 
-
-  addToFavorites(dish: Dish) {
-    // Pendiente
-  }
-
   goBack(): void {
     this.router.navigate(['/menu-qr']);
   }
 
+  async toggleFavorite(): Promise<void> {
+    if (!this.dish?.id) return;
+
+    const isFav = await this.favoritesService.isFavorite(this.dish.id);
+
+    if (isFav) {
+      await this.favoritesService.removeFromFavorites(this.dish.id);
+      this.isFavoriteDish = false;
+      const toast = await this.toastController.create({
+        message: `${this.dish.name} eliminado de favoritos.`,
+        duration: 2000,
+        color: 'medium'
+      });
+      await toast.present();
+    } else {
+      await this.favoritesService.addToFavorites(this.dish);
+      this.isFavoriteDish = true;
+      const toast = await this.toastController.create({
+        message: `${this.dish.name} añadido a favoritos.`,
+        duration: 2000,
+        color: 'success'
+      });
+      await toast.present();
+    }
+  }
+
+  private async checkIfFavorite() {
+    if (this.dishId) {
+      this.isFavoriteDish = await this.favoritesService.isFavorite(this.dishId);
+    }
+  }
 
 
 }
