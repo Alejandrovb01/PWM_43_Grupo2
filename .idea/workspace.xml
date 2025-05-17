@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac2b33ee-e0b6-4ca0-9aa3-8680611c68b0" name="Changes" comment="add login and register">
+    <list default="true" id="ac2b33ee-e0b6-4ca0-9aa3-8680611c68b0" name="Changes" comment="finish login and register">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/components/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/header/header.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/components/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/pages/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/pages/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/pages/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/app/capacitor.build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/android/app/capacitor.build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/android/capacitor.settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/android/capacitor.settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/about-us/about-us.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/about-us/about-us.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/about-us/about-us.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/about-us/about-us.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/models/about-us.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/pages/dish-page/dish-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/pages/dish-page/dish-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-4/src/app/pages/dish-page/dish-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-4/src/app/pages/dish-page/dish-page.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +104,10 @@
       <workItem from="1746786073568" duration="752000" />
       <workItem from="1747068500068" duration="64000" />
       <workItem from="1747075469853" duration="3293000" />
-      <workItem from="1747220015348" duration="4318000" />
+      <workItem from="1747220015348" duration="4685000" />
+      <workItem from="1747234918355" duration="346000" />
+      <workItem from="1747405912300" duration="1129000" />
+      <workItem from="1747495802870" duration="2328000" />
     </task>
     <task id="LOCAL-00002" summary="init project">
       <option name="closed" value="true" />
@@ -147,17 +157,37 @@
       <option name="project" value="LOCAL" />
       <updated>1747222575702</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="finish login and register">
+      <option name="closed" value="true" />
+      <created>1747225898485</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747225898485</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="init project" />
     <MESSAGE value="update project" />
     <MESSAGE value="add login and register" />
-    <option name="LAST_COMMIT_MESSAGE" value="add login and register" />
+    <MESSAGE value="finish login and register" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish login and register" />
   </component>
 </project>

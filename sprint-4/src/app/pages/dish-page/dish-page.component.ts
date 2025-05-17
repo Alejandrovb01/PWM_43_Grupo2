@@ -117,20 +117,6 @@ export class DishPageComponent implements OnInit {
     });
   }
 
-  async addToCart(dish: Dish): Promise<void> {
-    console.log('Añadir al carrito:', dish);
-    const toast = await this.toastController.create({
-      message: `${dish.name} añadido al carrito.`,
-      duration: 2000,
-      color: 'success'
-    });
-    await toast.present();
-  }
-
-  goBack(): void {
-    this.router.navigate(['/menu-qr']);
-  }
-
   async toggleFavorite(): Promise<void> {
     if (!this.dish?.id) return;
 
